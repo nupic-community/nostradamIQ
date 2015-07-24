@@ -1,6 +1,8 @@
 # nostradamIQ - sensing our worlds disasters.
 ## Modern tech & principles of our brain -> intuitive & intelligent tool for nostradamIQ prediction
 
+[![Join the chat at https://gitter.im/nupic-community/nostradamIQ](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nupic-community/nostradamIQ?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 # THIS IS WORK IN PROGRESS! DO NOT JUDGE, BUT FEEL FREE TO HELP/SHARE etc. ;)
 
 
