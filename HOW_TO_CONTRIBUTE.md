@@ -1,5 +1,10 @@
 # How can I help?
 
+### Questions? 
+[![Join the chat at https://gitter.im/nupic-community/nostradamIQ](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nupic-community/nostradamIQ?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[<img src="https://nostradamiq.herokuapp.com/badge.svg">](https://nostradamiq.slack.com)[Be invited to our Slack-Team!](https://nostradamiq.herokuapp.com)
+<script async defer src="https://nostradamiq.herokuapp.com/slackin.js?large"></script>
+
 [Deutsche Version unten zu finden!]
 
 Thank you for your interest!

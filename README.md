@@ -23,7 +23,7 @@ This will also lead to a nice tool for visualizing all kinds of natural phenomen
 If you watch close, history does nothing but repeat itself." 
 -Someone smart 
 
-
+For Question, Ideas or anything else, do not hesitate to [get in touch](mailto:info@nostradamiq.org)!
 __________________________________________________________________________________________________________________
 
 Thanks to the NuPIC-Community, Austin, Lab75 and many more for help!
