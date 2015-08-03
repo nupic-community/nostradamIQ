@@ -16,6 +16,12 @@ Here is a quick and easy step-by-step guide about how you can help us make this 
 ## Step 0:
 You should be familiar with git and github in general, if you're not, you will be in a few minutes!
 [![Just watch the short tutorial here:  https://www.youtube.com/watch?v=Yc3PKaT1knU] (https://img.youtube.com/vi/Yc3PKaT1knU/0.jpg)](https://www.youtube.com/watch?v=Yc3PKaT1knU)
+For further questions, see [Git's Docs](https://git-scm.com/docs)!
+
+[JavaScript](http://www.w3schools.com/js/) is a really easy-to-learn and generally useful language! If you don't know it, You'll learn it on the fly, no worries! Just see how some of the [current codes](https://github.com/nupic-community/river-view/tree/master/rivers) work and have a nice cheat-sheet like [this](http://www.cheatography.com/davechild/cheat-sheets/javascript/) at hand. 
+And Voil´a! Congrats! You're now set to start!
+
+![And Voil´a! Congrats! You're now set to start!](https://github.com/nupic-community/nostradamIQ/blob/master/img/woohoo.png "And Voil´a! Congrats! You're now set to start!")
 
 ## Step 1:
 ### Find a dataset you want to work with [here](https://github.com/nupic-community/nostradamIQ/blob/master/datasets.md)!
@@ -48,7 +54,14 @@ Hier ist eine schnelle und einfache Schritt-für-Schritt-Anleitung, wie DU uns h
 
 ## Schritt 0:
 Du solltest wissen wie du mit Git und Github arbeitest, falls du dich noch nicht auskennst, wirst du es in ein paar Minuten draufhaben!
+
 [![Schau dir einfach das Tutorial hier an: https://www.youtube.com/watch?v=Yc3PKaT1knU] (https://img.youtube.com/vi/Yc3PKaT1knU/0.jpg)](https://www.youtube.com/watch?v=Yc3PKaT1knU)
+Bei weiteren Fragen, siehe [Git's Docs](https://git-scm.com/docs)!
+
+[JavaScript](http://www.w3schools.com/js/) ist einfach zu lernen und super hilfreich und beliebt in vielen Bereichen! Wenn Du es noch nicht kennst, mach dir keine Sorgen, Du wirst es schnell während des Codens lernen! Schau dir einfach mal ein paar der [jetzigen Codes](https://github.com/nupic-community/river-view/tree/master/rivers) and und habe ein kleines Cheat-Sheet wie [dieses](http://www.cheatography.com/davechild/cheat-sheets/javascript/) greifbar! 
+Und Voil´a! Glückwunsch! Jetzt kannst Du durchstarten!
+
+![Und Voil´a! Glückwunsch! Jetzt kannst Du durchstarten!](https://github.com/nupic-community/nostradamIQ/blob/master/img/woohoo.png "Und Voil´a! Glückwunsch! Jetzt kannst Du durchstarten!")
 
 ## Schritt 1:
 ### Finde einen Datensatz mit dem Du arbeiten möchtest [hier](https://github.com/nupic-community/nostradamIQ/blob/master/datasets.md)!
