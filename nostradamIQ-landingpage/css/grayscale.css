@@ -4,10 +4,37 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+@font-face {
+    font-family: 'herolight';
+    src: url('../fonts/hero_light-webfont.eot');
+    src: url('../fonts/hero_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/hero_light-webfont.woff2') format('woff2'),
+         url('../fonts/hero_light-webfont.woff') format('woff'),
+         url('../fonts/hero_light-webfont.ttf') format('truetype'),
+         url('../fonts/hero_light-webfont.svg#hero_lightlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'heroregular';
+    src: url('../fonts/hero-webfont.eot');
+    src: url('../fonts/hero-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/hero-webfont.woff2') format('woff2'),
+         url('../fonts/hero-webfont.woff') format('woff'),
+         url('../fonts/hero-webfont.ttf') format('truetype'),
+         url('../fonts/hero-webfont.svg#heroregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'herolight';
     color: #fff;
     background-color: #000;
 }
@@ -25,8 +52,7 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-family: 'heroregular';
     letter-spacing: 1px;
 }
 
@@ -34,6 +60,7 @@ p {
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 @media(min-width:768px) {
@@ -45,7 +72,7 @@ p {
 }
 
 a {
-    color: #42dca3;
+    color: #E3000B;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -54,34 +81,33 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #1d9b6c;
-}
-
-.light {
-    font-weight: 400;
+    color: #BF0009;
 }
 
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'herolight';
     background-color: #000;
 }
 
-.navbar-custom .navbar-brand {
-    font-weight: 700;
+/* --------------------- Logo ----------------- */
+.navbar-brand {
+    padding: 0;
 }
 
 .navbar-custom .navbar-brand:focus {
     outline: 0;
 }
 
-.navbar-custom .navbar-brand .navbar-toggle {
-    padding: 4px 6px;
+/* -------------------- Navbar toggle -------- */
+.navbar-custom .navbar-toggle {
+    padding: 8px 6px;
     font-size: 16px;
     color: #fff;
 }
+/* ----------- */
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
 .navbar-custom .navbar-brand .navbar-toggle:active {
@@ -90,6 +116,8 @@ a:focus {
 
 .navbar-custom a {
     color: #fff;
+    font-size: 16px;
+    font-family: 'heroregular';
 }
 
 .navbar-custom .nav li a {
@@ -100,8 +128,8 @@ a:focus {
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: rgba(255,255,255,.8);
-    background-color: transparent;
+    color: #fff;
+    background-color: #E3000B;
 }
 
 .navbar-custom .nav li a:focus,
@@ -122,6 +150,7 @@ a:focus {
     color: #fff;
 }
 
+/* ------------------------------ navigation collapse -------------- */
 @media(min-width:768px) {
     .navbar-custom {
         padding: 20px 0;
@@ -139,6 +168,7 @@ a:focus {
         background: #000;
     }
 }
+/* ----------------------- */
 
 .intro {
     display: table;
@@ -160,8 +190,17 @@ a:focus {
     vertical-align: middle;
 }
 
+/* --------------------- intro heading ------------- */
 .intro .intro-body .brand-heading {
     font-size: 40px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.intro .intro-body .brand-heading i {
+    font-style: normal;
+    font-family: 'heroregular';
+    color: #E3000B;
 }
 
 .intro .intro-body .intro-text {
@@ -175,13 +214,15 @@ a:focus {
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 100px;
+        font-size: 75px;
+        font-weight: normal;
     }
 
     .intro .intro-body .intro-text {
         font-size: 26px;
     }
 }
+/* --------------------------------- */ 
 
 .btn-circle {
     width: 70px;

@@ -28,3 +28,12 @@ nostradamIQ-htmengine-app/*/*/*
 
 _dev
 _dev/*
+
+
+nostradamIQ-webapp
+nostradamIQ-webapp/*
+nostradamIQ-webapp/*/*
+nostradamIQ-webapp/*/*/*
+nostradamIQ-webapp/*/*/*/*
+
+
