@@ -16,17 +16,10 @@ from nupic.data.inference_shifter import InferenceShifter
 
 
 THISDIR = os.getcwd()
-<<<<<<< HEAD
 BASEFILENAME = "eq_01011900_04072015_6.csv"
 INPUTFILE = os.path.join("data", BASEFILENAME)
 MODELSTATE = str(os.path.join(os.getcwd(), "modelstate"))
 OUTPUTFILE = csv.writer(open(os.path.join("data", str("OUT_" + BASEFILENAME)), "wb"))
-=======
-BASEFILENAME = "150510_220515_5.csv"
-INPUTFILE = os.path.join("data", BASEFILENAME)
-MODELSTATE = str(os.path.join(os.getcwd(), "modelstate"))
-OUTPUTFILE = csv.writer(open(os.path.join("data", str("OUT" + BASEFILENAME)), "wb"))
->>>>>>> 0e7d4f6a0bc7d66dfa405fff1130255ef414e64d
 OUTPUTFILE.writerow(["iterCount", "type", "time", "latitude", "longitude", "depth", "scalar", "AnomalyScore", "AnomalyMean_Windowsize", "AnomalyLikelihood", "logLikelihood", "place", "id", "prediction"])
 
 LOAD = 0 # Load Model or create a new One?
@@ -61,7 +54,6 @@ if VISUALIZE:
     subprocess.Popen(["python", "run_server.py", "8000"])
     os.chdir(THISDIR)
 
-<<<<<<< HEAD
 # use Mongodb: http://api.mongodb.org/python/current/index.html && http://docs.mongodb.org/master/tutorial/install-mongodb-on-ubuntu/?_ga=1.3893173.422718975.1436026551
 if DATABASE:
   class database:
@@ -72,7 +64,8 @@ if DATABASE:
     def insert(self, obj):
       loc = [obj.lat, obj.lng]
       pass
-=======
+
+
 if DATABASE:
   # TODO: Too slow. MySQL probably not the best for this...
   import MySQLdb
@@ -97,7 +90,6 @@ if DATABASE:
     # print cursor.fetchall()
     conn.close()
     # print "\n" + str(eventObj) + "\n"
->>>>>>> 0e7d4f6a0bc7d66dfa405fff1130255ef414e64d
 
 
 # Create the event objects:
@@ -125,11 +117,8 @@ if CLUSTERING:
 
 #if PREDICT: import PREDICTmodel_params as model_params
 
-<<<<<<< HEAD
+
 import TESTmodel_params as model_params
-=======
-else: import TESTmodel_params as model_params
->>>>>>> 0e7d4f6a0bc7d66dfa405fff1130255ef414e64d
 
 if LOAD: model = ModelFactory.loadFromCheckpoint(MODELSTATE)  
 else: model = ModelFactory.create(model_params.MODEL_PARAMS)
@@ -178,11 +167,7 @@ for n, event in enumerate(events):
     modelInput["scalar"] = magnitude
     modelInput["timestamp"] = timestamp
     # TODO: May reset the model after some time?
-<<<<<<< HEAD
     # TODO: May cluster inputs for adjustable bins?
-=======
-    # TODO: May Cluster inputs for adjustable bins?
->>>>>>> 0e7d4f6a0bc7d66dfa405fff1130255ef414e64d
     result = model.run(modelInput)
     model.save(MODELSTATE)
     print result
@@ -192,7 +177,7 @@ for n, event in enumerate(events):
       anomalyScore = result.inferences["anomalyScore"]
       AnomalyScores.append(anomalyScore)
       # By default 0.5 for the first 600 iterations! TODO: Still not quite sure if that's alright...
-<<<<<<< HEAD
+
       try:
         likelihood = anomalyLikelihood.anomalyProbability(input_event[0] + numpy.array([input_event[1]]), anomalyScore, modelInput["timestamp"])
         logLikelihood = anomalyLikelihood.computeLogLikelihood(likelihood)
@@ -204,12 +189,7 @@ for n, event in enumerate(events):
         logLikelihood = anomalyLikelihood.computeLogLikelihood(likelihood)
         LikelihoodScores.append([modelInput["timestamp"], modelInput["event"], likelihood])
         pass
-      
-=======
-      likelihood = anomalyLikelihood.anomalyProbability(event[0] + numpy.array([event[1]]), anomalyScore, modelInput["timestamp"])
-      logLikelihood = anomalyLikelihood.computeLogLikelihood(likelihood)
-      LikelihoodScores.append([modelInput["timestamp"], modelInput["event"], likelihood])
->>>>>>> 0e7d4f6a0bc7d66dfa405fff1130255ef414e64d
+
       prediction = 'None'
 
     if PREDICT:

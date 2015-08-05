@@ -1,5 +1,4 @@
 iterCount,type,time,latitude,longitude,depth,scalar,AnomalyScore,AnomalyMean_Windowsize,AnomalyLikelihood,logLikelihood,place,id,prediction
-<<<<<<< HEAD
 0,earthquake,2010-05-15T00:08:43.530Z,-16.689,177.283,10.3,5.1,1.0,"(1.0, None)",0.5,0.0301029996658834,Fiji,usp000hcs0,None
 1,earthquake,2010-05-15T15:18:13.230Z,-23.59,-176.646,79.8,5.7,1.0,"(1.0, None)",0.5,0.0301029996658834,south of the Fiji Islands,usp000hcst,None
 2,earthquake,2010-05-16T00:33:06.350Z,0.511,124.657,123,5.8,1.0,"(1.0, None)",0.5,0.0301029996658834,"Minahasa, Sulawesi, Indonesia",usp000hct7,None
@@ -594,6 +593,4 @@ iterCount,type,time,latitude,longitude,depth,scalar,AnomalyScore,AnomalyMean_Win
 591,earthquake,2010-08-28T18:46:30.400Z,18.72,-107.097,53.3,5.5,0.0,"(0.35979729729729731, None)",0.5,0.0301029996658834,"off the coast of Jalisco, Mexico",usp000hjvq,None
 592,earthquake,2010-08-28T22:42:51.080Z,-17.454,167.755,35,5,0.0,"(0.35919055649241149, None)",0.5,0.0301029996658834,Vanuatu,usp000hjvw,None
 593,earthquake,2010-08-29T06:37:48.900Z,-55.8,-26.991,35,5.5,0.0,"(0.35858585858585856, None)",0.5,0.0301029996658834,South Sandwich Islands region,usp000hjwf,None
-594,earthquake,2010-08-29T06:43:28.170Z,-41.862,-105.196,10,5.1,0.0,"(0.35
-=======
->>>>>>> 0e7d4f6a0bc7d66dfa405fff1130255ef414e64d
+

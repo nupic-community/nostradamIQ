@@ -91,20 +91,12 @@ def cluster(input_events):
 		out_events.append(event)
 		lat = float(event.latitude)
 		lng = float(event.longitude)
-<<<<<<< HEAD
 		scl = 1.5**float(event.mag)
-=======
-		scl = 1.25**float(event.mag)
->>>>>>> 0e7d4f6a0bc7d66dfa405fff1130255ef414e64d
 		point = [lat, lng]
 		points.append(point)
 		len_events += 1
 
-<<<<<<< HEAD
 		plt.plot(point[1], point[0], 'o', markersize=scl)
-=======
-		plt.plot(point[0], point[1], 'o', markersize=scl)
->>>>>>> 0e7d4f6a0bc7d66dfa405fff1130255ef414e64d
         
         if lat > maxLatitudes:
         	maxLatitudes = lat
@@ -118,21 +110,14 @@ def cluster(input_events):
       	if lng < minLongitudes:
         	minLongitudes = lng
         
-
-<<<<<<< HEAD
 	print "There are {0} events in the given dataset\n".format(len_events)
 		
 	print "Max. Longitudes: {maxLng} ; Min. Longitudes: {minLng}".format(maxLng=str(maxLongitudes), minLng=str(minLongitudes)) 
 	print "Max. Latitudes: {maxLat} ; Min. Latitudes: {minLat}\n".format(maxLat=str(maxLatitudes), minLat=str(minLatitudes))
 	plt.show(block=True)
-=======
 	print len_events
 
-	import subprocess
+	#import subprocess
 	plt.show(block=False)
-		
-	print "Max. Longitudes: {maxLng} ; Min. Longitudes: {minLng}".format(maxLng=str(maxLongitudes), minLng=str(minLongitudes)) 
-	print "Max. Latitudes: {maxLat} ; Min. Latitudes: {minLat}\n".format(maxLat=str(maxLatitudes), minLat=str(minLatitudes))
->>>>>>> 0e7d4f6a0bc7d66dfa405fff1130255ef414e64d
 
 	return out_events, minLatitudes, maxLatitudes, minLongitudes, maxLongitudes
