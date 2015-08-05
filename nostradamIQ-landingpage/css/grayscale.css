@@ -396,7 +396,6 @@ a:focus {
     font-family: 'heroregular';
     color: #000;
     background-color: #E3000B;
-    
 }
 
 #contact {
@@ -512,10 +511,6 @@ body {
 #terms {
     max-width: 1000px;
     padding-top: 130px !important;
-}
-
-#terms p strong {
-    
 }
 
 #terms p {
