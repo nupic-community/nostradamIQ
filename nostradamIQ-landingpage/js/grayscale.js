@@ -24,6 +24,18 @@ $(function() {
     });
 });
 
+// toggle share-buttons
+$(document).ready(function () {
+    var share = $("#about").offset().top;
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > share && $(window).scrollTop()) {
+            $(".share-buttons").addClass("show-share-buttons");
+        } else {
+            $(".share-buttons").removeClass("show-share-buttons");
+        }
+    });
+});
+
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();

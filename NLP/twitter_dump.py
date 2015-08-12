@@ -1,5 +1,6 @@
 import oauth2 as oauth
 import urllib2 as urllib
+from tweet2geoJSON import format2geoJSON
 
 from API_KEYS import consumer_key, consumer_secret, access_token, access_token_secret
 

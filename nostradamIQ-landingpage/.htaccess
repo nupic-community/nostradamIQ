@@ -1,3 +1,6 @@
+RewriteEngine on
+
+RewriteOptions inherit
 ### MAIN DEFAULTS
 Options +ExecCGI -Indexes
 DirectoryIndex index.html index.htm index.php

@@ -80,12 +80,6 @@ if DATABASE:
     # print "\n" + str(eventObj) + "\n"
 
 
-<<<<<<< HEAD
-    
-
-
-=======
->>>>>>> 0e7d4f6a0bc7d66dfa405fff1130255ef414e64d
 # Create the event objects:
 events = deque()
 # Might also use input from querys! TODO

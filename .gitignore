@@ -29,11 +29,36 @@ nostradamIQ-htmengine-app/*/*/*
 _dev
 _dev/*
 
+# nostradamIQ-landingpage/img/IBM.png
+# nostradamIQ-landingpage/img/SAS.png
+# nostradamIQ-landingpage/img/PDC.png
+# nostradamIQ-landingpage/img/numenta.png
+# nostradamIQ-landingpage/img/Numenta.jpg
+# nostradamIQ-landingpage/img/Lab75.png
+# nostradamIQ-landingpage/img/TEDx.png
 
-nostradamIQ-webapp
-nostradamIQ-webapp/*
-nostradamIQ-webapp/*/*
-nostradamIQ-webapp/*/*/*
-nostradamIQ-webapp/*/*/*/*
+
+# nostradamIQ-webapp
+# nostradamIQ-webapp/*
+# nostradamIQ-webapp/*/*
+# nostradamIQ-webapp/*/*/*
+# nostradamIQ-webapp/*/*/*/*
 
 
+nostradamIQ-webapp/.idea
+nostradamIQ-webapp/.idea/
+nostradamIQ-webapp/.idea/*
+
+nostradamIQ-webapp/cesium-leap
+nostradamIQ-webapp/cesium-leap/*
+nostradamIQ-webapp/cesium-leap/*/*
+
+nostradamIQ-webapp/proxy/cache.json
+
+nostradamIQ-webapp/proxy/cors-anywhere
+nostradamIQ-webapp/proxy/cors-anywhere/*
+nostradamIQ-webapp/proxy/cors-anywhere/*/*
+
+nostradamIQ-webapp/proxy/node-http-proxy
+nostradamIQ-webapp/proxy/node-http-proxy/*
+nostradamIQ-webapp/proxy/node-http-proxy/*/*

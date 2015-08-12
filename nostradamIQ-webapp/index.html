@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+<head>
+  <base target="_blank" />
+  <title>nostradamIQ | sensing our World's disasters.</title>
+  <meta charset="utf-8">
+  <!-- Tell IE to use the latest, best version (or Chrome Frame if pre-IE11). -->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="application-name" content="nostradamIQ beta"/>
+
+  <link rel="canonical" href="//nostradamiq.org/webapp/index.html" />
+  <link rel="publisher" href="//nostradamiq.org/landing"/>
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="application" />
+  <meta property="og:title" content="nostradamIQ | sensing our World's disasters." />
+  <meta property="og:description" content="nostradamIQ amis to provide you with visually attractive, intuitive insight about Our Worlds current, past and future disasters! Powered by Free, Open-Source and Cutting-Edge Technology." />
+  <meta property="og:url" content="//nostradamiq.org/webapp/" />
+  <meta property="og:site_name" content="nostradamIQ | sensing our World's disasters." />
+  <meta property="article:publisher" content="https://gitter.im/nupic-community/nostradamIQ" />
+  <meta property="article:published_time" content="2015-08-08T01:30:00+00:00" />
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@nostradamIQ"/>
+  <meta name="twitter:domain" content="nostradamIQ"/>
+  <meta name="twitter:creator" content="@nostradamIQ"/>
+  <meta name="author" content="nostradamIQ-Team" />
+  <meta name="description" content="nostradamIQ amis to provide you with visually attractive, intuitive insight about Our Worlds current, past and future disasters! Powered by Free, Open-Source and Cutting-Edge Technology." />
+  <meta name="keywords" content="nostradamIQ, climate change, disaster awareness, alerts, forcasting, nowcasting, disaster tracker, disaster evaluation, education, awareness, collaboration, nature, machine learning, cv3d, climateviewer, natural catastrophes, disasters, 3D, globe, cesiumjs" />
+
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="lib/cesium/1.12/Widgets/widgets.css" rel='stylesheet' type='text/css'/>
+  <link href="lib/cesium/1.12/Widgets/Viewer/Viewer.css" rel='stylesheet' type='text/css'/>
+  <link href="lib/semantic-ui/2.0/semantic.min.css" rel='stylesheet' type='text/css' />
+  <!--<link href="lib/css/bootstrap.min.css" rel='stylesheet' type='text/css' />-->
+  <link href="lib/css/nostradamiq.css?v9005" rel='stylesheet' type='text/css' />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//nostradamiq.org/landing/img/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//nostradamiq.org/landing/img/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//nostradamiq.org/landing/img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" href="//nostradamiq.org/landing/img/apple-touch-icon-57x57.png" />
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+ 
+<body>
+  <div id="cesiumContainer"></div>
+  <div id="baseLayerPickerContainer"></div>
+  <div class="ui large feed cv3d noselect">
+      <div class="event">
+          <div class="label">
+              <img src="//nostradamiq.org/landing/img/favicon-96x96.png">
+          </div>
+          <div class="content">
+              <div class="summary"><a href="//nostradamiq.org/landing">nostradam<span>IQ</span></a>
+              <br><span class="slogan">sensing our World's disasters.</span></div>
+          </div>
+      </div>
+  </div>
+  <div class="ui vertical icon buttons cv-toolbar">
+      <button class="ui button cv-button top-menu" style="display:none">
+        <i class="fa fa-trash fa-fw"></i>
+        <span>NEWS</span>
+      </button>
+      <button class="ui button cv-button show-menu">
+        <i class="fa fa-bars fa-fw"></i>
+        <span>LAYERS</span>
+      </button>
+      <button class="ui button cv-button clear-layers">
+          <i class="fa fa-trash fa-fw"></i>
+          <span>CLEAR</span>
+      </button>
+      <button class="ui button cv-button reset-view">
+          <i class="fa fa-search-minus fa-fw"></i>
+          <span>ZOOM</span>
+      </button>
+  </div>
+  <div class="toolbar">
+    <div class="toolbar-contents">
+      <div class="tabmenu-body ui top attached">
+        <div id="top" class="tab layer-menu">
+          <div class="ui tab segment active" data-tab="first">
+            <!-- Nav tabs -->
+            <div id="main-nav-tabs" class="ui top attached tabular menu">
+              <a class="active item" data-tab="layers">Layers</a>
+              <a class="item" data-tab="base">Globe</a>
+              <a class="item" data-tab="learn">Learn</a>
+              <a class="item share-tab" data-tab="share">Share</a>
+              <a class="item" data-tab="about">About</a>
+            </div>
+            <!-- Tab panes -->
+            <div id="layers" class="ui bottom attached active tab segment" data-tab="layers">
+              <p class="instruct">Choose Category</p>
+              <!-- Build Layer Tree -->
+              <div id="map-layers" class="map-layers"></div>
+              <div id="geolocation_window"></div>
+            </div> <!-- segment -->
+            <div id="base" class="ui bottom attached tab segment" data-tab="base">
+              <p class="instruct">Map Mode</p>
+              <div class="ui three cv-button-group buttons">
+                <div class="ui button cv-button mode-3d">3D</div>
+                <div class="ui button cv-button mode-2d">2D</div>
+                <div class="ui button cv-button mode-flat-earth">Flat Earth</div>
+              </div>
+              <p class="instruct">Base Layers</p>
+            </div> <!-- segment -->
+            <div id="learn" class="ui bottom attached tab segment" data-tab="learn">
+              <p class="instruct"><a href="//nostradamiq.org/landing/#learn"><i>LEARN &amp; Prepare</i></a></p>
+                <!-- TODO Have a list for the resources here as well -->
+            
+                <p>
+                  Learn about various disasters!<br>
+                  How do I prepare?<br>
+                  What should I do in case?<br>
+                  <b><i>See here for answers!</i></b>
+                </p>
+                
+                <div class="col-lg-8 col-lg-offset-3">
+                  <ul class="list-inline banner-social-buttons">
+                      <li><a href="//nostradamiq.org/landing/resources/disaster_supply_kit.html" target="_blank" class="btn btn-default btn-lg">Supply Kit</a></li>
+                      <li><a href="//nostradamiq.org/landing/resources/family_awareness_plan.html" target="_blank" class="btn btn-default btn-lg">Prepare Your Family!</a></li>
+                      <li><a href="//nostradamiq.org/landing/resources/general_disaster_resources.html" target="_blank" class="btn btn-default btn-lg">Generally useful Resources for your House, Pet and more!</a></li>
+                      <li><a href="//nostradamiq.org/landing/resources/floods_resources.html" target="_blank" class="btn btn-default btn-lg">Floods</a></li>
+                      <li><a href="//nostradamiq.org/landing/resources/earthquake_resources.html" target="_blank" class="btn btn-default btn-lg">Earthquakes</a></li>
+                      <li><a href="//nostradamiq.org/landing/resources/tsunami_resources.html" target="_blank" class="btn btn-default btn-lg">Tsunamis</a></li>
+                      <li><a href="//nostradamiq.org/landing/resources/high_surf_resources.html" target="_blank" class="btn btn-default btn-lg">High Surf</a></li>
+                      <li><a href="//nostradamiq.org/landing/resources/volcanoes_resources.html" target="_blank" class="btn btn-default btn-lg">Volcanoes</a></li>
+                      <li><a href="//nostradamiq.org/landing/resources/tropical_cyclones_resources.html" target="_blank" class="btn btn-default btn-lg">Tropical Cyclones</a></li>
+                   </ul>
+              </div>
+            </div> <!-- segment -->
+            <div class="ui bottom attached tab segment share-container" data-tab="share">
+                <h3 style='margin-top:0'>
+                  <i class='heart icon'></i>Sharing is Caring
+                </h3>
+                <div id="share">
+                  <span class='st_facebook_vcount'></span>
+                  <span class='st_twitter_vcount'></span>
+                  <span class='st_sharethis_vcount'></span>
+                  <span class='st_email_vcount'></span>
+                </div> <!-- #share -->
+                <h3 class="chat-title">
+                  <i class="comments outline icon"></i>LOAD CHAT
+                </h3>
+                <div id="chat"></div> <!-- #chat -->
+                <h3 id="comments-title">
+                  <i class='comments icon'></i> LOAD COMMENTS
+                </h3>
+                <div id="comments"></div> <!-- #comments -->
+            </div> <!-- segment -->
+            <div class="ui bottom attached tab segment about-container" data-tab="about">
+              <h3 style="margin-top:0"><span style="color:#FFF"><a href="//nostradamiq.org/landing">About nostradam</span>IQ</a></h3>
+              <p>Provided by <a href="//nostradamiq.org/landing" target="_blank"><strong>nostradam<i>IQ</i></strong></a>
+               as a free public service for a better World.</p><p>Know how to code? Make <a href="https://github.com/nupic-community/nostradamIQ" target="_blank"><strong>nostradamIQ</strong></a>
+               <!-- and <a href="https://github.com/rezn8d/climateviewer" target="_blank">Climate Viewer 3D</a> -->better!</p>
+              
+              <h4>Open-Source Technologies</h4>
+              <ul>
+                <li><a href="//cesiumjs.org/" target="_blank" rel="nofollow">Cesium</a> </li>
+                <li><a href="//jquery.com/" target="_blank" rel="nofollow">jQuery 2.1.1</a></li>
+                <li><a href="//semantic-ui.com/" target="_blank" rel="nofollow">Semantic UI 2.0</a></li>
+                <li><a href="//amsul.github.io/pickadate.js" target="_blank" rel="nofollow">pickadate.js v3.5.6</a></li>
+                <li><a href="//fortawesome.github.io/Font-Awesome/" target="_blank" rel="nofollow">Font Awesome 4.3.0</a></li>
+                <li><a href="//numenta.org" target="_blank" rel="nofollow">NuPIC</a></li>
+              </ul>
+              
+              <h4>Support Us</h4>
+              <p>This service is made possible by <strong><a target="_blank" rel="nofollow" href="//www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JH4BWPHA326TL" title="PayPal Link">donations from caring individuals like you!</a></strong><br>
+              <a  rel="nofollow" href="//www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JH4BWPHA326TL" class="btn btn-default btn-lg"><i class="fa fa-paypal fa-fw" title="PayPal Link"></i> <span class="network-name">Donate</span></a><br>
+              Thank you for your support. <i class="fa fa-heart fa-fw"></i></p>
+              
+              <h5><strong><i class="fa fa-copyright fa-fw"></i><a style='text-decoration:none' title='nostradamIQ' href="//nostradamiq.org/terms_of_service.html">nostradamIQ</a>&nbsp;2015-<script type="text/javascript">today=new Date(); year=today.getYear(); if (year<1999) {year=year+1900;} document.write(year);</script></strong></h5> 
+              <p><a href="//nostradamiq.org/terms_of_service.html">Terms of Service</a></p>
+            </div> <!-- about -->
+          </div> <!-- segment -->
+        </div> <!-- tab -->
+      </div> <!-- tabmenu-body -->
+      <div class="tabmenu-footer ui seven cv-button-group bottom attached buttons">
+          <div title="Remove all layers from globe" class="ui button cv-button clear-layers"><i class="minus circle icon"></i></div>
+          <div title="Toggle the timeline" class="ui button cv-button toggle-timeline"><i class="clock icon"></i></div>
+          <div title="Toggle lighting (Sunlight, Day, Night)" class="ui button cv-button sun-control"><i class="sun icon"></i></div>
+          <div title="Share active layers" class="ui button cv-button share-active-layers"><i class="share alternate icon"></i></div>
+          <div title="Collapse all folders" class="ui button cv-button collapse"><i class="compress icon"></i></div>
+          <div title="Scroll to the top" class="ui button cv-button top-layers"><i class="chevron up icon"></i></div>
+          <div title="Close this menu" class="ui button cv-button close-menu"><i class="close icon"></i></div>
+      </div>
+    </div>
+  </div> <!-- sidebar -->
+
+<div id="datepicker-container"></div>
+
+<div id="shareModal" class="shareModal ui basic modal">
+  <i class="close icon"></i>
+  <div class="header">
+     Share Active Layers
+  </div>
+  <div class="content">
+    <div class="description">
+      <div class="ui header">
+        <i class="circular inverted blue share alternate icon" style="color:#FFF;font-size:32px;"></i>
+        <div class="content" style="padding-left:20px">
+          <a id="shareLink" class="share-all-layers" href="//nostradamiq.org/webapp/" title="My custom nostradamIQ map"></a>
+          <div class="sub header" style="color:#DDD">Use this URL to share Your View of the World! (all currently displayed layers)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="Greeting" class="ui basic modal">
+  <i class="close icon"></i>
+  <div class="header">
+     Welcome to nostradam<i>IQ</i>!
+  </div>
+  <div class="content">
+    <div class="description">
+          <p style="font-size:1.5em">Enter the new era of disaster awareness. <strong><a href="//nostradamiq.org/landing">nostradamIQ</a></strong> is there!<br>
+          This service is here for You to be informed about disasters, natural &amp; man-made catastrophes. If you have questions or find bugs on this site (it's still being constructed - Ideas and such are welcome as well!), please <a href="mailto:info@nostradamiq.org">let us know!</a> And have fun!</p>
+          <br>
+          <h3>Frequently Asked Questions</h3>
+          <div class="ui accordion">
+            <div class="ui header title"><h4>&bull;&nbsp;&nbsp;&nbsp;How do I use nostradamIQ?</h4></div>
+            <div class="ui card content">
+              Click the LAYERS Menu in the top right to show or hide the layer menu, then click on a map layer in the list to make it appear on the globe.  Click the layer again to remove it from the globe. Choose the Layers You are intersted in, learn and see what is and has happened all over the World! You can share Your View of the World with our sharing feature. Feel free to chat with us about your observations as well! 
+            </div>
+
+
+            <div class="ui header title"><h4>&bull;&nbsp;&nbsp;&nbsp;Is My Device Supported?</h4></div>
+            <div class="ui card content">
+                <h3 id="plugin">Does Cesium require an install or a plugin?</h3>
+                <p>No.  Cesium runs without an install.  It uses HTML5 standards, namely <a href="//www.khronos.org/webgl/" target="_blank">WebGL</a>, that are natively supported by browsers.</p>
+                <h3 id="browsers">What browsers are supported?</h3>
+                <p>Recent versions of Chrome, Firefox, and Internet Explorer 11 are supported and tested with every release. Safari and Opera both work as well, but are not as actively tested.</p>
+                <h3 id="OS">What operating systems are supported?</h3>
+                <p>Cesium runs on any platform with a WebGL capable browser, including Windows, Linux, OS X, Android, iOS, and Windows Phones.</p>
+                <h3 id="videoCards">What video cards are supported?</h3>
+                <p>Cesium works on any video card that supports WebGL. This includes almost all NVIDIA and AMD cards made since 2004 as well as recent Intel video cards.</p>
+                <p>To see if your video card supports WebGL, visit our <a href="//www.webglreport.com" target="_blank">WebGL Report</a>.</p>
+            </div>
+
+            <div class="ui header title"><h4>&bull;&nbsp;&nbsp;&nbsp;Why do you do this &amp; How did it begin?</h4></div>
+            <div class="ui card content">
+                <p>
+                  nostradamIQ started as a <a href="//datanauts.tedxrheinmain.de/contest-submissions/natural-catashtrophies-prediction-system/" target="_blank"><strong>TEDx-Project</strong></a>:
+                  <div class="videoWrapper"><iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/5eXk9V57-I0" frameborder="0" allowfullscreen></iframe></div>
+                  We want to make the World a save place for everyone, not just people living in nations with enough money and resources to conduct serious research in the areas of disaster prediction, reporting and education. This was motivated by the disruptive <a href="https://en.wikipedia.org/wiki/April_2015_Nepal_earthquake" target="_blank">earthquake in Nepal (April 2015)</a>, as the <a href="https://thenib.com/voices-from-nepal-8d93059a142b" target="_blank">most reported</a> problem by victims there was either that they had <strong>no idea about what to do</strong>, or <strong>no clue about what was coming</strong> and therefore were <strong>not properly prepared</strong>.<br>
+                  We belive that this has not to be the case nowadays and want to build a global tool for <a href="nostradamiq.org/landing/#about" target="_blank">disaster awareness, education and  forcasting</a>. This should be done on a global basis by using <a href="//numenta.org" target="_blank">NuPIC</a> to find anomalies in sensory and social data and then using sophisitcated Machine Learning algorithms to train Models for evaluating the likelihood of disasters, so that people can be better prepared at the right time! <br>
+                  To make this a reality, we need <a href="//nostradamiq.org/landing#help"><strong>YOUR HELP!</strong></a>
+                  This service is made possible by <strong><a target="_blank" rel="nofollow" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JH4BWPHA326TL" title="PayPal Link">donations from caring individuals like you!</a></strong><br>
+                  <a  rel="nofollow" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JH4BWPHA326TL" class="btn btn-default btn-lg"><i class="fa fa-paypal fa-fw" title="PayPal Link"></i> <span class="network-name">Donate</span></a><br>
+                  <b><i>Thank you for your support.</i></b><i class="fa fa-heart fa-fw"></i>
+                </p>
+            </div>
+
+            <!--
+            <div class="ui header title"><h4>&bull;&nbsp;&nbsp;&nbsp;What is Climate-Viewer and what has it to do with nostradamIQ?</h4></div>
+            <div class="ui card content">
+                <p>
+                Before seriously starting this Project, we were looking for other Projects with the same or comperable ideas...<br>
+                This is when we stumbled across <a href="https://github.com/rezn8d/climateviewer" target="_blank">Climate Viewer 3D</a>, which was using the exact visualization technologies we were considering and has a comperable goal: <a href="//climateviewer.com/" target="_blank"><strong>Raising awareness for man-made problems in nature!</strong></a><br>
+                To avoid reinventing the wheel, we decided to worked in a joined-effort on the 3D Webapp and server-technology.<br>
+                So please consider contributing, donating, helping and sharing both projects! <br>
+                <strong>DISCLAIMER: THIS DOES NOT MEAN THAT BOTH PROJECTS SHARE THE SAME OPINIONS - neither political, social nor others. BOTH GROUPS HAVE THEIR OWN PHILOSOPHY AND SHARE ONLY THE ATTITUDE TO CHANGE THE WORLD FOR THE BETTER OF US ALL!</strong>
+                </p>
+            </div>
+            -->
+
+            <div class="ui header title"><h4>&bull;&nbsp;&nbsp;&nbsp;How Can I Help?</h4></div>
+            <div class="ui card content">
+                <p>
+                  Please see <a href="//nostradamiq.org/landing#help"><strong>our Landingpage for more information!</strong></a>
+                  Do <strong>YOU</strong> know how to code? Help us make <a href="https://github.com/nupic-community/nostradamIQ" target="_blank">nostradamIQ</a> 
+                  better!<br>
+                   Please also consider <strong><a target="_blank" rel="nofollow" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JH4BWPHA326TL" title="PayPal Link">helping us to pay for resources!</a></strong><br>
+                   <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JH4BWPHA326TL" target="_blank"  rel="nofollow" class="btn btn-default btn-lg" title="PayPal Link"><i class="fa fa-paypal fa-fw"></i> <span class="network-name">Donate</span></a><br>
+                  <b><i>Thank you for your support.</i></b><i class="fa fa-heart fa-fw"></i>
+                </p>
+            </div>
+        </div>
+        <h5><strong><i class="fa fa-copyright fa-fw"></i><a style='text-decoration:none' title="Terms" href="//nostradamiq.org/terms_of_service.html">nostradamIQ</a>&nbsp;2015-<script type="text/javascript">today=new Date(); year=today.getYear(); if (year<1999) {year=year+1900;} document.write(year);</script></strong></h5>
+      </div>
+  </div>
+  <div class="actions">
+    <div class="two fluid ui inverted buttons">
+      <div class="ui green basic inverted button share-modal">
+        <i class="options icon"></i>
+        Open Menu
+      </div>
+      <div class="ui blue basic inverted button close-Greeting">
+        <i class="checkmark icon"></i>
+        Get Started
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="lib/graphlib/graphlib.min.js"></script>
+  <script type="text/javascript" src="lib/js/nobject.js?v9005"></script>
+  <script type="text/javascript" src="lib/jquery-2.1.3/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="lib/jquery-migrate-1.2.1/jquery-migrate.min.js"></script>
+  <script type="text/javascript" src="lib/semantic-ui/2.0/semantic.min.js"></script> 
+  <script type="text/javascript" src="lib/lodash/lodash.min.js"></script>
+  <script type="text/javascript" src="lib/pickadate-3.5.6/combined.js"></script>
+  <!-- <script type="text/javascript" src="lib/js/makeCorsRequest.js"></script> -->
+  <script type="text/javascript" src="lib/cesium/1.12/Cesium.js"></script>
+  <script type="text/javascript" src="lib/js/nostradamiq.js?v9005"></script>
+  <script type="text/javascript" src="lib/js/nostradamiq-layers.js?v9005"></script>
+  <script type="text/javascript" src="lib/js/nostradamiq-menu.js?v9005"></script>
+
+  <!-- Start of StatCounter Code for Default Guide -->
+  <script type="text/javascript">
+  var sc_project=10561933; 
+  var sc_invisible=1; 
+  var sc_security="ba7033e3"; 
+  var scJsHost = (("https:" == document.location.protocol) ?
+  "https://secure." : "http://www.");
+  document.write("<sc"+"ript type='text/javascript' src='" +
+  scJsHost+
+  "statcounter.com/counter/counter.js'></"+"script>");
+  </script>
+  <noscript><div class="statcounter"><a title="free hit
+  counters" href="http://statcounter.com/free-hit-counter/"
+  target="_blank"><img class="statcounter"
+  src="http://c.statcounter.com/10561933/0/ba7033e3/1/"
+  alt="free hit counters"></a></div></noscript>
+  <!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>
