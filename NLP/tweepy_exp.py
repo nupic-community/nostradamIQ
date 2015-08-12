@@ -56,10 +56,10 @@ class StdOutListener(StreamListener):
                     outPgeo.write(geoJson)
                     outPgeo.write('\n')
                 outPgeo.close()
-                countLoc += 1
+                self.countLoc += 1
 
-            if countAll%100 == 0:
-                print "Saw {0} tweets; {1} of them had location information!\n".format(countAll, countLoc)
+            if self.countAll%100 == 0:
+                print "Saw {0} tweets; {1} of them had location information!\n".format(self.countAll, self.countLoc)
 
         return True
 
