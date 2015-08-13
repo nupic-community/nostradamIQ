@@ -199,6 +199,7 @@ function updateGIBS(layerId, selectedDate) {
     removeImagery(layerId);
     var src = viewer.imageryLayers.addImageryProvider(new Cesium.WebMapTileServiceImageryProvider({
         url: "//map1.vis.earthdata.nasa.gov/wmts-webmerc/wmts.cgi?TIME=" + selectedDate,
+        // proxy: new Cesium.DefaultProxy(proxyURL),
         layer: layerId,
         style: "",
         format: "image/jpeg",
@@ -208,7 +209,6 @@ function updateGIBS(layerId, selectedDate) {
         tileHeight: 256,
         tilingScheme: new Cesium.WebMercatorTilingScheme()
     }));
-
     activeLayers[layerId] = src;
     $('.' + layerId + '-sliders').remove();
     loadSliders(src, layerId);
@@ -245,10 +245,11 @@ function loadGIBS(layerId) {
   updateGIBS(layerId, start);
 }
 
-function loadWmts(layerId, geoDataSrc, geoLayers) {
+function loadWmts(layerId, geoDataSrc, proxy, geoLayers) {
     console.log('load wmts');
     var src = viewer.imageryLayers.addImageryProvider(new Cesium.WebMapTileServiceImageryProvider({
         url : geoDataSrc,
+        // proxy: new Cesium.DefaultProxy(proxyURL),
         layers : geoLayers,
         style: "",
         format: "image/png",
@@ -262,7 +263,7 @@ function loadWmts(layerId, geoDataSrc, geoLayers) {
     loadSliders(src, layerId);
 }
 
-function loadWms(layerId, geoDataSrc, geoLayers) {
+function loadWms(layerId, geoDataSrc, proxy, geoLayers) {
     console.log('load WMS');
     //var proxySrc = (layerId + '/');
     var src = viewer.imageryLayers.addImageryProvider(new Cesium.WebMapServiceImageryProvider({
@@ -283,6 +284,7 @@ function loadOsmLayer(layerId, geoDataSrc, proxy, source) {
     console.log('load OSM-layer');
     var src = viewer.imageryLayers.addImageryProvider(new Cesium.OpenStreetMapImageryProvider({
         url : geoDataSrc,
+        // proxy: new Cesium.DefaultProxy(proxyURL),
         credit : source
     }));
     activeLayers[layerId] = src;
@@ -290,39 +292,70 @@ function loadOsmLayer(layerId, geoDataSrc, proxy, source) {
 }
 
 
-function loadGeoJson(layerId, geoDataSrc, markerLabel, markerScale, markerImg, markerColor, zoom) {
+function loadGeoJson(layerId, geoDataSrc, proxy, markerScale, markerImg, markerColor, zoom) {
     console.log('load geojson');
-    new Cesium.GeoJsonDataSource.load(geoDataSrc).then(function (geoData) {
-        modMarkers(geoData, markerImg, markerScale, markerColor, markerLabel);
-        viewer.dataSources.add(geoData);
-        activeLayers[layerId] = geoData;
-        loadSliders(geoData, layerId);
-        if (zoom) {
-            viewer.flyTo(geoData);
-        }
-        //loaded(layerId);
-    }, function (error) {
-        loadError(layerId, geoDataSrc, error);
-    });
+    if (proxy) {
+        new Cesium.GeoJsonDataSource.load(proxy + '?' + geoDataSrc).then(function (geoData) {
+          modMarkers(geoData, markerImg, markerScale, markerColor, markerLabel);
+          viewer.dataSources.add(geoData);
+          activeLayers[layerId] = geoData;
+          loadSliders(geoData, layerId);
+          if (zoom) {
+              viewer.flyTo(geoData);
+          }
+          //loaded(layerId);
+      }, function (error) {
+          loadError(layerId, geoDataSrc, error);
+      });
+    } else {
+        new Cesium.GeoJsonDataSource.load(geoDataSrc).then(function (geoData) {
+          modMarkers(geoData, markerImg, markerScale, markerColor, markerLabel);
+          viewer.dataSources.add(geoData);
+          activeLayers[layerId] = geoData;
+          loadSliders(geoData, layerId);
+          if (zoom) {
+              viewer.flyTo(geoData);
+          }
+          //loaded(layerId);
+      }, function (error) {
+          loadError(layerId, geoDataSrc, error);
+      });
+    }
 }
 
 // primarily for PDC's weired JSON format:
-function loadJson(layerId, geoDataSrc, markerLabel, markerScale, markerImg, markerColor, zoom) {
+function loadJson(layerId, geoDataSrc, proxy, markerLabel, markerScale, markerImg, markerColor, zoom) {
     console.log('load json');
-    new Cesium.loadJson(geoDataSrc).then(function(jsonData) {
-        // convert json to geoJSON:
-        var geoData = toGeoJSON(jsonData);
-        modMarkers(geoData, markerImg, markerScale, markerColor, markerLabel);
-        viewer.dataSources.add(geoData);
-        activeLayers[layerId] = geoData;
-        loadSliders(geoData, layerId);
-        if (zoom) {
-            viewer.flyTo(geoData);
-        }
-        //loaded(layerId);
-    }).otherwise(function(error) {
-        loadError(layerId, geoDataSrc, error);
-    });
+    if (proxy) {
+      new Cesium.loadJson(proxy + '?' + geoDataSrc).then(function(jsonData) {
+          // convert json to geoJSON:
+          var geoData = toGeoJSON(jsonData);
+          modMarkers(geoData, markerImg, markerScale, markerColor, markerLabel);
+          viewer.dataSources.add(geoData);
+          activeLayers[layerId] = geoData;
+          loadSliders(geoData, layerId);
+          if (zoom) {
+              viewer.flyTo(geoData);
+          }
+          //loaded(layerId);
+      }).otherwise(function(error) {
+          loadError(layerId, geoDataSrc, error);
+      });
+    } else {
+      new Cesium.loadJson(geoDataSrc).then(function(jsonData) {
+          // convert json to geoJSON:
+          var geoData = toGeoJSON(jsonData);
+          modMarkers(geoData, markerImg, markerScale, markerColor, markerLabel);
+          viewer.dataSources.add(geoData);
+          activeLayers[layerId] = geoData;
+          loadSliders(geoData, layerId);
+          if (zoom) {
+              viewer.flyTo(geoData);
+          }
+          //loaded(layerId);
+      }).otherwise(function(error) {
+          loadError(layerId, geoDataSrc, error);
+    }
 }
 
 function loadKml(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod) {
@@ -464,19 +497,19 @@ function updateLayer(layerId) {
         layerEnabled[layerId] = false;
         // Load layers by Type
         if (l.T === ("wms")) {
-            loadWms(layerId, geoDataSrc, geoLayers);
+            loadWms(layerId, geoDataSrc, proxy, geoLayers);
         } else if (l.T === ("wtms")) {
             loadGIBS(layerId);
         } else if (l.T === ("nasa-gibs")) {
             loadGIBS(layerId);
         } else if (l.T === ("wtms")) {
-            loadWmts(layerId, geoDataSrc, geoLayers);
+            loadWmts(layerId, geoDataSrc, proxy, geoLayers);
         } else if (l.T === ("base-layer")) {
            loadOsmLayer(layerId, geoDataSrc, proxy, source);
         } else if (l.T === ("geojson")) {
-            loadGeoJson(layerId, geoDataSrc, markerLabel, markerScale, markerImg, markerColor, zoom);
+            loadGeoJson(layerId, geoDataSrc, proxy, markerLabel, markerScale, markerImg, markerColor, zoom);
         } else if (l.T === ("json")) { // PDC
-            loadGeoJson(layerId, geoDataSrc, markerLabel, markerScale, markerImg, markerColor, zoom);
+            loadGeoJson(layerId, geoDataSrc, proxy, markerLabel, markerScale, markerImg, markerColor, zoom);
         } else if (l.T === ('kml')) {
             loadKml(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod);
         } else if (l.T === ('czml')) {
