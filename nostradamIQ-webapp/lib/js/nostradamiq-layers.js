@@ -494,9 +494,11 @@ var layers = {
             { I: "rivers", T: 'wms', G: "//nowcoast.noaa.gov/wms/com.esri.wms.Esrimap/obs", L: "rivers", S: "NOAA Ocean Service's nowCOAST's Map Services", U: "//nowcoast.noaa.gov/help/mapservices.shtml", N: "U.S. Rivers"},
             { I: "lakes", T: 'wms', G: "//nowcoast.noaa.gov/wms/com.esri.wms.Esrimap/obs", L: "lakes", S: "NOAA Ocean Service's nowCOAST's Map Services", U: "//nowcoast.noaa.gov/help/mapservices.shtml", N: "U.S. Lakes"},
             { I: "watersheds", T: 'wms', G: "//nowcoast.noaa.gov/wms/com.esri.wms.Esrimap/obs", L: "watersheds", S: "NOAA Ocean Service's nowCOAST's Map Services", U: "//nowcoast.noaa.gov/help/mapservices.shtml", N: "U.S. Watershed Boundaries"}
-            { I: "inet-active", T: 'kml', G: "/webapp/layers/kml/3rdparty/other/inet_active.kmz", S: "Greg's Cable Map", U: "//www.cablemap.info", N: "Internet Cables (All Active)"},
-            { I: "inet-future", T: 'kml', G: "/webapp/layers/kml/3rdparty/other/inet_future.kmz", S: "Greg's Cable Map", U: "//www.cablemap.info", N: "Internet Cables (All inet_future)"},
-            { I: "inet-all", T: 'kml', G: "/webapp/layers/kml/3rdparty/other/inet_all.kmz", S: "Greg's Cable Map", U: "//www.cablemap.info", N: "Internet Cables (All Active and Future)"}
+            { I: "inet-active", T: 'kml', G: "/webapp/layers/kml/3rdparty/other/inet_active.kmz", S: "Greg's Cable Map", U: "//www.cablemap.info", N: "Unofficial Cables (All Active)"},
+            { I: "inet-future", T: 'kml', G: "/webapp/layers/kml/3rdparty/other/inet_future.kmz", S: "Greg's Cable Map", U: "//www.cablemap.info", N: "Unofficial Internet Cables (All inet_future)"},
+            { I: "inet-all", T: 'kml', G: "/webapp/layers/kml/3rdparty/other/inet_all.kmz", S: "Greg's Cable Map", U: "//www.cablemap.info", N: "Unofficial Internet Cables (All Active and Future)"},
+            { I: "inet_all_official", T: 'kml', G: "/webapp/layers/kml/3rdparty/other/inet_all_official.kmz", S: "Submarine Cable Map - Officially Supported", U: "//www.submarinecablemap.com/", N: "Internet Cables (All Official)"},
+            { I: "inet_landp_official", T: 'kml', G: "/webapp/layers/kml/3rdparty/other/inet_landp_official.kmz", S: "Submarine Cable Map - Officially Supported", U: "//www.submarinecablemap.com/", N: "Internet Cable-Landingpoints (All Official)"}
         ]},
         Economic: { N: "Economics", icon: "money", '>': [
             { I: "global_pdc_economic", T: 'kml', G: "//agsc.pdc.org/arcgis/rest/services/global/pdc_economics/MapServer/kml/MapImage.kmz", S: "PDC", U: "//agsc.pdc.org/arcgis/rest/services/global/pdc_economics/MapServer", N: "Global Economics Data by PDC"},
