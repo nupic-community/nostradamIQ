@@ -12,28 +12,33 @@ SCHEME:
     "tweet_body": "I freaking love maps!",
   }
 }
-"""
+
+http://geojson.org/geojson-spec.html#bounding-boxes
+
+""" 
 
 def place_lookup(place):
-	#TODO 
-
+	#TODO https://twittercommunity.com/t/schema-of-boundingbox-in-places-section/8663
+	boundingBox = tweet["place"]["bounding_box"]["coordinates"][0]
+	lat = float((boundingBox[0][0] + boundingBox[1][0]) / 2.0)
+	lng = float((boundingBox[1][1] + boundingBox[2][1]) / 2.0)
 	return [lat, lng]
 
 def format2geoJSON(tweet):
-	if tweet["geo"] != 'null':
+	if tweet["coordinates"] != None:
 		# get lat,lng and create geoJSON object:
 		tweet_geoJSON = {
 						  "type": "Feature",
 						  "geometry": {
 						    "type": "Point",
-						    "coordinates": tweet['geo'], #[lat,lng]
+						    "coordinates": tweet['coordinates'], #[lat,lng]
 						    "img": tweet['user']["profile_image_url"]
 						  },
 						  "properties": {
 						    "name": tweet['user']['screen_name'],
 						    "user_description": tweet['user']['description'],
 						    "place": tweet["place"],
-						    "user__has_extended_profile": tweet['user']["has_extended_profile"],
+						    "default_profile": tweet['user']["default_profile"],
 						    "followers_count": tweet['user']['followers_count'],
 						    "verified": tweet['user']['verified'],
 						    "lang": tweet['user']['lang'],
@@ -54,21 +59,21 @@ def format2geoJSON(tweet):
 		return tweet_geoJSON
 
 
-	elif tweet["place"] != 'null':
+	elif tweet["place"] != None:
 		# convert place to lat,lng and create geoJSON object:
-		coords = place_lookup(tweet["place"])
+		coords = place_lookup(tweet)
 		tweet_geoJSON = {
 						  "type": "Feature",
 						  "geometry": {
 						    "type": "Point",
-						    "coordinates": coords
+						    "coordinates": coords,
 						    "img": tweet['user']["profile_image_url"]
 						  },
 						  "properties": {
 						    "name": tweet['user']['screen_name'],
 						    "user_description": tweet['user']['description'],
 						    "place": tweet["place"],
-						    "user__has_extended_profile": tweet['user']["has_extended_profile"],
+						    "default_profile": tweet['user']["default_profile"],
 						    "followers_count": tweet['user']['followers_count'],
 						    "verified": tweet['user']['verified'],
 						    "lang": tweet['user']['lang'],

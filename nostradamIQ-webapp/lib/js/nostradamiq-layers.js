@@ -187,7 +187,7 @@ var layers = {
         ]},
         Twitter: { N: "Twitter Stream Listener", icon: "twitter", '>': [
                 // TODO Link to goeJSONs for various twitter streams:
-                { I: "twitter-quake", C: true, T: 'geojson', G: "/webapp/layers/geojson/twitter/quake.geojson", MI: "/webapp/img/twitter-icon.png", S:"nostradamIQ's own Twitter Listeners" N: "Twitter Stream containing #quake" }
+                { I: "twitter-quake", C: true, T: 'geojson', G: "/webapp/layers/geojson/twitter/quake.geojson", MI: "/webapp/img/twitter-icon.png", S:"nostradamIQ's own Twitter Listeners", N: "Twitter Stream containing #quake" }
         ]},
         Report: {  N: "Climate Viewer Reports", icon: "bullhorn", '>': [
                 { NL: true, I: "cvr01", T: 'kml', M: true, MS: "2", G: "/webapp/layers/kml/cv-reports/cv-reports-0415.kml", S: "Climate Viewer Reports", U: "https://climateviewer.crowdmap.com/", N: "CV Reports - 2011 - 2015"}
