@@ -32,8 +32,8 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'heroregular';
-    color: #fff;
-    background-color: #000;
+    color: #111;
+    background-color: #eee;
     overflow: hidden;
     overflow-y: scroll;
 }
@@ -104,10 +104,10 @@ a:focus {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
+    border-bottom: 1px solid rgba(0,0,0,.8);
     text-transform: uppercase;
     font-family: 'herolight';
-    background-color: #000;
+    background-color: #eee;
 }
 
 /* padding to add space to logo (on nav black nav bar) */
@@ -134,7 +134,7 @@ a:focus {
 .navbar-custom .navbar-toggle {
     padding: 8px 6px;
     font-size: 16px;
-    color: #fff;
+    color: #111;
 }
 /* ----------- */
 
@@ -144,7 +144,7 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: #111;
     font-size: 16px;
     font-family: 'heroregular';
 }
@@ -172,7 +172,7 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
     outline: 0;
-    background-color: transparent;
+    background-color: #eee;
 }
 
 .navbar-custom .nav li.active {
@@ -180,7 +180,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a {
-    background-color: rgba(255,255,255,.3);
+    background-color: #ccc;
 }
 
 .navbar-custom .nav li.active a:hover {
@@ -193,7 +193,7 @@ a:focus {
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        background: 0 0;
+        background: #eee;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -201,10 +201,11 @@ a:focus {
 
     .navbar-custom.top-nav-collapse {
         padding: 0;
-        border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #000;
+        border-bottom: 1px solid #aaa;
+        background: #eee;
     }
 }
+
 /* ----------------------- */
 
 .intro {
@@ -223,15 +224,20 @@ a:focus {
 }
 
 .intro .intro-body {
+    padding: 18% 0 0 0;
     display: table-cell;
     vertical-align: middle;
 }
 
 /* --------------------- intro heading ------------- */
 .intro .intro-body .brand-heading {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    display: inline-block;
     font-size: 40px;
     font-weight: normal;
     text-transform: none;
+    background-color: rgba(0,0,0,0.8);
 }
 
 .intro .intro-body .brand-heading i {
@@ -241,7 +247,14 @@ a:focus {
 }
 
 .intro .intro-body .intro-text {
+    display: inline-block;
+    padding: 4px 10px;
     font-size: 18px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.intro .btn-default {
+    background-color: rgba(0,0,0,0.8);
 }
 
 @media(min-width:768px) {
@@ -335,10 +348,6 @@ a:focus {
     }
 }
 
-.content-section {
-    padding-top: 200px !important;
-}
-
 /* ----------------------- Video --------------- */
 
 .video-container {
@@ -357,7 +366,17 @@ a:focus {
     height: 100%;
 }
 
+/* -------------- sections ------------- */
+#about {
+    padding-top: 100px;
+}
+
+#about .banner-social-buttons {
+    margin: 50px 0 50px 0;
+}
+
 /* -------------------- panels ----------- */
+
 
 .panel-default {
     border-color: #ddd;
@@ -366,7 +385,7 @@ a:focus {
 .panel {
     max-width: 800px; 
     margin: 22px auto 22px auto;
-    background-color: #000;
+    background-color: #eee;
     border-radius: 0px;
     border: none;
     box-shadow: none;
@@ -374,9 +393,9 @@ a:focus {
 }
 
 .panel-default>.panel-heading {
-    color: #fff;
+    color: #111;
     text-align: left;
-    background-color: #000;
+    background-color: #eee;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom: 1px solid #E3000B;
@@ -385,7 +404,7 @@ a:focus {
 .panel-title {
     font-size: 18px;
     text-transform: none;
-    color: #fff;
+    color: #111;
     margin: 0;
 }
 
@@ -406,10 +425,12 @@ a:focus {
 
 .help-section {
     width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/intro_bg_3.jpg) no-repeat bottom center scroll;
-    background-color: #000;
+    height: 0;
+    padding: 550px 0 0 0 !important;
+    margin-bottom: 50px;
+    color: #111;
+    background: url(../img/intro_bg_3.jpg) no-repeat center center scroll;
+    background-color: #eee;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -417,7 +438,7 @@ a:focus {
 }
 
 #partners {
-    padding-top: 110px !important
+    padding-top: 110px !important;
 }
 
 
@@ -431,8 +452,8 @@ a:focus {
     margin: 0;
     font-size: 26px;
     font-family: 'heroregular';
-    color: #000;
-    background-color: #000;
+    color: #111;
+    background-color: #eee;
 }
 
 .banner-partner-sponsors li a {
@@ -462,7 +483,7 @@ a:focus {
     border: 1px solid #e3000b;
     letter-spacing: 0.1em;
     color: #e3000b;
-    background-color: #000;
+    background-color: #eee;
 }
 
 .form-horizontal {
@@ -471,23 +492,23 @@ a:focus {
 
 #submit:hover {
     background-color: #e3000b;
-    color: #000;
+    color: #111;
 }
 
 .control-label {
-    color: #999;
+    color: #111;
 }
 
 #name, #email, #subject, #human {
     height: 40px;
-    border: 1px solid #333;
+    border: none;
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -o-border-radius: 0;
-    color: #999;
+    color: #111;
     -webkit-appearance: none;
-    background-color: #333;
+    background-color: #ccc;
 }
 
 #name:focus, #email:focus, #subject:focus, #message:focus, #human:focus {
@@ -497,16 +518,15 @@ a:focus {
 }
 
 #message {
-    border: 1px solid #333;
+    border: none;
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -o-border-radius: 0;
-    color: #999;
+    color: #111;
     -webkit-appearance: none;
-    background-color: #333;
+    background-color: #ccc;
 }
-
 
 /* --------------------- Share Buttons ------------- */
 
@@ -520,7 +540,7 @@ a:focus {
     top: auto;
     right: auto;
     bottom: -10px;
-    background-color: #000;
+    background-color: #eee;
     transition: margin 0.5s ease-in-out;
     -webkit-transition: margin 0.5s ease-in-out;
     -moz-transition: margin 0.5s ease-in-out;
@@ -691,23 +711,17 @@ a:focus {
 /* -------------------- resources ----------------- */
 
 .resources-intro {
-    width: 100%;
-    height: 0;
-    margin-top: 60px;
-    padding-bottom: 75%;
+    max-height: 800px;
 }
 
 @media(min-width:768px) {
     .resources-intro {
-        display: table;
         width: 100%;
-        height: 0;
-        max-width: 1250px;
-        margin: 60px auto;
-        padding-bottom: 75%;
+        margin: 100px auto;
         text-align: center;
-        color: #fff;
-        background-color: #000;
+        color: #111;
+        background-color: #eee;
+        background-position: center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -715,13 +729,6 @@ a:focus {
         box-sizing: border-box;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
-    }
-}
-
-@media(min-width:1250px) {
-    .resources-intro {
-        height: 938px !important;
-        padding-bottom: 0 !important;
     }
 }
 
@@ -759,7 +766,7 @@ a:focus {
 
 @media(max-width:768px) {
     #resources {
-        margin-top: -200px;
+        margin-top: -150px;
         max-width: 800px;
         padding-top: 10px !important;
         text-align: left;
@@ -775,7 +782,8 @@ a:focus {
     padding: 10px;
     text-align: center;
     margin-bottom: 200px;
-    background-color: rgba(102,0,0,0.7);
+    color: #eee;
+    background-color: rgba(102,0,0,0.8);
 }
 
 #resources h3 {
@@ -819,14 +827,14 @@ a:focus {
 #sources h4 {
     margin: 0 0 5px 0;
     font-size: 13px;
-    color: #999;
+    color: #111;
 }
 
 #sources p {
     margin: 0;
     font-size: 13px;
     font-family: 'heroregular';
-    color: #999;
+    color: #111;
 }
 /* ----------------------- */
 
@@ -838,9 +846,6 @@ a:focus {
 */
 
 @media(min-width:767px) {
-    .content-section {
-        padding-top: 250px;
-    }
 
     .help-section {
         padding: 100px 0;
@@ -865,14 +870,14 @@ a:focus {
 .btn-default {
     border: 1px solid #E3000B;
     color: #E3000B;
-    background-color: #000;
+    background-color: #eee;
 }
 
 .btn-default:hover,
 .btn-default:focus {
     border: 1px solid #E3000B;
     outline: 0;
-    color: #000;
+    color: #111;
     background-color: #E3000B;
 }
 
@@ -917,14 +922,14 @@ footer p {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
+    background: #111;
+    background: rgba(0,0,0,.2);
 }
 
 ::selection {
     text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
+    background: #111;
+    background: rgba(0,0,0,.2);
 }
 
 img::selection {
@@ -942,41 +947,36 @@ body {
 
 /* -------------------- contributors ----------------- */
 
-.contributors-intro {
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-attachment: scroll;
-}
-
 #contributors-intro {
     background-image: url(../img/intro_bg.jpg);
 }
 
-@media(min-width:768px) {
-    .contributors-intro {
-        display: table;
-        width: 100%;
-        height: auto;
-        max-width: 1250px;
-        margin: 0 auto;
-        padding: 300px 0;
-        text-align: center;
-        color: #fff;
-        background-color: #000;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
+#contributors {
+    max-width: 800px;
+    margin-top: -300px;
+    padding-top: 0px !important;
+}
+
+@media(max-width:768px) {
+    #contributors {
+        margin-top: -150px;
+        max-width: 800px;
+        padding-top: 10px !important;
+        text-align: left;
+    }
+    
+    #contributors h1 {
+        margin-bottom: 100px !important;
     }
 }
 
-#contributors {
-    max-width: 800px;
-    padding-top: 10px !important;
-}
-
 #contributors h1 { 
+    width: auto;
+    padding: 10px;
     text-align: center;
+    margin-bottom: 200px;
+    color: #eee;
+    background-color: rgba(0, 62, 147, 0.8);
 }
 
 #contributors h2 {
@@ -1039,7 +1039,7 @@ body {
     margin: 0 3px 0 3px;
     text-align: center;
     vertical-align: top;
-    background-color: #111;
+    background-color: #ccc;
 }
 
 .banner-people li h4 {
@@ -1047,11 +1047,11 @@ body {
     padding-bottom: 4px;
     border-bottom: 1px solid #e3000b;
     font-size: 16px;
-    color: #ccc;
+    color: #111;
 }
 
 .banner-people span {
-    color: #ccc;
+    color: #111;
     display: block;
     font-size: 16px;
     margin: 8px 0 10px 0;
@@ -1065,7 +1065,7 @@ body {
 .people-profile a {
     padding: 8px;
     display: inline-block;
-    color: #555;
+    color: #111;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
     border-bottom-left-radius: 100%;
@@ -1123,9 +1123,6 @@ body {
 
 
 @media(min-width:767px) {
-    .content-section {
-        padding-top: 250px;
-    }
 
     .help-section {
         padding: 100px 0;
@@ -1150,14 +1147,14 @@ body {
 .btn-default {
     border: 1px solid #E3000B;
     color: #E3000B;
-    background-color: #000;
+    background-color: #eee;
 }
 
 .btn-default:hover,
 .btn-default:focus {
     border: 1px solid #E3000B;
     outline: 0;
-    color: #000;
+    color: #111;
     background-color: #E3000B;
 }
 
@@ -1197,14 +1194,14 @@ footer p {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
+    background: #111;
+    background: rgba(0,0,0,.2);
 }
 
 ::selection {
     text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
+    background: #111;
+    background: rgba(0,0,0,.2);
 }
 
 img::selection {
