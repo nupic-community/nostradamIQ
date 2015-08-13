@@ -468,7 +468,8 @@ var layers = {
             { I: "gmo-oms-pt", T: 'kml', S: "Google-Maps Overlays", G: "/webapp/layers/kml/3rdparty/openstreetmap-public-transport-overlay-for-google-earth.kmz", U: "http://ge-map-overlays.appspot.com/", N: "Open-Street-Maps Public-Transport (GoogleMaps-Overlay)"},
             { I: "gmo-oms-gpst", T: 'kml', S: "Google-Maps Overlays", G: "/webapp/layers/kml/3rdparty/openstreetmap-gps-traces-overlay-for-google-earth.kmz", U: "http://ge-map-overlays.appspot.com/", N: "Open-Street-Maps GPS-Traces (GoogleMaps-Overlay)"},
             { I: "gmo-cm-mc", T: 'kml', S: "Google-Maps Overlays", G: "/webapp/layers/kml/3rdparty/cloudmade-midnight-commander-overlay-for-google-earth.kmz", U: "http://ge-map-overlays.appspot.com/", N: "Cloud-Made Midnight-Commander (GoogleMaps-Overlay)"},
-            { I: "gmo-cm-t", T: 'kml', S: "Google-Maps Overlays", G: "/webapp/layers/kml/3rdparty/cloudmade-tourist-overlay-for-google-earth.kmz", U: "http://ge-map-overlays.appspot.com/", N: "Cloud-Made Tourist (GoogleMaps-Overlay)"}
+            { I: "gmo-cm-t", T: 'kml', S: "Google-Maps Overlays", G: "/webapp/layers/kml/3rdparty/cloudmade-tourist-overlay-for-google-earth.kmz", U: "http://ge-map-overlays.appspot.com/", N: "Cloud-Made Tourist (GoogleMaps-Overlay)"},
+            { I: "pdc-basemap", T: 'wms', G: "http://agsc.pdc.org/arcgis/services/global/pdc_basemap/MapServer/WMSServer", L: "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27", S: "Pacific Disaster Control - PDC", U: "//agsc.pdc.org/arcgis/rest/services/global/pdc_basemap/MapServer", N: "PDC Basemap"}
         ]},
         Flight: { N: "Flight", icon: "plane", '>': [
             { P: true, C: true, I: "kml-fwi", T: 'kml', G: "//mw1.google.com/mw-earth-vectordb/flightwise/flightwise_root.kml", S: "Flightwise", U: "//flightwise.com/", N: "Current Flights"},
