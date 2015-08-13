@@ -1,5 +1,6 @@
 toGeoJSON = (function() {
     'use strict';
+    // Converts PDC's JSON format to legal geoJSON TODO
 
     var removeSpace = (/\s*/g),
         trimSpace = (/^\s*|\s*$/g),

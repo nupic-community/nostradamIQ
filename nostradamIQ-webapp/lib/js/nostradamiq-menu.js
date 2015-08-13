@@ -216,6 +216,7 @@ function updateGIBS(layerId, selectedDate) {
 
 
 function loadGIBS(layerId) {
+  console.log('load gibs');
   var target = $('#' + layerId);
   $('<div class="ui card ' + layerId + '-picker layer-sliders"><div class="content"><div class="ui divided list"><div class="item '+ layerId + '-info"><i class="circular inverted clock icon"></i><div class="content"><div class="header">Imagery Date</div>Click this button below to change the loaded image:<br><input type="button" value="" class="datepicker ui blue basic button" id="'+ layerId + '-datepicker" name="date"></div></div></div></div>').appendTo(target);
   var date = new Date();
@@ -245,6 +246,7 @@ function loadGIBS(layerId) {
 }
 
 function loadWmts(layerId, geoDataSrc, geoLayers) {
+    console.log('load wmts');
     var src = viewer.imageryLayers.addImageryProvider(new Cesium.WebMapTileServiceImageryProvider({
         url : geoDataSrc,
         layers : geoLayers,
@@ -261,6 +263,7 @@ function loadWmts(layerId, geoDataSrc, geoLayers) {
 }
 
 function loadWms(layerId, geoDataSrc, geoLayers) {
+    console.log('load WMS');
     //var proxySrc = (layerId + '/');
     var src = viewer.imageryLayers.addImageryProvider(new Cesium.WebMapServiceImageryProvider({
         url : geoDataSrc,
@@ -277,6 +280,7 @@ function loadWms(layerId, geoDataSrc, geoLayers) {
 }
 
 function loadOsmLayer(layerId, geoDataSrc, proxy, source) {
+    console.log('load OSM-layer');
     var src = viewer.imageryLayers.addImageryProvider(new Cesium.OpenStreetMapImageryProvider({
         url : geoDataSrc,
         credit : source
@@ -302,7 +306,27 @@ function loadGeoJson(layerId, geoDataSrc, markerLabel, markerScale, markerImg, m
     });
 }
 
+// primarily for PDC's weired JSON format:
+function loadJson(layerId, geoDataSrc, markerLabel, markerScale, markerImg, markerColor, zoom) {
+    console.log('load json');
+    new Cesium.loadJson(geoDataSrc).then(function(jsonData) {
+        // convert json to geoJSON:
+        var geoData = toGeoJSON(jsonData);
+        modMarkers(geoData, markerImg, markerScale, markerColor, markerLabel);
+        viewer.dataSources.add(geoData);
+        activeLayers[layerId] = geoData;
+        loadSliders(geoData, layerId);
+        if (zoom) {
+            viewer.flyTo(geoData);
+        }
+        //loaded(layerId);
+    }).otherwise(function(error) {
+        loadError(layerId, geoDataSrc, error);
+    });
+}
+
 function loadKml(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod) {
+    console.log('load kml');
     if (proxy) {
         new Cesium.KmlDataSource.load(geoDataSrc, {
             proxy: new Cesium.DefaultProxy(proxyURL),
@@ -342,6 +366,7 @@ function loadKml(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, marke
 }
 
 function loadCZML(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod) {
+    console.log('load CZML');
     if (proxy) {
         new Cesium.CzmlDataSource.load(geoDataSrc, {
             proxy: new Cesium.DefaultProxy(proxyURL),
@@ -389,7 +414,6 @@ function removeImagery(layerId) {
 
 // REMOVE LAYERS
 function disableLayer(l) {
-
     var layerId = l.I;
     var mlt = l.T;
 
@@ -415,7 +439,7 @@ function updateLayer(layerId) {
     var l = me.node(layerId);
     if (!l) {
         console.error('missing layer', layerId);
-        //return false;
+        //return false; // FAIL FAST
     }
     var geoDataSrc = l.G,
     geoLayers = l.L,
@@ -450,6 +474,8 @@ function updateLayer(layerId) {
         } else if (l.T === ("base-layer")) {
            loadOsmLayer(layerId, geoDataSrc, proxy, source);
         } else if (l.T === ("geojson")) {
+            loadGeoJson(layerId, geoDataSrc, markerLabel, markerScale, markerImg, markerColor, zoom);
+        } else if (l.T === ("json")) { // PDC
             loadGeoJson(layerId, geoDataSrc, markerLabel, markerScale, markerImg, markerColor, zoom);
         } else if (l.T === ('kml')) {
             loadKml(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod);
