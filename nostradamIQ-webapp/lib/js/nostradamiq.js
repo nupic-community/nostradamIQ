@@ -406,7 +406,7 @@ if ($('body').hasClass('mobile')) {
 
     // better Moon Picture: 
     viewer.scene.moon = new Cesium.Moon({ 
-        textureUrl: '/webapp/lib/cesium/1.12/Assets/Textures/moonSmall.jpg', 
+        textureUrl: '/webapp/lib/cesium/Cesium/Assets/Textures/moonSmall.jpg', 
         onlySunLightning: false 
     });
     // better Stars: WARNING! LOTS OF WORK! 
