@@ -7,7 +7,7 @@ import base64
 import datetime
 import redis
 
-#from cache_times import CACHE_MIN # Dir with the TTL for each URL
+#from cache_times import CACHE_MIN # Directory with the TTL for each URL
 
 FILTER = False # only for dev
 CACHE_MIN = 5 # only for dev
