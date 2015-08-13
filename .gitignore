@@ -20,6 +20,7 @@ NLP/*.py[cod]
 NLP/*.pyc
 NLP/corpiri/old_trans
 NLP/old
+NLP/*.txt
 
 nostradamIQ-htmengine-app
 nostradamIQ-htmengine-app/*
