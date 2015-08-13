@@ -414,7 +414,7 @@ div.cesium-baseLayerPicker-sectionTitle:not(:first-child) {
 	padding-top:9px;
 }
 
-/* ---------------- CONTROL BUTTONS ----------------- */
+/* --------------------- CONTROL BUTTONS ----------------- */
 .cv-toolbar {
 	position:fixed;
 	top:60px;
@@ -430,7 +430,7 @@ div.cesium-baseLayerPicker-sectionTitle:not(:first-child) {
 
 .cv-toolbar:hover .ui.button.cv-button {
     width: auto !important;
-    padding: 0 10px 0 10px !important;
+    padding: 0 14px 0 10px !important;
 }
 
 .ui.basic.buttons.cv-toolbar .button {
@@ -449,6 +449,7 @@ button.ui.button.cv-button {
     -o-border-radius: 45px !important;
 	text-align:left;
 	background:#fff;
+    line-height: 45px;
 }
 
 button.ui.button.cv-button i {
@@ -457,6 +458,7 @@ button.ui.button.cv-button i {
 
 button.ui.button.cv-button i,button.ui.button.cv-button span {
 	color:#000;
+    line-height: 0;
 	font-weight:normal;
 }
 
@@ -474,7 +476,7 @@ button.ui.button.cv-button:focus i,button.ui.button.cv-button:hover i {
 }
 
 button.ui.button.cv-button:focus span,button.ui.button.cv-button:hover span {
-	color:#ff4d00!important;
+	color:#fff!important;
 }
 
 .ui.basic.buttons button.ui.button.cv-button:not(:first-child) {
