@@ -59,6 +59,7 @@ class StdOutListener(StreamListener):
             # convert to and write as .geoJSON:
             geoJson = format2geoJSON(tweet)
             if geoJson != None:
+                # TODO write in Redis Proxy instance
                 with open(outputgeo, 'a+') as outPgeo:
                     json.dump(geoJson, outPgeo)
                     outPgeo.write(',\n')
@@ -83,9 +84,11 @@ if __name__ == '__main__':
 
         stream = Stream(auth, l)
 
+
+        # https://dev.twitter.com/rest/public/search
         keywords = ["#earthquake", "#quake", "#shakeAlert", "#quakeAlert", "shakeAlert", "quakeAlert", "earthquake", "quake", "from:USGSted", "from:everyEarthquake"] #, "-movie", "-vid", "-pic", "-picture", "-clip", "-video", "-past"]
 
-        """
+        """ FOR CMD line args:
         if len(sys.argv) < 2 : 
     	   print 'USAGE : python get_tweets.py [n: CUTOFF] [keyword1 keyword2 ... keywordn]'
     	   exit(0)
@@ -96,7 +99,7 @@ if __name__ == '__main__':
         except : queries = sys.argv[1:]
         """
 
-        stream.filter(track=keywords)#, async=True)
+        stream.filter(track=keywords)#, async=True) #async for multithreating
 
     except KeyboardInterrupt:
         print "\n\nYOU INTERRUPTED!\nFINISH WRITING FILE\n"
