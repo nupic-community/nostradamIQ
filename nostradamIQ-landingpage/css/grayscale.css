@@ -368,7 +368,7 @@ a:focus {
 
 /* -------------- sections ------------- */
 #about {
-    padding-top: 0px;
+    padding-top: 100px;
 }
 
 #about .banner-social-buttons {
@@ -711,23 +711,17 @@ a:focus {
 /* -------------------- resources ----------------- */
 
 .resources-intro {
-    width: 100%;
-    height: 0;
-    margin-top: 60px;
-    padding-bottom: 75%;
+    max-height: 800px;
 }
 
 @media(min-width:768px) {
     .resources-intro {
-        display: table;
         width: 100%;
-        height: 0;
-        max-width: 1250px;
-        margin: 60px auto;
-        padding-bottom: 75%;
+        margin: 100px auto;
         text-align: center;
         color: #111;
         background-color: #eee;
+        background-position: center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -735,13 +729,6 @@ a:focus {
         box-sizing: border-box;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
-    }
-}
-
-@media(min-width:1250px) {
-    .resources-intro {
-        height: 938px !important;
-        padding-bottom: 0 !important;
     }
 }
 
@@ -779,7 +766,7 @@ a:focus {
 
 @media(max-width:768px) {
     #resources {
-        margin-top: -200px;
+        margin-top: -150px;
         max-width: 800px;
         padding-top: 10px !important;
         text-align: left;
@@ -796,7 +783,7 @@ a:focus {
     text-align: center;
     margin-bottom: 200px;
     color: #eee;
-    background-color: rgba(102,0,0,0.7);
+    background-color: rgba(102,0,0,0.8);
 }
 
 #resources h3 {
@@ -935,14 +922,14 @@ footer p {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
+    background: #111;
+    background: rgba(0,0,0,.2);
 }
 
 ::selection {
     text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
+    background: #111;
+    background: rgba(0,0,0,.2);
 }
 
 img::selection {
@@ -960,41 +947,36 @@ body {
 
 /* -------------------- contributors ----------------- */
 
-.contributors-intro {
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-attachment: scroll;
-}
-
 #contributors-intro {
     background-image: url(../img/intro_bg.jpg);
 }
 
-@media(min-width:768px) {
-    .contributors-intro {
-        display: table;
-        width: 100%;
-        height: auto;
-        max-width: 1250px;
-        margin: 0 auto;
-        padding: 300px 0;
-        text-align: center;
-        color: #111;
-        background-color: #eee;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
+#contributors {
+    max-width: 800px;
+    margin-top: -300px;
+    padding-top: 0px !important;
+}
+
+@media(max-width:768px) {
+    #contributors {
+        margin-top: -150px;
+        max-width: 800px;
+        padding-top: 10px !important;
+        text-align: left;
+    }
+    
+    #contributors h1 {
+        margin-bottom: 100px !important;
     }
 }
 
-#contributors {
-    max-width: 800px;
-    padding-top: 10px !important;
-}
-
 #contributors h1 { 
+    width: auto;
+    padding: 10px;
     text-align: center;
+    margin-bottom: 200px;
+    color: #eee;
+    background-color: rgba(0, 62, 147, 0.8);
 }
 
 #contributors h2 {
@@ -1057,7 +1039,7 @@ body {
     margin: 0 3px 0 3px;
     text-align: center;
     vertical-align: top;
-    background-color: #111;
+    background-color: #ccc;
 }
 
 .banner-people li h4 {
@@ -1069,7 +1051,7 @@ body {
 }
 
 .banner-people span {
-    color: #ccc;
+    color: #111;
     display: block;
     font-size: 16px;
     margin: 8px 0 10px 0;
@@ -1212,14 +1194,14 @@ footer p {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
+    background: #111;
+    background: rgba(0,0,0,.2);
 }
 
 ::selection {
     text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
+    background: #111;
+    background: rgba(0,0,0,.2);
 }
 
 img::selection {
