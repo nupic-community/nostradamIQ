@@ -205,46 +205,37 @@ a:focus {
         background: #eee;
     }
 }
+
 /* ----------------------- */
 
 .intro {
+    display: table;
     width: 100%;
-    height: 100% !important;
-    max-height: 900px;
-    padding-bottom: 0 !important;
-    margin: 0 auto;
+    height: auto;
+    padding: 150px 0;
     text-align: center;
-    color: #eee;
-    position: relative;
-    background-color: #eee;
-    background-image: url(../img/intro_bg.jpg);
+    color: #fff;
+    background: url(../img/intro_bg.jpg) no-repeat bottom center scroll;
+    background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
 }
 
 .intro .intro-body {
-    width: 100%;
-    position: absolute;
-    bottom: 2%;
-    right: 3%;
-    display: block;
-    text-align: center;
+    padding: 18% 0 0 0;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 /* --------------------- intro heading ------------- */
 .intro .intro-body .brand-heading {
-    width: 540px;
-    padding: 10px;
-    display: inline-block;
+    padding: 10px 15px;
     margin-bottom: 10px;
-    font-size: 75px;
+    display: inline-block;
+    font-size: 40px;
     font-weight: normal;
-    text-align: center;
     text-transform: none;
     background-color: rgba(0,0,0,0.8);
 }
@@ -256,11 +247,13 @@ a:focus {
 }
 
 .intro .intro-body .intro-text {
-    width: 420px;
-    padding: 4px;
-    font-size: 26px;
-    text-align: center;
     display: inline-block;
+    padding: 4px 10px;
+    font-size: 18px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.intro .btn-default {
     background-color: rgba(0,0,0,0.8);
 }
 
@@ -269,36 +262,14 @@ a:focus {
         height: 100%;
         padding: 0;
     }
-    
-    .intro .intro-body {
-        width: 100%;
-        position: absolute;
-        bottom: 2%;
-        right: 3%;
-        display: block;
-        text-align: right;
-    }
 
     .intro .intro-body .brand-heading {
-        width: 540px;
-        padding: 10px;
-        display: inline-block;
-        margin-bottom: 10px;
         font-size: 75px;
         font-weight: normal;
-        font-weight: normal;
-        text-align: center;
-        text-transform: none;
-        background-color: rgba(0,0,0,0.8);
     }
 
     .intro .intro-body .intro-text {
-        width: 420px;
-        padding: 4px;
         font-size: 26px;
-        text-align: center;
-        display: inline-block;
-        background-color: rgba(0,0,0,0.8);
     }
 }
 /* --------------------------------- */ 
@@ -395,8 +366,9 @@ a:focus {
     height: 100%;
 }
 
+/* -------------- sections ------------- */
 #about {
-    padding-top: 80px;
+    padding-top: 0px;
 }
 
 #about .banner-social-buttons {
@@ -529,14 +501,14 @@ a:focus {
 
 #name, #email, #subject, #human {
     height: 40px;
-    border: 1px solid #333;
+    border: none;
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -o-border-radius: 0;
-    color: #999;
+    color: #111;
     -webkit-appearance: none;
-    background-color: #333;
+    background-color: #ccc;
 }
 
 #name:focus, #email:focus, #subject:focus, #message:focus, #human:focus {
@@ -546,16 +518,15 @@ a:focus {
 }
 
 #message {
-    border: 1px solid #333;
+    border: none;
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -o-border-radius: 0;
-    color: #999;
+    color: #111;
     -webkit-appearance: none;
-    background-color: #333;
+    background-color: #ccc;
 }
-
 
 /* --------------------- Share Buttons ------------- */
 
@@ -569,7 +540,7 @@ a:focus {
     top: auto;
     right: auto;
     bottom: -10px;
-    background-color: #000;
+    background-color: #eee;
     transition: margin 0.5s ease-in-out;
     -webkit-transition: margin 0.5s ease-in-out;
     -moz-transition: margin 0.5s ease-in-out;
