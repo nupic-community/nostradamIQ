@@ -61,15 +61,29 @@
 	position:fixed;
 	bottom:auto;
 	right:auto;
-    left: 0;
-    top: 0;
+    left: 30px;
+    top: 30px;
     z-index: 5;
 	padding:0;
-	width:29px;
-	height:29px;
+	width:35px;
+	height:35px;
 	overflow:hidden;
+    border-radius: 200%;
+    -webkit-border-radius: 200%;
+    -moz-border-radius: 200%;
+    -o-border-radius: 200%;
+    color: #111 !important;
 }
 
+.cesium-viewer-fullscreenContainer .cesium-button {
+    background-color: #000000;
+    border-radius: 200%;
+    -webkit-border-radius: 200%;
+    -moz-border-radius: 200%;
+    -o-border-radius: 200%;
+}
+/* -------------------- */
+ 
 .cesium-viewer-toolbar {
 	display:block;
 	position:absolute;

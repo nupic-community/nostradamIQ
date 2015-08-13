@@ -424,17 +424,29 @@ div.cesium-baseLayerPicker-sectionTitle:not(:first-child) {
 	background: transparent;
 }
 
+.cv-toolbar:hover .ui.button.cv-button span {
+    display: inline-block;
+}
+
+.cv-toolbar:hover .ui.button.cv-button {
+    width: auto !important;
+    padding: 0 10px 0 10px !important;
+}
+
 .ui.basic.buttons.cv-toolbar .button {
 	background:#222!important;
 }
 
 button.ui.button.cv-button {
-    padding: .77em !important;
+    width: 45px !important;
+    height: 45px;
+    padding: 0 !important;
+    text-align: center !important;
     margin-bottom: 10px !important;
-    border-radius: 100% !important;
-    -webkit-border-radius: 100% !important;
-    -moz-border-radius: 100% !important;
-    -o-border-radius: 100% !important;
+    border-radius: 45px !important;
+    -webkit-border-radius: 45px !important;
+    -moz-border-radius: 45px !important;
+    -o-border-radius: 45px !important;
 	text-align:left;
 	background:#fff;
 }
