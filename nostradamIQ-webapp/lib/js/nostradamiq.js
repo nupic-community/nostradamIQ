@@ -315,6 +315,7 @@ imageryViewModels.push(new Cesium.ProviderViewModel({
 imageryViewModels.push(new Cesium.ProviderViewModel({
     name: 'Natural Earth II',
     iconUrl: Cesium.buildModuleUrl('Widgets/Images/ImageryProviders/naturalEarthII.png'),
+    tooltip: 'Natural Earth Model by the Cesium Community\nhttps://cesiumjs.org/data-and-assets/imagery/natural-earth-ii.html',
     creationFunction: function () {
         return new Cesium.UrlTemplateImageryProvider({
             url: '//cesiumjs.org/tilesets/imagery/naturalearthii/{z}/{x}/{reverseY}.jpg',
