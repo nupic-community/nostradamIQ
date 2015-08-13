@@ -233,7 +233,7 @@ a:focus {
     bottom: 2%;
     right: 3%;
     display: block;
-    text-align: right;
+    text-align: center;
 }
 
 /* --------------------- intro heading ------------- */
@@ -242,7 +242,7 @@ a:focus {
     padding: 10px;
     display: inline-block;
     margin-bottom: 10px;
-    font-size: 40px;
+    font-size: 75px;
     font-weight: normal;
     text-align: center;
     text-transform: none;
@@ -258,7 +258,7 @@ a:focus {
 .intro .intro-body .intro-text {
     width: 420px;
     padding: 4px;
-    font-size: 18px;
+    font-size: 26px;
     text-align: center;
     display: inline-block;
     background-color: rgba(0,0,0,0.8);
@@ -269,14 +269,36 @@ a:focus {
         height: 100%;
         padding: 0;
     }
+    
+    .intro .intro-body {
+        width: 100%;
+        position: absolute;
+        bottom: 2%;
+        right: 3%;
+        display: block;
+        text-align: right;
+    }
 
     .intro .intro-body .brand-heading {
+        width: 540px;
+        padding: 10px;
+        display: inline-block;
+        margin-bottom: 10px;
         font-size: 75px;
         font-weight: normal;
+        font-weight: normal;
+        text-align: center;
+        text-transform: none;
+        background-color: rgba(0,0,0,0.8);
     }
 
     .intro .intro-body .intro-text {
+        width: 420px;
+        padding: 4px;
         font-size: 26px;
+        text-align: center;
+        display: inline-block;
+        background-color: rgba(0,0,0,0.8);
     }
 }
 /* --------------------------------- */ 
@@ -378,7 +400,7 @@ a:focus {
 }
 
 #about .banner-social-buttons {
-    margin: 0 0 50px 0;
+    margin: 50px 0 50px 0;
 }
 
 /* -------------------- panels ----------- */
@@ -890,7 +912,7 @@ a:focus {
 .btn-default {
     border: 1px solid #E3000B;
     color: #E3000B;
-    background-color: #000;
+    background-color: #eee;
 }
 
 .btn-default:hover,
