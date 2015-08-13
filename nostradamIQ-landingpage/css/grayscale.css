@@ -160,7 +160,7 @@ a:focus {
     line-height: normal;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
+    -transition: background .3s ease-in-out;
 }
 
 .navbar-custom .nav li a:hover {

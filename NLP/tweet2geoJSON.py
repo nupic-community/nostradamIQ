@@ -27,33 +27,32 @@ def place_lookup(tweet):
 def format2geoJSON(tweet):
 	if tweet["coordinates"] != None:
 		# get lat,lng and create geoJSON object:
-		tweet_geoJSON = {
-						  "type": "Feature",
-						  "geometry": {
-						    "type": "Point",
-						    "coordinates": tweet['coordinates'], #[lat,lng]
-						    "img": tweet['user']["profile_image_url"]
-						  },
-						  "properties": {
-						    "name": tweet['user']['screen_name'],
-						    "user_description": tweet['user']['description'],
-						    "place": tweet["place"],
-						    "default_profile": tweet['user']["default_profile"],
-						    "followers_count": tweet['user']['followers_count'],
-						    "verified": tweet['user']['verified'],
-						    "lang": tweet['user']['lang'],
-						    "tweet_body": tweet['text'],
-						    "time": tweet['created_at'],
-						    "favorite_count": tweet["favorite_count"],
-						    "retweeted": tweet['retweeted'],
-						    "in_reply_to_user_id_str": tweet["in_reply_to_user_id_str"],
-						    "in_reply_to_status_id_str": tweet["in_reply_to_status_id_str"],
-						    "possibly_sensitive": tweet["possibly_sensitive"],
-						    "hashtags": tweet["entities"]["hashtags"],
-						    "symbols": tweet["entities"]["symbols"],
-						    "user_mentions": tweet["entities"]["user_mentions"],
-						    "urls": tweet["entities"]["urls"],
-						  }
+		tweet_geoJSON = {"type": "Feature",
+							  "geometry": {
+							    "type": "Point",
+							    "coordinates": tweet['coordinates']['coordinates'], #[lat,lng]
+							  },
+							  "properties": {
+							    "name": tweet['user']['screen_name'],
+							    "user_description": tweet['user']['description'],
+							    "place": tweet["place"],
+							    "default_profile": tweet['user']["default_profile"],
+							    "followers_count": tweet['user']['followers_count'],
+							    "verified": tweet['user']['verified'],
+							    "lang": tweet['user']['lang'],
+							    "tweet_body": tweet['text'],
+							    "time": tweet['created_at'],
+							    "favorite_count": tweet["favorite_count"],
+							    "retweeted": tweet['retweeted'],
+							    "in_reply_to_user_id_str": tweet["in_reply_to_user_id_str"],
+							    "in_reply_to_status_id_str": tweet["in_reply_to_status_id_str"],
+							    "possibly_sensitive": tweet["possibly_sensitive"],
+							    "hashtags": tweet["entities"]["hashtags"],
+							    "symbols": tweet["entities"]["symbols"],
+							    "user_mentions": tweet["entities"]["user_mentions"],
+							    "urls": tweet["entities"]["urls"],
+							    "img": tweet['user']["profile_image_url"]
+							  }
 						}
 
 		return tweet_geoJSON
