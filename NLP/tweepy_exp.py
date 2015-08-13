@@ -61,7 +61,7 @@ class StdOutListener(StreamListener):
             if geoJson != None:
                 with open(outputgeo, 'a+') as outPgeo:
                     json.dump(geoJson, outPgeo)
-                    #outPgeo.write('\n')
+                    outPgeo.write(',\n')
                 outPgeo.close()
                 countLoc += 1
             # notification:
@@ -83,7 +83,7 @@ if __name__ == '__main__':
 
         stream = Stream(auth, l)
 
-        keywords = ["#earthquake", "OR", "#quake", "OR", "shakeAlert", "OR", "quakeAlert", "OR", "earthquake", "OR", "quake", "OR", "from:USGSted", "OR", "from:everyEarthquake"] #, "-movie", "-vid", "-pic", "-picture", "-clip", "-video", "-past"]
+        keywords = ["#earthquake", "#quake", "#shakeAlert", "#quakeAlert", "shakeAlert", "quakeAlert", "earthquake", "quake", "from:USGSted", "from:everyEarthquake"] #, "-movie", "-vid", "-pic", "-picture", "-clip", "-video", "-past"]
 
         """
         if len(sys.argv) < 2 : 
@@ -106,5 +106,6 @@ if __name__ == '__main__':
         outPgeo.close()
 
     except IncompleteRead: 
+        print "Twitter Restriction set in... \nALL THAT BEAUTIFUL DATA :'(\n"
         time.sleep(10) # sleep for 10 seconds twitters restrictions
 
