@@ -3,8 +3,8 @@
 // Set web root url
 var baseURL = window.location.protocol + "//" + window.location.host + "/webapp/";  // production
 //var proxyURL = 'http://climateviewer.net/netj1/proxy';  // production
-//var proxyURL = 'http://localhost:8081/?url=';  // local
-var proxyURL = '//nostradamiq.org/webapp/proxy/';  // dev
+var proxyURL = 'http://nostradamiq.org/webapp/proxy/proxy:8081/?url=';  // local
+//var proxyURL = '//nostradamiq.org/webapp/proxy/';  // dev
 //var proxyURL = '//cors-anywhere.herokuapp.com/';
 var proxyEverything = false;
 
