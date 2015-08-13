@@ -17,7 +17,7 @@ http://geojson.org/geojson-spec.html#bounding-boxes
 
 """ 
 
-def place_lookup(place):
+def place_lookup(tweet):
 	#TODO https://twittercommunity.com/t/schema-of-boundingbox-in-places-section/8663
 	boundingBox = tweet["place"]["bounding_box"]["coordinates"][0]
 	lat = float((boundingBox[0][0] + boundingBox[1][0]) / 2.0)
