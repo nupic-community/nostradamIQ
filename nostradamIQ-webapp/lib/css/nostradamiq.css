@@ -414,14 +414,14 @@ div.cesium-baseLayerPicker-sectionTitle:not(:first-child) {
 	padding-top:9px;
 }
 
-/* CONTROL BUTTONS */
+/* ---------------- CONTROL BUTTONS ----------------- */
 .cv-toolbar {
 	position:fixed;
-	top:64px;
-	right:0;
+	top:60px;
+	right:30px;
 	left:auto;
 	display:none;
-	background:#3d3d3d;
+	background: transparent;
 }
 
 .ui.basic.buttons.cv-toolbar .button {
@@ -429,21 +429,32 @@ div.cesium-baseLayerPicker-sectionTitle:not(:first-child) {
 }
 
 button.ui.button.cv-button {
+    padding: .77em !important;
+    margin-bottom: 10px !important;
+    border-radius: 100% !important;
+    -webkit-border-radius: 100% !important;
+    -moz-border-radius: 100% !important;
+    -o-border-radius: 100% !important;
 	text-align:left;
-	background:#222!important;
+	background:#fff;
+}
+
+button.ui.button.cv-button i {
+    font-size: 20px;
 }
 
 button.ui.button.cv-button i,button.ui.button.cv-button span {
-	color:#999;
-	font-weight:700;
+	color:#000;
+	font-weight:normal;
 }
 
 button.ui.button.cv-button span {
 	padding-left:7px;
+    display: none;
 }
 
 button.ui.button.cv-button:focus,button.ui.button.cv-button:hover {
-	background:#000!important;
+	background:#8c0c12!important;
 }
 
 button.ui.button.cv-button:focus i,button.ui.button.cv-button:hover i {
@@ -462,7 +473,27 @@ button.ui.button.cv-button:focus span,button.ui.button.cv-button:hover span {
 	border:0;
 }
 
-/* MAP INFO WINDOW */
+@media only screen and (max-width:570px) {
+    /* -------------- Nav collapsed ----------*/
+    .cv-toolbar {
+        position: fixed;
+        top: 8px;
+        right: 8px;
+        left: auto;
+    }
+    
+    button.ui.button.cv-button {
+        padding: .87em !important;
+        margin-bottom: 5px !important;
+    }
+    
+    .ui.button.cv-button span {
+	   display:none;
+    }
+    /* ------------ */
+}
+
+/* --------------------- MAP INFO WINDOW ------------------------ */
 .cesium-viewer-toolbar {
 	display:none;
 }
@@ -1404,7 +1435,7 @@ div#disqus_thread {
 }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 570px) {
 
 /* ----------------- Logo ------------ */
 .ui.feed.cv3d {
@@ -1432,37 +1463,6 @@ div#disqus_thread {
 .tabmenu-footer.ui.bottom.attached.buttons {
 	width:100%!important;
 }
-
-/* -------------- Nav collapsed ----------*/
-.cv-toolbar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: auto;
-    display: none;
-    background: red;
-}
-    
-button.ui.button.cv-button {
-    padding: .87em !important;
-    text-align: left;
-    background: #a51717 !important;
-}
-    
-.ui.vertical.buttons .button:last-child {
-    border-radius: 0 !important;
-}
-    
-button.ui.button.cv-button:focus,
-button.ui.button.cv-button:hover   {
-    background-color: #333 !important;
-    color: #fff;
-}
-    
-.ui.button.cv-button span {
-	display:none;
-}
-/* ------------ */
     
 #Greeting .header {
 	font-size:1.2em;
