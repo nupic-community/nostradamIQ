@@ -205,6 +205,7 @@
     <!-- Help Section -->
     <section id="help" class="content-section text-center">
         <div class="help-section">
+        </div>
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Help saving the World!</h2>
@@ -223,7 +224,7 @@
                     <p>Translators, are also <strong>urgently</strong> needed, to provide the entire World with relevant information!<br>So if YOU are bilingual, please <a href="mailto:info@nostradamiq.org" target="_blank">let us know and help!</a></p>
                     <p>We are also looking for <a class="page-scroll" href="#partners">Partners, Sponsors and Communicators</a>!</p>
                 </div>
-            </div>
+            
         </div>
     </section>
 

@@ -107,7 +107,7 @@ a:focus {
     border-bottom: 1px solid rgba(0,0,0,.8);
     text-transform: uppercase;
     font-family: 'herolight';
-    background-color: #eee;
+    background-color: #000;
 }
 
 /* padding to add space to logo (on nav black nav bar) */
@@ -134,7 +134,7 @@ a:focus {
 .navbar-custom .navbar-toggle {
     padding: 8px 6px;
     font-size: 16px;
-    color: #111;
+    color: #eee;
 }
 /* ----------- */
 
@@ -144,7 +144,7 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #111;
+    color: #eee;
     font-size: 16px;
     font-family: 'heroregular';
 }
@@ -172,7 +172,7 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
     outline: 0;
-    background-color: #eee;
+    background-color: #fff;
 }
 
 .navbar-custom .nav li.active {
@@ -180,7 +180,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a {
-    background-color: #ccc;
+    background-color: #333;
 }
 
 .navbar-custom .nav li.active a:hover {
@@ -193,7 +193,7 @@ a:focus {
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        background: #eee;
+        background: #000;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -202,7 +202,7 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid #aaa;
-        background: #eee;
+        background: #000;
     }
 }
 
@@ -437,6 +437,10 @@ a:focus {
     -o-background-size: cover;
 }
 
+#learn {
+    padding-top: 100px;
+}
+
 #partners {
     padding-top: 110px !important;
 }
@@ -612,13 +616,15 @@ a:focus {
     }
     
     .share-buttons ul li {
+        padding: 0;
         display: inline-block;
         font-size: 20px
     }
     
     .share-buttons ul li a {
+        margin: 0 !important;
         padding: 9px 9px;
-        line-height: 50px;
+        line-height: 100%;
         text-decoration: none;
     }
 }
@@ -720,7 +726,7 @@ a:focus {
         margin: 100px auto;
         text-align: center;
         color: #111;
-        background-color: #eee;
+        background-color: #000;
         background-position: center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -775,6 +781,18 @@ a:focus {
     #resources h1 {
         margin-bottom: 100px !important;
     }
+    
+    #resources h3 {
+        margin: 0px 0 20px 0 !important;
+    }
+    
+    #resources p.copy {
+        margin: 0 0 20px 0px !important;
+    }
+    
+    #resources ol li, #resources ul li {
+        margin: 10px 0 10px 0px !important; 
+    }
 }
 
 #resources h1 {
@@ -783,16 +801,20 @@ a:focus {
     text-align: center;
     margin-bottom: 200px;
     color: #eee;
-    background-color: rgba(102,0,0,0.8);
+    background-color: rgba(199, 0, 0, 0.65);
 }
 
 #resources h3 {
-    margin: 30px 0 20px 0;
+    margin: 50px 0 20px 0;
     padding-bottom: 3px;
     text-align: left;
     font-size: 18px;
     font-family: 'heroregular';
     border-bottom: 1px solid #E3000B;
+}
+
+#resources h3 i {
+    color: #999;
 }
 
 #resources p {
@@ -805,8 +827,12 @@ a:focus {
     line-height: 1.34;
 }
 
+#resources p.copy {
+    margin: 0 0 20px 30px;
+}
+
 #resources ol, #resources ul {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     padding: 0 0 0 25px;
     text-align: left;
     font-size: 16px;
@@ -814,7 +840,7 @@ a:focus {
 }
 
 #resources ol li, #resources ul li {
-    margin: 10px 0 10px;
+    margin: 10px 0 10px 5px;
 }
 
 #sources {
@@ -877,7 +903,7 @@ a:focus {
 .btn-default:focus {
     border: 1px solid #E3000B;
     outline: 0;
-    color: #111;
+    color: #eee;
     background-color: #E3000B;
 }
 
@@ -962,7 +988,6 @@ body {
         margin-top: -150px;
         max-width: 800px;
         padding-top: 10px !important;
-        text-align: left;
     }
     
     #contributors h1 {
@@ -997,12 +1022,12 @@ body {
     line-height: 1.34;
 }
 
-#contributors ul, #resources ul {
+#contributors ul {
     list-style: none;
     font-family: 'heroregular';
 }
 
-#contributors ul, #resources ul li {
+#contributors ul {
     margin: 10px 0 10px;
     font-size: 18px;
 }
@@ -1027,7 +1052,7 @@ body {
     
     ul.banner-social-buttons li {
         display: inline-block !important;
-        margin-bottom: 20px;
+        margin-bottom: 5px !important;
         padding: 0;
     }
 }
@@ -1103,14 +1128,15 @@ body {
 /* ---------- organisations -------- */
 
 .org .btn {
-    border: 1px solid #111;
-    color: #ccc;
-    background-color: #111;
+    border: 1px solid #ccc;
+    color: #111;
+    background-color: #ccc;
     text-transform: none;
     font-size: 16px;
     letter-spacing: 0.04em;
     font-weight: normal;
     font-family: 'heroregular';
+    border-radius: 70px;
 }
 
 /* ----------------------- */
@@ -1154,7 +1180,7 @@ body {
 .btn-default:focus {
     border: 1px solid #E3000B;
     outline: 0;
-    color: #111;
+    color: #eee;
     background-color: #E3000B;
 }
 
@@ -1185,11 +1211,15 @@ ul.banner-social-buttons li {
 }
 
 footer {
-    padding: 50px 0;
+    margin-top: 50px;
+    padding: 20px 0 !important;
+    background-color: #111;
 }
 
 footer p {
     margin: 0;
+    font-size: 15px;
+    color: #eee;
 }
 
 ::-moz-selection {
@@ -1222,7 +1252,7 @@ body {
 
 #terms {
     max-width: 1000px;
-    padding-top: 130px !important;
+    padding-top: 150px !important;
 }
 
 #terms p strong {
