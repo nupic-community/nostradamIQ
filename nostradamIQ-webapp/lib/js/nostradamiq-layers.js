@@ -68,8 +68,9 @@ var layers = {
             { I: "iris-st-im", T: 'kml', G: "//ds.iris.edu/cgi-bin/kmlstationinfo/IM?kmz=1", S: "Incorporated Research Institutions for Seismology (IRIS)", U: "//ds.iris.edu/cgi-bin/kmlstationinfo/", N: "IRIS International Miscellaneous Stations Stations"},
         ]},
         Volcano: { N: "Volcano", icon: "warning sign", '>': [
-            { I: "kml-volcano", P: true, M: true, MS: "3", T: 'kml', G: "//www.volcano.si.edu/news/WeeklyVolcanoGE-Reports.kmz", S: "Smithsonian Institute National Museum of History, Global Volcanism Program: Latest Volcanic Activity", U: "//www.volcano.si.edu/", N: "Weekly Activity and Eruptions"},
-            { I: "kml-volcanos", T: 'kml', G: "/webapp/layers/kml/3rdparty/alerts/GVPWorldVolcanoes-List.kmz", S: "Smithsonian Institute National Museum of History, Global Volcanism Program", U: "//www.volcano.si.edu/", N: "Global Vocanoes"}
+            { I: "kml-volcano", P: true, M: true, MS: "3", T: 'kml', G: "//volcano.si.edu/news/WeeklyVolcanoGE.kml", S: "Smithsonian Institute National Museum of History, Global Volcanism Program: Latest Volcanic Activity", U: "//www.volcano.si.edu/", N: "Weekly Activity and Eruptions"},
+            { I: "kml-volcano2", P: true, M: true, MS: "3", T: 'kml', G: "//www.volcano.si.edu/news/WeeklyVolcanoGE-Reports.kmz", S: "Smithsonian Institute National Museum of History, Global Volcanism Program: Latest Volcanic Activity", U: "//www.volcano.si.edu/", N: "Weekly Activity and Eruption Report"},
+            { I: "kml-volcanos", T: 'kml', G: "/webapp/layers/kml/3rdparty/places/GVPWorldVolcanoes-List.kmz", S: "Smithsonian Institute National Museum of History, Global Volcanism Program", U: "//www.volcano.si.edu/", N: "Global Vocanoes"}
         ]},
         Fire: { N: "Fire", icon: "fire", '>': [
             { I: "kml-usda-fire", Z: true, T: 'kml', P: true, G: "//activefiremaps.fs.fed.us/data/kml/conus.kmz", S: "US Department of Agriculture (USDA) Forest Service Remote Sensing Applications Center, Active Fire Mapping Program", U: "//activefiremaps.fs.fed.us/", N: "Active Fire Mapping Program"},
@@ -500,6 +501,14 @@ var layers = {
             { I: "inet-all", T: 'kml', G: "/webapp/layers/kml/3rdparty/other/inet_all.kmz", S: "Greg's Cable Map", U: "//www.cablemap.info", N: "Unofficial Internet Cables (All Active and Future)"},
             { I: "inet_all_official", T: 'kml', G: "/webapp/layers/kml/3rdparty/other/inet_all_official.kmz", S: "Submarine Cable Map - Officially Supported", U: "//www.submarinecablemap.com/", N: "Internet Cables (All Official)"},
             { I: "inet_landp_official", T: 'kml', G: "/webapp/layers/kml/3rdparty/other/inet_landp_official.kmz", S: "Submarine Cable Map - Officially Supported", U: "//www.submarinecablemap.com/", N: "Internet Cable-Landingpoints (All Official)"}
+        ]},
+        Cities: { N: "Cities", icon: "city", '>': [
+            { I:"berlin-3d", T:'kml', G: "/webapp/layers/kml/3rdparty/places/berlin-3d.kmz", S: "Google Earth Community Build 3D Model of Berlin", U: "http://www.gearthhacks.com/dlcat57/3D-Cities.htm", N: "Berlin in 3D"},
+            { I:"frankfurt-3d", T:'kml', G: "/webapp/layers/kml/3rdparty/places/frankfurt-3d.kmz", S: "Google Earth Community Build 3D Model of Frankfurt", U: "http://www.gearthhacks.com/dlcat57/3D-Cities.htm", N: "Frankfurt in 3D"},
+            { I:"dublin-3d", T:'kml', G: "/webapp/layers/kml/3rdparty/places/dublin-3d.kmz", S: "Google Earth Community Build 3D Model of Dublin", U: "http://www.gearthhacks.com/dlcat57/3D-Cities.htm", N: "Dublin in 3D"},
+            { I:"hongkong-3d", T:'kml', G: "/webapp/layers/kml/3rdparty/places/hongkong-3d.kmz", S: "Google Earth Community Build 3D Model of Hong-Kong", U: "http://www.gearthhacks.com/dlcat57/3D-Cities.htm", N: "Hong-Kong in 3D"},
+            { I:"paris-3d", T:'kml', G: "/webapp/layers/kml/3rdparty/places/paris-3d.kmz", S: "Google Earth Community Build 3D Model of Paris Landmarks", U: "http://www.gearthhacks.com/dlcat57/3D-Cities.htm", N: "Paris Landmarks in 3D"},
+            { I:"london-3d", T:'kml', G: "/webapp/layers/kml/3rdparty/places/london-3d.kmz", S: "Google Earth Community Build 3D Model of London", U: "http://www.gearthhacks.com/dlcat57/3D-Cities.htm", N: "London's Monuments in 3D"}
         ]},
         Economic: { N: "Economics", icon: "money", '>': [
             { I: "global_pdc_economic", T: 'kml', G: "//agsc.pdc.org/arcgis/rest/services/global/pdc_economics/MapServer/kml/MapImage.kmz", S: "PDC", U: "//agsc.pdc.org/arcgis/rest/services/global/pdc_economics/MapServer", N: "Global Economics Data by PDC"},

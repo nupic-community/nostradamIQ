@@ -355,7 +355,7 @@ function loadJson(layerId, geoDataSrc, proxy, markerLabel, markerScale, markerIm
           //loaded(layerId);
       }).otherwise(function(error) {
           loadError(layerId, geoDataSrc, error);
-    }
+    });
 }
 
 function loadKml(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod) {
