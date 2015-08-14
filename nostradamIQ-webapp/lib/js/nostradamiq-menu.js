@@ -419,7 +419,7 @@ function loadTwitter(layerId, geoDataSrc, proxy, markerScale, markerImg, markerC
 
   var $input_date = $( '#'+ layerId + '-datepicker' ).pickadate({
     formatSubmit: 'dd-mm-yyyy',
-    min: new Date(08, 14, 2015),
+    min: -7, // [08, 14, 2015],
     max: true,
     container: '#'+ layerId + '-datepicker',
     //editable: true, //
@@ -561,12 +561,12 @@ function updateLayer(layerId) {
             loadWmts(layerId, geoDataSrc, proxy, geoLayers);
         } else if (l.T === ("base-layer")) {
            loadOsmLayer(layerId, geoDataSrc, proxy, source);
+        } else if (l.T === ('geojson') && layerId.substring(0,6) === 'twitter') { // load twitter data extra
+            loadTwitter(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod);
         } else if (l.T === ("geojson")) {
             loadGeoJson(layerId, geoDataSrc, proxy, markerLabel, markerScale, markerImg, markerColor, zoom);
         } else if (l.T === ("json")) { // PDC
             loadGeoJson(layerId, geoDataSrc, proxy, markerLabel, markerScale, markerImg, markerColor, zoom);
-        } else if (l.T === ('kml') && layerId[0:6] === 'twitter') {
-            loadTwitter(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod);
         } else if (l.T === ('kml')) {
             loadKml(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod);
         } else if (l.T === ('czml')) {
