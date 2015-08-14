@@ -227,8 +227,8 @@ function loadGIBS(layerId) {
     formatSubmit: 'yyyy-mm-dd',
     min: [2012, 4, 8],
     max: Cesium.JulianDate.now(),
-    container: '#datepicker-container',
-    editable: true, //
+    container: '#'+ layerId + '-datepicker',
+    //editable: true, //
     closeOnSelect: true,
     closeOnClear: false
   });
@@ -397,6 +397,46 @@ function loadKml(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, marke
           }
         ); // end then
     } // end proxy
+}
+
+// TODO
+// load twitter data according to picked date - build URL accordingly: 
+// Format:
+// HOUR = HH (str)
+// DATE = DD-MM-YYYY (str)
+// ARRAY = key for keywords Dict that contains filterwords for twitter stream object (str)
+// tweets_ARRAY_HOUR_DATE.geojson -> geoJSON object to be read by Cesium
+// stats_ARRAY_HOUR_DATE -> ((ALL, WITH_GEO), (ALL_INTV, WITH_GEO_INTV))
+function loadTwitter(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod) {
+  console.log('load twitter data');
+  var target = $('#' + layerId);
+  $('<div class="ui card ' + layerId + '-picker layer-sliders"><div class="content"><div class="ui divided list"><div class="item '+ layerId + '-info"><i class="circular inverted clock icon"></i><div class="content"><div class="header">Imagery Date</div>Click this button below to change the loaded image:<br><input type="button" value="" class="datepicker ui blue basic button" id="'+ layerId + '-datepicker" name="date"></div></div></div></div>').appendTo(target);
+  var date = new Date();
+  date.setDate(date.getDate());
+  var today = Cesium.JulianDate.fromDate(date);
+  var time = Cesium.JulianDate.toDate(today);
+  var $input = $( '#'+ layerId + '-datepicker' ).pickadate({
+    formatSubmit: 'hh:dd-mm-yyyy',
+    min: [00, 14, 08, 2015],
+    max: Cesium.JulianDate.now(),
+    container: '#'+ layerId + '-datepicker',
+    //editable: true, //
+    closeOnSelect: true,
+    closeOnClear: false
+  });
+
+  var picker = $input.pickadate('picker');
+  picker.set('select', time);
+  picker.on({
+    set: function() {
+      var selectedDate = picker.get('select', 'hh:dd-mm-yyyy');
+      var get_data_select = geoDataSrc + 'tweets_ARRAY_HOUR_DATE.geojson';
+      loadKml(layerId, get_data_select, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod)
+    }
+  });
+  var start = picker.get('select', 'hh:dd-mm-yyyy');
+  var get_data_start = geoDataSrc + 'tweets_ARRAY_HOUR_DATE.geojson';
+  loadKml(layerId, get_data_start, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod)
 }
 
 function loadCZML(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod) {
