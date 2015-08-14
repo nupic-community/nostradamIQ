@@ -1,3 +1,5 @@
+# TODO get number of ALL tweets for a intervall (somehow??) and calc percentage of keywork tweets
+
 def calc_percentage(allFile, filteredFile):
         numFiltered = 0
         numAll = 0 

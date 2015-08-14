@@ -18,8 +18,9 @@ NLP/API_KEYS.py
 NLP/API_KEYS.py[cod]
 NLP/*.py[cod]
 NLP/*.pyc
-NLP/corpiri/old_trans
+NLP/corpori/old_trans
 NLP/old
+NLP/*.txt
 
 nostradamIQ-htmengine-app
 nostradamIQ-htmengine-app/*

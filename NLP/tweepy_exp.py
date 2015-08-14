@@ -88,6 +88,8 @@ if __name__ == '__main__':
         # https://dev.twitter.com/rest/public/search
         keywords = ["#earthquake", "#quake", "#shakeAlert", "#quakeAlert", "shakeAlert", "quakeAlert", "earthquake", "quake", "from:USGSted", "from:everyEarthquake"] #, "-movie", "-vid", "-pic", "-picture", "-clip", "-video", "-past"]
 
+        # keywords = sys.argv[1:]
+
         """ FOR CMD line args:
         if len(sys.argv) < 2 : 
     	   print 'USAGE : python get_tweets.py [n: CUTOFF] [keyword1 keyword2 ... keywordn]'
