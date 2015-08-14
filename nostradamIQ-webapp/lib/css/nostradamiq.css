@@ -742,7 +742,7 @@ div.cesium-viewer-geocoderContainer {
 
 .cesium-viewer-geocoderContainer:hover .cesium-geocoder-input,.cesium-viewer-geocoderContainer .cesium-geocoder-input:focus,.cesium-viewer-geocoderContainer .cesium-geocoder-input-wide {
 	width:100%;
-	color:#E3000B;
+	color:#fff;
 	outline-color:#1982d1;
 	border:0;
 	border-top:0;
