@@ -437,6 +437,10 @@ a:focus {
     -o-background-size: cover;
 }
 
+#learn {
+    padding-top: 100px;
+}
+
 #partners {
     padding-top: 110px !important;
 }
@@ -612,13 +616,15 @@ a:focus {
     }
     
     .share-buttons ul li {
+        padding: 0;
         display: inline-block;
         font-size: 20px
     }
     
     .share-buttons ul li a {
+        margin: 0 !important;
         padding: 9px 9px;
-        line-height: 50px;
+        line-height: 100%;
         text-decoration: none;
     }
 }
@@ -783,16 +789,20 @@ a:focus {
     text-align: center;
     margin-bottom: 200px;
     color: #eee;
-    background-color: rgba(102,0,0,0.8);
+    background-color: rgba(199, 0, 0, 0.65);
 }
 
 #resources h3 {
-    margin: 30px 0 20px 0;
+    margin: 50px 0 20px 0;
     padding-bottom: 3px;
     text-align: left;
     font-size: 18px;
     font-family: 'heroregular';
     border-bottom: 1px solid #E3000B;
+}
+
+#resources h3 i {
+    color: #999;
 }
 
 #resources p {
@@ -806,7 +816,7 @@ a:focus {
 }
 
 #resources ol, #resources ul {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     padding: 0 0 0 25px;
     text-align: left;
     font-size: 16px;
@@ -814,7 +824,7 @@ a:focus {
 }
 
 #resources ol li, #resources ul li {
-    margin: 10px 0 10px;
+    margin: 10px 0 10px 15px;
 }
 
 #sources {
@@ -877,7 +887,7 @@ a:focus {
 .btn-default:focus {
     border: 1px solid #E3000B;
     outline: 0;
-    color: #111;
+    color: #eee;
     background-color: #E3000B;
 }
 
@@ -997,12 +1007,12 @@ body {
     line-height: 1.34;
 }
 
-#contributors ul, #resources ul {
+#contributors ul {
     list-style: none;
     font-family: 'heroregular';
 }
 
-#contributors ul, #resources ul li {
+#contributors ul {
     margin: 10px 0 10px;
     font-size: 18px;
 }
@@ -1154,7 +1164,7 @@ body {
 .btn-default:focus {
     border: 1px solid #E3000B;
     outline: 0;
-    color: #111;
+    color: #eee;
     background-color: #E3000B;
 }
 
