@@ -26,6 +26,8 @@ DELETE_OLD = False
 
 countAll = 0
 countLoc = 0
+countAll_intervall = 0 
+countLoc_intervall = 0
 
 # holds the name of the searcharray
 searchArray = None
@@ -43,13 +45,17 @@ KEYWORDS = {
         'quake': ["#earthquake", "#quake", "#shakeAlert", "#quakeAlert", "shakeAlert", "quakeAlert", "earthquake", "quake", "from:USGSted", "from:everyEarthquake"]
 }
 
-def getCurrentDateKey(): 
+
+def getCurrentDateKey():
+    # Returns: str: HH:DD-MM-YYYY 
+    hour = datetime.datetime.now().hour
+    date = "{0}-{1}-{2}".format(datetime.datetime.now().day,datetime.datetime.now().month, datetime.datetime.now().year)
     return "{0}:{1}".format(hour, date)
 
 class StdOutListener(StreamListener):
 
     def on_data(self, data):
-        global countLoc, countAll, outputgeo, nowDateTime
+        global countLoc, countAll, countAll_intervall, countLoc_intervall, outputgeo, nowDateTime
 
         # update nowDateTime:
         nowDateTime = getCurrentDateKey()
@@ -58,6 +64,7 @@ class StdOutListener(StreamListener):
             tweet = json.loads(data)
             print('@%s tweeted: %s\nPlace: %s (%s)\n' % ( tweet['user']['screen_name'], tweet['text'], tweet['place'], tweet['coordinates']))
             countAll += 1
+            countAll_intervall += 1
             # convert to and write as .geoJSON:
             geoJson = format2geoJSON(tweet)
             if geoJson != None:
@@ -67,6 +74,7 @@ class StdOutListener(StreamListener):
                     outPgeo.write(',\n')
                 outPgeo.close()
                 countLoc += 1
+                countLoc_intervall += 1
             if countAll%100 == 0:
                 print "Saw {0} tweets; {1} of them had location information!\n".format(countAll, countLoc)
 
@@ -114,6 +122,10 @@ if __name__ == '__main__':
             uploadFileJSON = json.loads(uploadFile)
         uploadFile.close()
         REDIS.setex(outputgeo, uploadFileJSON, 60*60*24*7) # a week in seconds
+        # stats_ARRAY_HOUR_DATE -> ((ALL, WITH_GEO), (ALL_INTV, WITH_GEO_INTV))
+        REDIS.set("stats_{0}_{1}_{2}".format(searchArray, currentKeyDateTime.split(':')[0], currentKeyDateTime.split(':')[1]), ((counAll, countLoc), (countAll_intervall, countLoc_intervall)))
+        countAll_intervall = 0 
+        countLoc_intervall = 0 
         
         # Delete old file?
         if DELETE_OLD: os.remove(outputgeo)

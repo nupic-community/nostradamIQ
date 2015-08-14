@@ -14,7 +14,11 @@ import json
 REDIS = redis.Redis()
 
 # Format:
-# tweets_ARRAY_HOUR_DATE.geojson
+# HOUR = HH (str)
+# DATE = DD-MM-YYYY (str)
+# ARRAY = key for keywords Dict that contains filterwords for twitter stream object (str)
+# tweets_ARRAY_HOUR_DATE.geojson -> geoJSON object to be read by Cesium
+# stats_ARRAY_HOUR_DATE -> ((ALL, WITH_GEO), (ALL_INTV, WITH_GEO_INTV))
 
 def app(environ, start_response):
     start_response('200 OK', [('Content-Type', 'text/html'), ('Access-Control-Allow-Origin', '*')])
