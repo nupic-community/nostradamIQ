@@ -506,7 +506,9 @@ var layers = {
             { I: "inet_all_official", T: 'kml', G: "/webapp/layers/kml/3rdparty/other/inet_all_official.kmz", S: "Submarine Cable Map - Officially Supported", U: "//www.submarinecablemap.com/", N: "Internet Cables (All Official)"},
             { I: "inet_landp_official", T: 'kml', G: "/webapp/layers/kml/3rdparty/other/inet_landp_official.kmz", S: "Submarine Cable Map - Officially Supported", U: "//www.submarinecablemap.com/", N: "Internet Cable-Landingpoints (All Official)"},
             { I: "jehovas-hq", T: 'kml', G: "/webapp/layers/kml/3rdparty/places/Watchtower-Branch-Offices-2015.kmz", S: "Jehova's Witnesses", U: "https://drive.google.com/folderview?id=0B53yKA_sylV3aWNOblgtelg0SEk&usp=sharing#list", N:"All current HQs and Branches of Jehova's Witnesses"},
-            { I: "cities-at-night", T: 'kml', G: "/webapp/layers/kml/3rdparty/places/cities-at-night.kmz", S: "Google Earth Community build", S: "http://www.gelib.com/", N: "Map of some Cities at Night"}
+            { I: "cities-at-night", T: 'kml', G: "/webapp/layers/kml/3rdparty/places/cities-at-night.kmz", S: "Google Earth Community build", S: "http://www.gelib.com/", N: "Map of some Cities at Night"},
+            { I: "ancient-greek-places", Z: true, T: 'kml', G: "/webapp/layers/kml/3rdparty/places/ancient-greek-places.kmz", S: "Google Earth Community build", S: "http://www.gelib.com/", N: "Ancient Greek Places and Sites"},
+            { I: "castles-of-italy", Z: true, T: 'kml', G: "/webapp/layers/kml/3rdparty/places/castles-of-italy.kmz", S: "Google Earth Community build", S: "http://www.gelib.com/", N: "Castles of Italy"}
         ]},
         /*
         Cities: { N: "Cities", icon: "city", '>': [
