@@ -10,6 +10,8 @@ import json
 import re
 import time
 import sys
+import redis
+
 from tweet2geoJSON import format2geoJSON
 from httplib import IncompleteRead
 
