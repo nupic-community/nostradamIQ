@@ -107,7 +107,7 @@ a:focus {
     border-bottom: 1px solid rgba(0,0,0,.8);
     text-transform: uppercase;
     font-family: 'herolight';
-    background-color: #eee;
+    background-color: #000;
 }
 
 /* padding to add space to logo (on nav black nav bar) */
@@ -134,7 +134,7 @@ a:focus {
 .navbar-custom .navbar-toggle {
     padding: 8px 6px;
     font-size: 16px;
-    color: #111;
+    color: #eee;
 }
 /* ----------- */
 
@@ -144,7 +144,7 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #111;
+    color: #eee;
     font-size: 16px;
     font-family: 'heroregular';
 }
@@ -172,7 +172,7 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
     outline: 0;
-    background-color: #eee;
+    background-color: #fff;
 }
 
 .navbar-custom .nav li.active {
@@ -180,7 +180,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a {
-    background-color: #ccc;
+    background-color: #333;
 }
 
 .navbar-custom .nav li.active a:hover {
@@ -193,7 +193,7 @@ a:focus {
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        background: #eee;
+        background: #000;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -202,7 +202,7 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid #aaa;
-        background: #eee;
+        background: #000;
     }
 }
 
@@ -723,10 +723,10 @@ a:focus {
 @media(min-width:768px) {
     .resources-intro {
         width: 100%;
-        margin: 110px auto;
+        margin: 100px auto;
         text-align: center;
         color: #111;
-        background-color: #eee;
+        background-color: #000;
         background-position: center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -1252,7 +1252,7 @@ body {
 
 #terms {
     max-width: 1000px;
-    padding-top: 130px !important;
+    padding-top: 150px !important;
 }
 
 #terms p strong {
