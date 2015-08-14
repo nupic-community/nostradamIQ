@@ -457,9 +457,9 @@ button.ui.button.cv-button i {
 }
 
 button.ui.button.cv-button i,button.ui.button.cv-button span {
-	color:#000;
+	color:#111;
     line-height: 0;
-	font-weight:normal;
+	font-weight:normal !important;
 }
 
 button.ui.button.cv-button span {
@@ -484,7 +484,8 @@ button.ui.button.cv-button:focus span,button.ui.button.cv-button:hover span {
 }
 
 .ui.segment {
-	border:0;
+	border:0 !important;
+    border-radius: 0px !important;
 }
 
 @media only screen and (max-width:570px) {
@@ -497,13 +498,29 @@ button.ui.button.cv-button:focus span,button.ui.button.cv-button:hover span {
     }
     
     button.ui.button.cv-button {
-        padding: .87em !important;
-        margin-bottom: 5px !important;
+        width: 40px !important;
+        height: 40px;
+        margin-bottom: 8px !important;
+        border-radius: 40px !important;
+        -webkit-border-radius: 40px !important;
+        -moz-border-radius: 40px !important;
+        -o-border-radius: 40px !important;
+        line-height: 40px;
     }
     
     .ui.button.cv-button span {
-	   display:none;
+	   display: none;
     }
+    
+    .cv-toolbar:hover .ui.button.cv-button span {
+        display: none;
+    }
+
+    .cv-toolbar:hover .ui.button.cv-button {
+        width: 40px !important;
+        padding: 0 !important;
+    }
+    
     /* ------------ */
 }
 
@@ -566,14 +583,14 @@ iframe.cesium-infoBox-iframe {
 	right:0;
 	left:auto;
 	z-index:5;
-	background:rgba(0,0,0,0.7);
+	background:#000;
 	display:none;
 }
 
 .toolbar-contents {
 	width:100%;
 	position:relative;
-	padding-top:5px;
+	padding-top:0px;
 }
 
 div.folder {
@@ -647,8 +664,12 @@ p.instruct:not(:first-child) {
 }
 
 .ui.tab.segment.active {
-	padding:0 8px;
+	padding: 0;
 	background-color:transparent;
+}
+
+.ui.tabular.menu {
+    border: 0px !important;
 }
 
 .ui.tabular.menu .item {
@@ -663,8 +684,9 @@ p.instruct:not(:first-child) {
 .ui.tabular.menu .active.item {
 	background-color:#222;
 	color:#FFF;
+    border: 0px !important;
 	border-bottom:transparent;
-	border-radius:0;
+	border-radius: 0 !important;
 }
 
 .ui.tabular.menu+.bottom.attached.segment,.ui.tabular.menu~.bottom.attached.segment+.bottom.attached.segment {
