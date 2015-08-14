@@ -723,7 +723,7 @@ a:focus {
 @media(min-width:768px) {
     .resources-intro {
         width: 100%;
-        margin: 100px auto;
+        margin: 110px auto;
         text-align: center;
         color: #111;
         background-color: #eee;
@@ -781,6 +781,18 @@ a:focus {
     #resources h1 {
         margin-bottom: 100px !important;
     }
+    
+    #resources h3 {
+        margin: 0px 0 20px 0 !important;
+    }
+    
+    #resources p.copy {
+        margin: 0 0 20px 0px !important;
+    }
+    
+    #resources ol li, #resources ul li {
+        margin: 10px 0 10px 0px !important; 
+    }
 }
 
 #resources h1 {
@@ -815,6 +827,10 @@ a:focus {
     line-height: 1.34;
 }
 
+#resources p.copy {
+    margin: 0 0 20px 30px;
+}
+
 #resources ol, #resources ul {
     margin-bottom: 50px;
     padding: 0 0 0 25px;
@@ -824,7 +840,7 @@ a:focus {
 }
 
 #resources ol li, #resources ul li {
-    margin: 10px 0 10px 15px;
+    margin: 10px 0 10px 5px;
 }
 
 #sources {
@@ -972,7 +988,6 @@ body {
         margin-top: -150px;
         max-width: 800px;
         padding-top: 10px !important;
-        text-align: left;
     }
     
     #contributors h1 {
@@ -1037,7 +1052,7 @@ body {
     
     ul.banner-social-buttons li {
         display: inline-block !important;
-        margin-bottom: 20px;
+        margin-bottom: 5px !important;
         padding: 0;
     }
 }
@@ -1113,14 +1128,15 @@ body {
 /* ---------- organisations -------- */
 
 .org .btn {
-    border: 1px solid #111;
-    color: #ccc;
-    background-color: #111;
+    border: 1px solid #ccc;
+    color: #111;
+    background-color: #ccc;
     text-transform: none;
     font-size: 16px;
     letter-spacing: 0.04em;
     font-weight: normal;
     font-family: 'heroregular';
+    border-radius: 70px;
 }
 
 /* ----------------------- */
@@ -1195,11 +1211,15 @@ ul.banner-social-buttons li {
 }
 
 footer {
-    padding: 50px 0;
+    margin-top: 50px;
+    padding: 20px 0 !important;
+    background-color: #111;
 }
 
 footer p {
     margin: 0;
+    font-size: 15px;
+    color: #eee;
 }
 
 ::-moz-selection {
