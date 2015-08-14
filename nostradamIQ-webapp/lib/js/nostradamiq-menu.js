@@ -407,36 +407,50 @@ function loadKml(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, marke
 // ARRAY = key for keywords Dict that contains filterwords for twitter stream object (str)
 // tweets_ARRAY_HOUR_DATE.geojson -> geoJSON object to be read by Cesium
 // stats_ARRAY_HOUR_DATE -> ((ALL, WITH_GEO), (ALL_INTV, WITH_GEO_INTV))
-function loadTwitter(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod) {
+function loadTwitter(layerId, geoDataSrc, proxy, markerScale, markerImg, markerColor, zoom) {
   console.log('load twitter data');
   var target = $('#' + layerId);
-  $('<div class="ui card ' + layerId + '-picker layer-sliders"><div class="content"><div class="ui divided list"><div class="item '+ layerId + '-info"><i class="circular inverted clock icon"></i><div class="content"><div class="header">Imagery Date</div>Click this button below to change the loaded image:<br><input type="button" value="" class="datepicker ui blue basic button" id="'+ layerId + '-datepicker" name="date"></div></div></div></div>').appendTo(target);
+  $('<div class="ui card ' + layerId + '-picker layer-sliders"><div class="content"><div class="ui divided list"><div class="item '+ layerId + '-info"><i class="circular inverted clock icon"></i><div class="content"><div class="header">Date</div>Click this button below to change the loaded data:<br><input type="button" value="" class="datepicker ui blue basic button" id="'+ layerId + '-datepicker" name="date"></div></div></div></div>').appendTo(target);
   var date = new Date();
   date.setDate(date.getDate());
-  var today = Cesium.JulianDate.fromDate(date);
-  var time = Cesium.JulianDate.toDate(today);
-  var $input = $( '#'+ layerId + '-datepicker' ).pickadate({
-    formatSubmit: 'hh:dd-mm-yyyy',
-    min: [00, 14, 08, 2015],
-    max: Cesium.JulianDate.now(),
+  var today = date.getDay() + '-' + date.getMonth() + '-' + date.getYear();
+  var now_time = date.getHours();
+  var date_selected = false;
+
+  var $input_date = $( '#'+ layerId + '-datepicker' ).pickadate({
+    formatSubmit: 'dd-mm-yyyy',
+    min: new Date(08, 14, 2015),
+    max: true,
     container: '#'+ layerId + '-datepicker',
     //editable: true, //
     closeOnSelect: true,
-    closeOnClear: false
+    closeOnClear: false,
+    onSet: function() {
+      date_selected = true;
+    } 
   });
+  if (date_selected) {
+    var $input_time = $( '#'+ layerId + '-timepicker' ).pickadate({
+      formatSubmit: 'hh',
+      max: true,
+      interval: 60,
+      container: '#'+ layerId + '-timepicker',
+      //editable: true, //
+      closeOnSelect: true,
+      closeOnClear: false,
+      onSet: function(selectedHour) {
+        var selectedDate = $input_date.pickadate('select', 'dd-mm-yyyy');
+        var get_data_select = geoDataSrc + '_' + selectedHour + '_' + selectedDate + '.geojson';
+        loadGeoJson(layerId, get_data_select, proxy, markerScale, markerImg, markerColor, zoom);
+        // TODO Have a info-window with twitter stats!
+      } 
+    });
+  }
 
-  var picker = $input.pickadate('picker');
-  picker.set('select', time);
-  picker.on({
-    set: function() {
-      var selectedDate = picker.get('select', 'hh:dd-mm-yyyy');
-      var get_data_select = geoDataSrc + 'tweets_ARRAY_HOUR_DATE.geojson';
-      loadKml(layerId, get_data_select, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod)
-    }
-  });
-  var start = picker.get('select', 'hh:dd-mm-yyyy');
-  var get_data_start = geoDataSrc + 'tweets_ARRAY_HOUR_DATE.geojson';
-  loadKml(layerId, get_data_start, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod)
+  $input_date.pickadate('select', today);
+  $input_time.pickadate('select', now_time);
+  var get_data_start = geoDataSrc + '_' + now_time + '_' + today + '.geojson';
+  loadGeoJson(layerId, get_data_start, proxy, markerScale, markerImg, markerColor, zoom);
 }
 
 function loadCZML(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod) {
@@ -551,6 +565,8 @@ function updateLayer(layerId) {
             loadGeoJson(layerId, geoDataSrc, proxy, markerLabel, markerScale, markerImg, markerColor, zoom);
         } else if (l.T === ("json")) { // PDC
             loadGeoJson(layerId, geoDataSrc, proxy, markerLabel, markerScale, markerImg, markerColor, zoom);
+        } else if (l.T === ('kml') && layerId[0:6] === 'twitter') {
+            loadTwitter(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod);
         } else if (l.T === ('kml')) {
             loadKml(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod);
         } else if (l.T === ('czml')) {

@@ -189,7 +189,8 @@ var layers = {
         ]},
         Twitter: { N: "Twitter Stream Listener", icon: "twitter", '>': [
                 // TODO Link to goeJSONs for various twitter streams:
-                { I: "twitter-quake", C: true, T: 'geojson', G: "/webapp/layers/geojson/twitter/tweetsQuake.geojson", MI: "/webapp/img/twitter-icon.png", S:"nostradamIQ's own Twitter Listeners", U: "//nostradamiq.org/landing/resources/our_twitter_listener.html", N: "Twitter Stream containing #quake" }
+                { I: "twitter-quake", T: 'geojson', G: "/webapp/layers/geojson/twitter/tweetsQuake.geojson", MI: "/webapp/img/twitter-icon.png", S:"nostradamIQ's own Twitter Listeners", U: "//nostradamiq.org/landing/resources/our_twitter_listener.html", N: "Twitter Stream containing #quake" },
+                { I: "twitter-quake2", T: 'geojson', G: "/webapp/layers/geojson/twitter/tweets_quake", MI: "/webapp/img/twitter-icon.png", S:"nostradamIQ's own Twitter Listeners", U: "//nostradamiq.org/landing/resources/our_twitter_listener.html", N: "Twitter Stream containing #quake 2" }
         ]},
         Report: {  N: "Climate Viewer Reports", icon: "bullhorn", '>': [
                 { NL: true, I: "cvr01", T: 'kml', M: true, MS: "2", G: "/webapp/layers/kml/cv-reports/cv-reports-0415.kml", S: "Climate Viewer Reports", U: "https://climateviewer.crowdmap.com/", N: "CV Reports - 2011 - 2015"}
