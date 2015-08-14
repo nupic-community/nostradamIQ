@@ -193,7 +193,7 @@ a:focus {
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        background: #000;
+        background: rgba(0, 0, 0, 0.7);
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -718,12 +718,13 @@ a:focus {
 
 .resources-intro {
     max-height: 800px;
+    margin: 70px auto;
 }
 
 @media(min-width:768px) {
     .resources-intro {
         width: 100%;
-        margin: 100px auto;
+        margin: 0px auto;
         text-align: center;
         color: #111;
         background-color: #000;
@@ -764,7 +765,7 @@ a:focus {
 }
 
 #resources {
-    margin-top: -300px;
+    margin-top: -200px;
     max-width: 800px;
     padding-top: 10px !important;
     text-align: left;
@@ -772,7 +773,7 @@ a:focus {
 
 @media(max-width:768px) {
     #resources {
-        margin-top: -150px;
+        margin-top: -200px;
         max-width: 800px;
         padding-top: 10px !important;
         text-align: left;
@@ -784,10 +785,6 @@ a:focus {
     
     #resources h3 {
         margin: 0px 0 20px 0 !important;
-    }
-    
-    #resources p.copy {
-        margin: 0 0 20px 0px !important;
     }
     
     #resources ol li, #resources ul li {
@@ -825,10 +822,6 @@ a:focus {
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 1.34;
-}
-
-#resources p.copy {
-    margin: 0 0 20px 30px;
 }
 
 #resources ol, #resources ul {
@@ -979,13 +972,13 @@ body {
 
 #contributors {
     max-width: 800px;
-    margin-top: -300px;
+    margin-top: -200px;
     padding-top: 0px !important;
 }
 
 @media(max-width:768px) {
     #contributors {
-        margin-top: -150px;
+        margin-top: -200px;
         max-width: 800px;
         padding-top: 10px !important;
     }
@@ -1180,7 +1173,7 @@ body {
 .btn-default:focus {
     border: 1px solid #E3000B;
     outline: 0;
-    color: #eee;
+    color: #fff;
     background-color: #E3000B;
 }
 
@@ -1211,15 +1204,16 @@ ul.banner-social-buttons li {
 }
 
 footer {
-    margin-top: 50px;
-    padding: 20px 0 !important;
-    background-color: #111;
+    margin-top: 60px;
+    padding: 40px 0 !important;
+    background-color: #eee;
+    border-top: 1px solid #111; 
 }
 
 footer p {
     margin: 0;
     font-size: 15px;
-    color: #eee;
+    color: #111;
 }
 
 ::-moz-selection {
