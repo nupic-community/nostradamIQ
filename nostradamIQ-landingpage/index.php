@@ -155,7 +155,7 @@
                 </div>
                 <p><a href="//datanauts.tedxrheinmain.de/blog/nostradamiq/" target="_blank">Read a TEDx Blog Article about us!</a></p>    
                 <p>nostradamIQ is entirely Open-Source and Collaborative! YOU are Welcome to <a href="//github.com/nupic-community/nostradamIQ/blob/master/HOW_TO_CONTRIBUTE.md" target="_blank">join</a> the Quest for a save World!</p>
-                <p>We are a OS-Project initiated by the awesome <a href="//numenta.org/" target="_blank">NuPIC-Community</a>, TEDx and many more events and circumstances! Together we accelerate Machine-Intelligence and its <b>good impact for Humanity!</b></p>
+                <p>We are an OS-Project initiated by the awesome <a href="//numenta.org/" target="_blank">NuPIC-Community</a>, TEDx and many more events and circumstances! Together we accelerate Machine-Intelligence and its <b>good impact for Humanity!</b></p>
                 <p>We made it our goal to be the global one-stop platform providing risk related information with following goals:</p>
             </div>
         </div>
@@ -233,15 +233,15 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Be prepared</h2>
                 <ul class="list-inline banner-social-buttons">
-                    <li><a href="//nostradamiq.org/landing/resources/disaster_supply_kit.html" target="_blank" class="btn btn-default btn-lg">Supply Kit</a></li>
-                    <li><a href="//nostradamiq.org/landing/resources/family_awareness_plan.html" target="_blank" class="btn btn-default btn-lg">Prepare Your Family!</a></li>
-                    <li><a href="//nostradamiq.org/landing/resources/general_disaster_resources.html" target="_blank" class="btn btn-default btn-lg">Generally useful Resources for your House, Pet and more!</a></li>
-                    <li><a href="//nostradamiq.org/landing/resources/floods_resources.html" target="_blank" class="btn btn-default btn-lg">Floods</a></li>
-                    <li><a href="//nostradamiq.org/landing/resources/earthquake_resources.html" target="_blank" class="btn btn-default btn-lg">Earthquakes</a></li>
-                    <li><a href="//nostradamiq.org/landing/resources/tsunami_resources.html" target="_blank" class="btn btn-default btn-lg">Tsunamis</a></li>
-                    <li><a href="//nostradamiq.org/landing/resources/high_surf_resources.html" target="_blank" class="btn btn-default btn-lg">High Surf</a></li>
-                    <li><a href="//nostradamiq.org/landing/resources/volcanoes_resources.html" target="_blank" class="btn btn-default btn-lg">Volcanoes</a></li>
-                    <li><a href="//nostradamiq.org/landing/resources/tropical_cyclones_resources.html" target="_blank" class="btn btn-default btn-lg">Tropical Cyclones</a></li>
+                    <li><a href="//nostradamiq.org/landing/resources/disaster_supply_kit.html" class="btn btn-default btn-lg">Supply Kit</a></li>
+                    <li><a href="//nostradamiq.org/landing/resources/family_awareness_plan.html" class="btn btn-default btn-lg">Prepare Your Family!</a></li>
+                    <li><a href="//nostradamiq.org/landing/resources/general_disaster_resources.html" class="btn btn-default btn-lg">Generally useful Resources for your House, Pet and more!</a></li>
+                    <li><a href="//nostradamiq.org/landing/resources/floods_resources.html" class="btn btn-default btn-lg">Floods</a></li>
+                    <li><a href="//nostradamiq.org/landing/resources/earthquake_resources.html" class="btn btn-default btn-lg">Earthquakes</a></li>
+                    <li><a href="//nostradamiq.org/landing/resources/tsunami_resources.html" class="btn btn-default btn-lg">Tsunamis</a></li>
+                    <li><a href="//nostradamiq.org/landing/resources/high_surf_resources.html" class="btn btn-default btn-lg">High Surf</a></li>
+                    <li><a href="//nostradamiq.org/landing/resources/volcanoes_resources.html" class="btn btn-default btn-lg">Volcanoes</a></li>
+                    <li><a href="//nostradamiq.org/landing/resources/tropical_cyclones_resources.html" class="btn btn-default btn-lg">Tropical Cyclones</a></li>
                  </ul>
             </div>
         </div>
