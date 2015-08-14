@@ -82,6 +82,15 @@
     -moz-border-radius: 200%;
     -o-border-radius: 200%;
 }
+
+@media only screen and (max-width:570px) {
+    .cesium-viewer-fullscreenContainer {
+        left: 8px;
+        top: 8px;
+        width: 40px;
+        height: 40px;
+    }
+}
 /* -------------------- */
  
 .cesium-viewer-toolbar {
