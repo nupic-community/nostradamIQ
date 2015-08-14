@@ -739,8 +739,8 @@ a:focus {
     }
 }
 
-#supply-kit-intro {
-    background-image: url(../img/intro_bg.jpg);
+#supply-kit {
+    background-image: url(../img/resources_kit.jpg);
 }
 
 #tsunami {
@@ -753,6 +753,24 @@ a:focus {
 
 #volcanoes {
     background-image: url(../img/resources_volcanoe.jpg);
+}
+
+#earthquake {
+    background-image: url(../img/earthquake_83016693.jpg);
+}
+
+#high-surf {
+    background-image: url(../img/resources_high_surf.jpg);
+    background-position: center top;
+}
+
+#general {
+    background-image: url(../img/resources_general.jpg);
+}
+
+#family {
+    background-image: url(../img/resources_family.jpg);
+    background-position: center top;
 }
 
 .banner-resources-buttons {
