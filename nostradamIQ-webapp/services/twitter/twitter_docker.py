@@ -9,7 +9,9 @@ from tweepy import Stream
 import json
 import re
 import time
+import datetime
 import sys
+import os
 import redis
 
 from tweet2geoJSON import format2geoJSON
@@ -17,47 +19,45 @@ from httplib import IncompleteRead
 
 from API_KEYS import consumer_key, consumer_secret, access_token, access_token_secret
 
-CUTOFF = -1
+REDIS = redis.Redis()
+
+# Delete old file?
+DELETE_OLD = False
 
 countAll = 0
 countLoc = 0
 
-outputfile = "tweetsQuake.txt"
-outputgeo = "tweetsQuake.geojson"
+# holds the name of the searcharray
+searchArray = None
 
-with open(outputgeo, 'a+') as outPgeo:
-    outPgeo.write('{"type":"FeatureCollection","features":[')
-    outPgeo.write('\n')
-outPgeo.close()
+ # tweets_ARRAY_HOUR_DATE.geojson
+outputgeo_tpl = "tweets_%s_%s_%s.geojson"
+# name of current file:
+outputgeo = None
+
+nowDateTime = getCurrentDateKey()
+currentKeyDateTime = None
+
+# https://dev.twitter.com/rest/public/search
+KEYWORDS = {
+        'quake': ["#earthquake", "#quake", "#shakeAlert", "#quakeAlert", "shakeAlert", "quakeAlert", "earthquake", "quake", "from:USGSted", "from:everyEarthquake"]
+}
+
+def getCurrentDateKey(): 
+    return "{0}:{1}".format(hour, date)
 
 class StdOutListener(StreamListener):
 
     def on_data(self, data):
-        global countLoc, countAll
+        global countLoc, countAll, outputgeo, nowDateTime
+
+        # update nowDateTime:
+        nowDateTime = getCurrentDateKey()
 
         try:
             tweet = json.loads(data)
-
-            if countLoc == CUTOFF : exit(0)
-
-            """
-            # only show english & german tweets with geo location and or place defined: TODO
-            if (("coordinates" in tweet) or ("place" in tweet)): # and ("lang" in tweet["user"]) and (tweet["user"]["lang"] == "en" or tweet["user"]["lang"] == "de"):
-                if (tweet["coordinates"] == None):
-                    print( '@%s tweeted: %s\nPlace: %s\n' % ( tweet['user']['screen_name'], tweet['text'], tweet["place"]) )
-                elif (tweet["place"] == None):
-                    print( '@%s tweeted: %s\nlat, lng: %s\n' % ( tweet['user']['screen_name'], tweet['text'], tweet["coordinates"] ) )
-                else:
-                    print( '@%s tweeted: %s\nPlace, lat, lng: %s, %s\n' % ( tweet['user']['screen_name'], tweet['text'], tweet["place"], tweet["coordinates"]) )
-            """
-
             print('@%s tweeted: %s\nPlace: %s (%s)\n' % ( tweet['user']['screen_name'], tweet['text'], tweet['place'], tweet['coordinates']))
             countAll += 1
-            # write to .txt file
-            with open(outputfile, 'a+') as outP:
-                    outP.write(str(tweet)) 
-                    outP.write('\n')
-            outP.close()
             # convert to and write as .geoJSON:
             geoJson = format2geoJSON(tweet)
             if geoJson != None:
@@ -67,7 +67,6 @@ class StdOutListener(StreamListener):
                     outPgeo.write(',\n')
                 outPgeo.close()
                 countLoc += 1
-            # notification:
             if countAll%100 == 0:
                 print "Saw {0} tweets; {1} of them had location information!\n".format(countAll, countLoc)
 
@@ -79,40 +78,59 @@ class StdOutListener(StreamListener):
         print 'Error: ', status
 
 if __name__ == '__main__':
-    try:
-        l = StdOutListener()
-        auth = OAuthHandler(consumer_key, consumer_secret)
-        auth.set_access_token(access_token, access_token_secret)
+    # Get SysArgs and the keyword array:
+    searchArray = sys.argv[1:]
+    try: 
+        keywordArray = KEYWORDS[searchArray]
+    except:
+        print "keywordArray with the name {0} does not exsist!\n".format(searchArray)
+        exit(0)
+  
+    while nowDateTime == currentKeyDateTime: # Changes every hour, so that we publish hourly
+        try:
+            l = StdOutListener()
+            auth = OAuthHandler(consumer_key, consumer_secret)
+            auth.set_access_token(access_token, access_token_secret)
+            stream = Stream(auth, l)
+            stream.filter(track=keywordArray)#, async=True) #async for multithreating
+        except KeyboardInterrupt:
+            print "\n\nYOU INTERRUPTED!\nFINISH WRITING FILE\n"
+            print "Saw {0} tweets; {1} of them had location information!\n".format(countAll, countLoc)
+            with open(outputgeo, 'a+') as outPgeo:
+                outPgeo.write(']}')
+            outPgeo.close()
+        except IncompleteRead: 
+            print "Twitter Restriction set in... \nALL THAT BEAUTIFUL DATA :'(\n"
+            time.sleep(10) # sleep for 10 seconds twitters restrictions
 
-        stream = Stream(auth, l)
-
-
-        # https://dev.twitter.com/rest/public/search
-        keywords = ["#earthquake", "#quake", "#shakeAlert", "#quakeAlert", "shakeAlert", "quakeAlert", "earthquake", "quake", "from:USGSted", "from:everyEarthquake"] #, "-movie", "-vid", "-pic", "-picture", "-clip", "-video", "-past"]
-
-        # keywords = sys.argv[1:]
-
-        """ FOR CMD line args:
-        if len(sys.argv) < 2 : 
-    	   print 'USAGE : python get_tweets.py [n: CUTOFF] [keyword1 keyword2 ... keywordn]'
-    	   exit(0)
-
-        try : 
-            CUTOFF = int(sys.argv[1])
-            queries = sys.argv[2:]
-        except : queries = sys.argv[1:]
-        """
-
-        stream.filter(track=keywords)#, async=True) #async for multithreating
-
-    except KeyboardInterrupt:
-        print "\n\nYOU INTERRUPTED!\nFINISH WRITING FILE\n"
-        print "Saw {0} tweets; {1} of them had location information!\n".format(countAll, countLoc)
+    else:
+        # write last line of old one:
         with open(outputgeo, 'a+') as outPgeo:
             outPgeo.write(']}')
         outPgeo.close()
 
-    except IncompleteRead: 
-        print "Twitter Restriction set in... \nALL THAT BEAUTIFUL DATA :'(\n"
-        time.sleep(10) # sleep for 10 seconds twitters restrictions
+        # publish old one for one week
+        with open(outputgeo, 'r') as uploadFile:
+            uploadFileJSON = json.loads(uploadFile)
+        uploadFile.close()
+        REDIS.setex(outputgeo, uploadFileJSON, 60*60*24*7) # a week in seconds
+        
+        # Delete old file?
+        if DELETE_OLD: os.remove(outputgeo)
+
+        # update KeyDateTime and nowDateTime:
+        currentKeyDateTime = getCurrentDateKey()
+        nowDateTime = getCurrentDateKey()        
+        # set new name:
+        outputgeo = outputgeo_tpl % (searchArray, currentKeyDateTime.split(':')[0], currentKeyDateTime.split(':')[1])
+
+        # write first line of new one
+        with open(outputgeo, 'a+') as outPgeo:
+            outPgeo.write('{"type":"FeatureCollection","features":[')
+            outPgeo.write('\n')
+        outPgeo.close()
+        # Now back to main loop
+
+
+
 
