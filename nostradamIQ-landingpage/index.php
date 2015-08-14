@@ -344,7 +344,7 @@
                         <label for='subject' class='col-sm-2 control-label'><i class='fa fa-heart-o fa-fw'></i></label>
                         <div class='col-sm-9'>
                             <select id='subject' name='subject' class='form-control'>
-                                <option value='' disabled selected></option>
+                                <option value='' disabled selected>Select an Option</option>
                                 <option value='ContributeData'>I want to help you gather Data!</option>
                                 <option value='ContributeFunding'>I want to become a Sponsor!</option>
                                 <option value='ContributeTranslator'>I want to help you translate!</option>
