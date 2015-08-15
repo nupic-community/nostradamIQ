@@ -37,20 +37,16 @@ outputgeo_tpl = "tweets_%s_%s_%s.geojson"
 # name of current file:
 outputgeo = None
 
-nowDateTime = getCurrentDateKey()
-currentKeyDateTime = None
-
-# https://dev.twitter.com/rest/public/search
-KEYWORDS = {
-        'quake': ["#earthquake", "#quake", "#shakeAlert", "#quakeAlert", "shakeAlert", "quakeAlert", "earthquake", "quake", "from:USGSted", "from:everyEarthquake"]
-}
-
 
 def getCurrentDateKey():
     # Returns: str: HH:DD-MM-YYYY 
     hour = datetime.datetime.now().hour
     date = "{0}-{1}-{2}".format(datetime.datetime.now().day,datetime.datetime.now().month, datetime.datetime.now().year)
     return "{0}:{1}".format(hour, date)
+
+nowDateTime = getCurrentDateKey()
+currentKeyDateTime = None
+
 
 class StdOutListener(StreamListener):
 
@@ -86,14 +82,22 @@ class StdOutListener(StreamListener):
         print 'Error: ', status
 
 if __name__ == '__main__':
+    """
+    # https://dev.twitter.com/rest/public/search
+    KEYWORDS = {
+            "quake": ["#earthquake", "#quake", "#shakeAlert", "#quakeAlert", "shakeAlert", "quakeAlert", "earthquake", "quake", "from:USGSted", "from:everyEarthquake"]
+    }
     # Get SysArgs and the keyword array:
     searchArray = sys.argv[1:]
     try: 
-        keywordArray = KEYWORDS[searchArray]
+        keywordArray = KEYWORDS[str(searchArray)]
     except:
         print "keywordArray with the name {0} does not exsist!\n".format(searchArray)
         exit(0)
-  
+    """
+    searchArray = "quake"
+    keywordArray = ["#earthquake", "#quake", "#shakeAlert", "#quakeAlert", "shakeAlert", "quakeAlert", "earthquake", "quake", "from:USGSted", "from:everyEarthquake"]
+
     while nowDateTime == currentKeyDateTime: # Changes every hour, so that we publish hourly
         try:
             l = StdOutListener()
