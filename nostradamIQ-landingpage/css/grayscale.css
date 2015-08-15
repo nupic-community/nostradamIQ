@@ -717,8 +717,44 @@ a:focus {
 /* -------------------- resources ----------------- */
 
 .resources-intro {
-    max-height: 800px;
+    max-height: 800px !important;
     margin: 70px auto;
+    text-align: center;
+    color: #111;
+    background-color: #000;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+}
+
+.resources-intro .intro-body {
+    width: 100%;
+    display: block;
+    padding: 0;
+    bottom: 20px;
+    position: absolute;
+}
+
+.resources-intro .intro-body h1 {
+    padding: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(199, 0, 0, 0.7);
+}
+
+.resources-intro .credits {
+    font-size: 10px !important;
+    margin: 0 0 3px 0 !important;
+    text-align: center !important;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(199, 0, 0, 0.65);
 }
 
 @media(min-width:768px) {
@@ -736,6 +772,22 @@ a:focus {
         box-sizing: border-box;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
+        position: relative;
+    }
+    
+    .resources-intro .intro-body {
+        width: 100%;
+        display: block;
+        padding: 0;
+        bottom: 100px;
+        position: absolute;
+    }
+    
+    .resources-intro .intro-body h1 {
+        padding: 10px;
+        text-align: center;
+        color: #fff;
+        background-color: rgba(199, 0, 0, 0.7);
     }
 }
 
@@ -783,7 +835,7 @@ a:focus {
 }
 
 #resources {
-    margin-top: -200px;
+    margin-top: 50px;
     max-width: 800px;
     padding-top: 10px !important;
     text-align: left;
@@ -791,14 +843,9 @@ a:focus {
 
 @media(max-width:768px) {
     #resources {
-        margin-top: -200px;
         max-width: 800px;
-        padding-top: 10px !important;
+        padding-top: 0px !important;
         text-align: left;
-    }
-    
-    #resources h1 {
-        margin-bottom: 100px !important;
     }
     
     #resources h3 {
@@ -810,17 +857,8 @@ a:focus {
     }
 }
 
-#resources h1 {
-    width: auto;
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 200px;
-    color: #eee;
-    background-color: rgba(199, 0, 0, 0.65);
-}
-
 #resources h3 {
-    margin: 50px 0 20px 0;
+    margin: 50px 0 20px 0 !important;
     padding-bottom: 3px;
     text-align: left;
     font-size: 18px;
@@ -843,7 +881,6 @@ a:focus {
 }
 
 #resources ol, #resources ul {
-    margin-bottom: 50px;
     padding: 0 0 0 25px;
     text-align: left;
     font-size: 16px;
