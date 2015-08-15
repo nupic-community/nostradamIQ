@@ -527,8 +527,9 @@ var layers = {
             { I: "John-Peabody-Harrington-Audio-Collection", T: 'kml', G: "/webapp/layers/kml/3rdparty/places/John-Peabody-Harrington-Audio-Collection.kmz", S: "The Rosetta Project", S: "http://rosettaproject.org/projects/google-earth/", N: "John Peabody Harrington Audio Collection"},
             { I: "bible-locations", T: 'kml', G: "/webapp/layers/kml/3rdparty/places/bible-locations.kmz", S: "Google Earth Community build", S: "http://www.gelib.com/", N: "Locations of the Bible"},
             { I: "places-of-interest", T: 'kml', G: "/webapp/layers/kml/3rdparty/places/places-of-interest.kmz", S: "Google Earth Community build", S: "http://www.gelib.com/", N: "Some Places of Interest"},
-            { I: "WATERS-Data", T: 'kml', G: "/webapp/layers/kml/3rdparty/humanitarian/WATERS-Data.kmz", S: "US EPA", S: "http://water.epa.gov/scitech/datait/tools/waters/tools/waters_kmz.cfm" N: "WATERS Water assessment data"},
-            { I: "geonames-features", T: 'kml', G: "/webapp/layers/kml/3rdparty/places/geonames-features.kmz", S: "geonames.org", S: "http://www.geonames.org" N: "Geonames network link"}
+            { I: "WATERS-Data", T: 'kml', G: "/webapp/layers/kml/3rdparty/humanitarian/WATERS-Data.kmz", S: "US EPA", U: "http://water.epa.gov/scitech/datait/tools/waters/tools/waters_kmz.cfm", N: "WATERS Water assessment data"},
+            { I: "geonames-features", T: 'kml', G: "/webapp/layers/kml/3rdparty/places/geonames-features.kmz", S: "geonames.org", U: "http://www.geonames.org", N: "Geonames network link"},
+            { I: "crimes-hist-usa", Z: true, T: 'kml', G: "/webapp/layers/kml/3rdparty/places/crimes-hist-usa.kmz", S: "Google Earth Community build", U: "http://www.gelib.com/", N: "Crimes and Criminals from the past 200 yrs (only USA)"}
             
         ]},
         /*
