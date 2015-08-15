@@ -223,6 +223,16 @@ a:focus {
     -o-background-size: cover;
 }
 
+@media only screen and (max-width:570px) {
+    .intro {
+        padding: 150px 0;
+    }
+    
+    .intro .intro-body {
+        padding: 0 !important;
+    }
+}
+
 .intro .intro-body {
     padding: 18% 0 0 0;
     display: table-cell;
