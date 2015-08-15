@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<NetworkLink>
+	<name>Crime Scenes Serial Killers</name>
+	<visibility>0</visibility>
+	<Snippet maxLines="0"></Snippet>
+	<description><![CDATA[<a href="http://www.gelib.com/crime-scenes.htm">More Information</a><br><br>]]></description>
+	<flyToView>1</flyToView>
+	<Url>
+		<href>http://bbs.keyhole.com/ubb/ubbthreads.php?ubb=download&amp;Number=852212&amp;filename=The%20Dark%20Side%20of%20America.kmz&amp;</href>
+		<viewRefreshMode>onRequest</viewRefreshMode>
+	</Url>
+</NetworkLink>
+</kml>
