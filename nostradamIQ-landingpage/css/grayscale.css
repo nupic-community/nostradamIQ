@@ -1035,31 +1035,26 @@ body {
     background-image: url(../img/intro_bg.jpg);
 }
 
+#contributors-intro h1 {
+    background-color: rgba(10, 46, 196, 0.7);
+}
+
 #contributors {
     max-width: 800px;
-    margin-top: -200px;
+    margin-top: 50px;
     padding-top: 0px !important;
 }
 
 @media(max-width:768px) {
     #contributors {
-        margin-top: -200px;
+        margin-top: 20px;
         max-width: 800px;
-        padding-top: 10px !important;
+        padding-top: 0px !important;
     }
     
     #contributors h1 {
         margin-bottom: 100px !important;
     }
-}
-
-#contributors h1 { 
-    width: auto;
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 200px;
-    color: #eee;
-    background-color: rgba(0, 62, 147, 0.8);
 }
 
 #contributors h2 {
