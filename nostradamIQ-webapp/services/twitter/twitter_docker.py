@@ -95,6 +95,7 @@ if __name__ == '__main__':
         print "keywordArray with the name {0} does not exsist!\n".format(searchArray)
         exit(0)
     """
+    first = True
     searchArray = "quake"
     keywordArray = ["#earthquake", "#quake", "#shakeAlert", "#quakeAlert", "shakeAlert", "quakeAlert", "earthquake", "quake", "from:USGSted", "from:everyEarthquake"]
 
@@ -116,10 +117,12 @@ if __name__ == '__main__':
             time.sleep(10) # sleep for 10 seconds twitters restrictions
 
     else:
-        # write last line of old one:
-        with open(outputgeo, 'a+') as outPgeo:
-            outPgeo.write(']}')
-        outPgeo.close()
+        if not first:
+            # write last line of old one:
+            with open(outputgeo, 'a+') as outPgeo:
+                outPgeo.write(']}')
+            outPgeo.close()
+
 
         # publish old one for one week
         with open(outputgeo, 'r') as uploadFile:
@@ -145,6 +148,9 @@ if __name__ == '__main__':
             outPgeo.write('{"type":"FeatureCollection","features":[')
             outPgeo.write('\n')
         outPgeo.close()
+
+        # not the fist one anymore:
+        first = False
         # Now back to main loop
 
 
