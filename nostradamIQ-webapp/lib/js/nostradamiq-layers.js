@@ -47,10 +47,10 @@ var layers = {
             { C: true, I: "kml-usgs-eq30dda", ML: "usgs-eq", T: 'kml', G: "//earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_month_depth_animated_link.kml", S: "USGS Earthquake Hazard Program", U: "//earthquake.usgs.gov/", N: "USGS 30 days, Colored by Depth, ANIMATED"},
             { I: "kml-emsc", T: 'kml', P: true, ML: "usgs-eq", G: "//www.emsc-csem.org/Earthquake/Map/earth/kml.php", S: "Centre Sismologique Euro-Méditerranéen (CSEM) Euro-Med earthquakes", U: "//www.emsc-csem.org/", N: "Euro-Med Earthquakes - CSEM/EMSC"},
             { P: true, I: "kml-buoy", T: 'kml', G: "//www.ndbc.noaa.gov/kml/marineobs_as_kml.php?sort=owner", S: "National Oceanic and Atmospheric Administration (NOAA) National Data Buoy Center", U: "//www.ndbc.noaa.gov/", N: "NOAA Buoys"},
-            { P: true, I: "landslides", T: 'kml', G: "//data.nasa.gov/api/geospatial/h9d8-neg4?method=export&format=KMZ", S: "NASA DATA PORTAL", U: "https://data.nasa.gov/Earth-Science/Global-Landslide-Catalog/h9d8-neg4", N: "Global Landslides"},
-            { I: "eqs_germany_last100yrs", Z:true, T: 'kml', G: "/webapp/layers/kml/3rdparty/events/eqs_germany_last100yrs.kmz", S: "USGS Earthquake Search", U: "http://earthquake.usgs.gov/earthquakes/search/", N: "All Earthquakes in Germany during the last 100 yrs"},
-            { I: "eqs_germany_ever", Z:true, T: 'kml', G: "/webapp/layers/kml/3rdparty/events/eqs_germany_ever.kmz", S: "USGS Earthquake Search", U: "http://earthquake.usgs.gov/earthquakes/search/", N: "All Earthquakes in Germany EVER"},
-            { I: "eqs_nepal_ever", Z:true, T: 'kml', G: "/webapp/layers/kml/3rdparty/events/eqs_nepal_ever.kmz", S: "USGS Earthquake Search", U: "http://earthquake.usgs.gov/earthquakes/search/", N: "All Earthquakes in Nepal EVER"}
+            { P: true, I: "landslides", T: 'kml', ML: "usgs-eq", G: "//data.nasa.gov/api/geospatial/h9d8-neg4?method=export&format=KMZ", S: "NASA DATA PORTAL", U: "https://data.nasa.gov/Earth-Science/Global-Landslide-Catalog/h9d8-neg4", N: "Global Landslides"},
+            { I: "eqs_germany_ever", Z: true, T: 'geojson', ML: "usgs-eq", G: "/webapp/layers/geojson/eqs_germany_all_ever.geojson", S: "USGS Earthquake Search", U: "http://earthquake.usgs.gov/earthquakes/search/", N: "All Earthquakes in Germany EVER"},
+            { I: "eqs_nepal_ever", Z: true, T: 'geojson', ML: "usgs-eq", G: "/webapp/layers/geojson/eqs_nepal_all_ever.geojson", S: "USGS Earthquake Search", U: "http://earthquake.usgs.gov/earthquakes/search/", N: "All Earthquakes in Nepal EVER"},
+            { I: "eqs_results_01011900_2015_6", T: 'geojson', ML: "usgs-eq", G: "/webapp/layers/geojson/nostradamIQ/eqs_results_01011900_2015_6.geojson", S: "nostradamIQ-Demo App", U: "https://github.com/nupic-communitiy/nostradamIQ/blob/master/demo_app", N: "All M6+ Earthquakes since 1900 processed by NuPIC"}
         ]},
         SeismicStations: { N: "Seismic Stations", icon: "rss", '>': [
             { I: "iris-st-active", T: 'kml', G: "//ds.iris.edu/cgi-bin/kmlstationinfo/_ACTIVE?kmz=1", S: "Incorporated Research Institutions for Seismology (IRIS)", U: "//ds.iris.edu/cgi-bin/kmlstationinfo/", N: "IRIS Active Stations"},
@@ -197,9 +197,10 @@ var layers = {
                 { C: true, I: "kml-es4dteca", T: 'kml', G: "//sol.spacenvironment.net/~ionops/kml_files/ES4D_TEC_anim_Ionops.kml", S: "Communcation Alert and Prediction Center (CAPS) / Earth Space 4D (ES4D) Ionops, Utah State University", U: "//sol.spacenvironment.net/~ionops/", N: "Total Electron Content (animated)"}
         ]},
         Twitter: { N: "Twitter Stream Listener", icon: "twitter", '>': [
-                // TODO Link to goeJSONs for various twitter streams:
-                { I: "twitter-quake", T: 'geojson', G: "/webapp/layers/geojson/twitter/tweetsQuake.geojson", MI: "/webapp/img/twitter-icon.png", S:"nostradamIQ's own Twitter Listeners", U: "//nostradamiq.org/landing/resources/our_twitter_listener.html", N: "Twitter Stream containing #quake" },
-                { I: "twitter-quake2", T: 'geojson', G: "/webapp/layers/geojson/twitter/tweetsQuake2.geojson", MI: "/webapp/img/twitter-icon.png", S:"nostradamIQ's own Twitter Listeners", U: "//nostradamiq.org/landing/resources/our_twitter_listener.html", N: "Twitter Stream containing #quake Small" },
+                // TODO Link to geoJSONs for various twitter streams:
+                { I: "twitter-quake", T: 'geojson', G: "/webapp/layers/geojson/twitter/tweetsQuake.geojson", MI: "/webapp/img/twitter-icon.png", S:"nostradamIQ's own Twitter Listeners", U: "//nostradamiq.org/landing/resources/our_twitter_listener.html", N: "Twitter Stream containing #quake 2" },
+                { I: "twitter-quake2", T: 'geojson', G: "/webapp/layers/geojson/twitter/tweetsQuake2.geojson", MI: "/webapp/img/twitter-icon.png", S:"nostradamIQ's own Twitter Listeners", U: "//nostradamiq.org/landing/resources/our_twitter_listener.html", N: "Twitter Stream containing #quake 1" },
+                { I: "twitter-quake3", T: 'geojson', G: "/webapp/layers/geojson/twitter/tweetsQuake3.geojson", MI: "/webapp/img/twitter-icon.png", S:"nostradamIQ's own Twitter Listeners", U: "//nostradamiq.org/landing/resources/our_twitter_listener.html", N: "Twitter Stream containing #quake 3" },
                 { I: "twitter-quake-api", T: 'geojson', G: "/webapp/layers/geojson/twitter/tweets_quake", MI: "/webapp/img/twitter-icon.png", S:"nostradamIQ's own Twitter Listeners", U: "//nostradamiq.org/landing/resources/our_twitter_listener.html", N: "Twitter Stream containing #quake API" }
         ]},
         Report: {  N: "Climate Viewer Reports", icon: "bullhorn", '>': [
@@ -226,6 +227,7 @@ var layers = {
     },
 
     Historical: {N: "Historical Events", icon: "clock", '>': [
+                { I: "munichre-2012", T: 'kml', G: "/webapp/layers/kml/Natural-Disasters-2012-CV3D.kmz", S: "Munich Re NATCATSERVICE “Natural Catastrophes January – June 2012 World map”", U: "http://www.munichre.com/en/reinsurance/business/non-life/georisks/natcatservice/default.aspx", N: "Natural Catastrophes January – June 2012"},
                 { I: "historical_events", T: 'kml', P: true, G: "//agsc.pdc.org/arcgis/rest/services/global/pdc_historical_hazards/MapServer/kml/mapImage.kmz", S: "PDC", U: "//agsc.pdc.org/arcgis/rest/services/global/pdc_historical_hazards/MapServer", N: "Historical Events"},
                 { I: "US_civil_war", P: true, T: 'kml', G: "/webapp/layers/kml/3rdparty/events/US_civil_war.kmz", S: "Google-Maps Gallery", U: "http://maps.google.com/gallery/details?id=zcb1ceNe4gmU.k8RXpchKRzec&hl=en", N: "US Civil War"},
                 { I: "College_Sexual_Assault_Investigations", P: true, T: 'kml', G: "/webapp/layers/kml/3rdparty/events/College_Sexual_Assault_Investigations.kmz", S: "Google-Maps Gallery", U: "http://maps.google.com/gallery/details?id=zogHuYnuB-1k.kAnDHXNo5DGw&hl=en", N: "US College Sexual Assault Investigations"},
