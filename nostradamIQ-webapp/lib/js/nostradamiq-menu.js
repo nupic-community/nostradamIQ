@@ -227,7 +227,7 @@ function loadGIBS(layerId) {
     formatSubmit: 'yyyy-mm-dd',
     min: [2012, 4, 8],
     max: Cesium.JulianDate.now(),
-    container: '#'+ layerId + '-datepicker',
+    container: '#datepicker-container', //'#'+ layerId + '-datepicker',
     //editable: true, //
     closeOnSelect: true,
     closeOnClear: false
@@ -421,7 +421,7 @@ function loadTwitter(layerId, geoDataSrc, proxy, markerScale, markerImg, markerC
     formatSubmit: 'dd-mm-yyyy',
     min: -7, // [08, 14, 2015],
     max: true,
-    container: '#'+ layerId + '-datepicker',
+    container: '#datepicker-container', //'#'+ layerId + '-datepicker',
     //editable: true, //
     closeOnSelect: true,
     closeOnClear: false,
@@ -434,7 +434,7 @@ function loadTwitter(layerId, geoDataSrc, proxy, markerScale, markerImg, markerC
       formatSubmit: 'hh',
       max: true,
       interval: 60,
-      container: '#'+ layerId + '-timepicker',
+      container: '#timepicker-container', //'#'+ layerId + '-timepicker',
       //editable: true, //
       closeOnSelect: true,
       closeOnClear: false,
