@@ -764,7 +764,7 @@ a:focus {
     margin: 0 0 3px 0 !important;
     text-align: center !important;
     color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(199, 0, 0, 0.65);
+    background-color: rgba(199, 0, 0, 0.7);
 }
 
 @media(min-width:768px) {
