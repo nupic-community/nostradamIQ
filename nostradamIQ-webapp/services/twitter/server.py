@@ -21,7 +21,7 @@ REDIS = redis.Redis()
 # stats_ARRAY_HOUR_DATE -> ((ALL, WITH_GEO), (ALL_INTV, WITH_GEO_INTV))
 
 def app(environ, start_response):
-    start_response('200 OK', [('Content-Type', 'text/html'), ('Access-Control-Allow-Origin', '*')])
+    start_response('200 OK', [('Content-Type', 'application/json'), ('Access-Control-Allow-Origin', '*')])
     parameters = parse_qs(environ.get('QUERY_STRING', ''))
     filename = "No filename given"
     if 'file' in parameters:
