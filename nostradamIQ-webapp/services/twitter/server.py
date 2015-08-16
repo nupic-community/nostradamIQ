@@ -28,25 +28,24 @@ def app(environ, start_response):
         filename = parameters['file'][0]
         response = REDIS.get(filename)
         if response != None:
-        	return response
+            return response
         else:
-        	# retrieve geoJSON file: # ONLY IF WE DON'T DELETE THEM!
-        	if os.path.isfile(filename):
-	        	with open(filename, 'r') as responseFile:
-	            	response = json.loads(responseFile)
-	            responseFile.close()
-	        	if response != None:
-	        		return response	
-	    print "ERROR: FILE NOT FOUND!\n"
-	    return ""
+            # retrieve geoJSON file: # ONLY IF WE DON'T DELETE THEM!
+            if os.path.isfile(filename):
+                with open(filename, 'r') as responseFile:
+                    response = json.loads(responseFile)
+                responseFile.close()
+                if response != None:
+                    return response	
+        print "ERROR: FILE NOT FOUND!\n"
+        return ""
     print "ERROR: REQUEST COULD NOT BE MADE!\n"
     return ""
 
-
 if __name__ == '__main__':
-   from wsgiref.simple_server import make_server
-   url = ''
-   port = 8088
-   srv = make_server(url, port, app)
-   print "Twitter-Server listening on {0}:{1}\n".format(url, port)
-   srv.serve_forever()
+    from wsgiref.simple_server import make_server
+    url = ''
+    port = 8088
+    srv = make_server(url, port, app)
+    print "Twitter-Server listening on {0}:{1}\n".format(url, port)
+    srv.serve_forever()

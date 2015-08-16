@@ -98,60 +98,68 @@ if __name__ == '__main__':
     first = True
     searchArray = "quake"
     keywordArray = ["#earthquake", "#quake", "#shakeAlert", "#quakeAlert", "shakeAlert", "quakeAlert", "earthquake", "quake", "from:USGSted", "from:everyEarthquake"]
+    
+    while True:
+        while nowDateTime == currentKeyDateTime: # Changes every hour, so that we publish hourly
+            try:
+                l = StdOutListener()
+                auth = OAuthHandler(consumer_key, consumer_secret)
+                auth.set_access_token(access_token, access_token_secret)
+                stream = Stream(auth, l)
+                stream.filter(track=keywordArray)#, async=True) #async for multithreating
+            except KeyboardInterrupt:
+                print "\n\nYOU INTERRUPTED!\nFINISH WRITING FILE\n"
+                print "Saw {0} tweets; {1} of them had location information!\n".format(countAll, countLoc)
+                with open(outputgeo, 'a+') as outPgeo:
+                    outPgeo.write(']}')
+                outPgeo.close()
+                break
+            except IncompleteRead: 
+                print "Twitter Restriction set in... \nALL THAT BEAUTIFUL DATA :'(\n"
+                time.sleep(10) # sleep for 10 seconds twitters restrictions
+            
+        else:
+            if not first:
+                # write last line of old one:
+                with open(outputgeo, 'a+') as outPgeo:
+                    outPgeo.write(']}')
+                outPgeo.close()
+                # publish old one for one week
+                with open(outputgeo, 'r') as uploadFile:
+                    uploadFileJSON = json.loads(uploadFile)
+                uploadFile.close()
+                REDIS.setex(outputgeo, uploadFileJSON, 60*60*24*7) # a week in seconds
+                # stats_ARRAY_HOUR_DATE -> ((ALL, WITH_GEO), (ALL_INTV, WITH_GEO_INTV))
+                REDIS.set("stats_{0}_{1}_{2}".format(searchArray, currentKeyDateTime.split(':')[0], currentKeyDateTime.split(':')[1]), ((counAll, countLoc), (countAll_intervall, countLoc_intervall)))
+                countAll_intervall = 0 
+                countLoc_intervall = 0             
+                # Delete old file?
+                if DELETE_OLD: os.remove(outputgeo)
 
-    while nowDateTime == currentKeyDateTime: # Changes every hour, so that we publish hourly
-        try:
-            l = StdOutListener()
-            auth = OAuthHandler(consumer_key, consumer_secret)
-            auth.set_access_token(access_token, access_token_secret)
-            stream = Stream(auth, l)
-            stream.filter(track=keywordArray)#, async=True) #async for multithreating
-        except KeyboardInterrupt:
-            print "\n\nYOU INTERRUPTED!\nFINISH WRITING FILE\n"
-            print "Saw {0} tweets; {1} of them had location information!\n".format(countAll, countLoc)
+            # update KeyDateTime and nowDateTime:
+            currentKeyDateTime = getCurrentDateKey()
+            nowDateTime = getCurrentDateKey()        
+            # set new name:
+            outputgeo = outputgeo_tpl % (searchArray, currentKeyDateTime.split(':')[0], currentKeyDateTime.split(':')[1])
+
+            # write first line of new one
             with open(outputgeo, 'a+') as outPgeo:
-                outPgeo.write(']}')
-            outPgeo.close()
-        except IncompleteRead: 
-            print "Twitter Restriction set in... \nALL THAT BEAUTIFUL DATA :'(\n"
-            time.sleep(10) # sleep for 10 seconds twitters restrictions
-
-    else:
-        if not first:
-            # write last line of old one:
-            with open(outputgeo, 'a+') as outPgeo:
-                outPgeo.write(']}')
+                outPgeo.write('{"type":"FeatureCollection","features":[')
+                outPgeo.write('\n')
             outPgeo.close()
 
+            # not the fist one anymore:
+            first = False
+            # Now back to main loop
 
-        # publish old one for one week
-        with open(outputgeo, 'r') as uploadFile:
-            uploadFileJSON = json.loads(uploadFile)
-        uploadFile.close()
-        REDIS.setex(outputgeo, uploadFileJSON, 60*60*24*7) # a week in seconds
-        # stats_ARRAY_HOUR_DATE -> ((ALL, WITH_GEO), (ALL_INTV, WITH_GEO_INTV))
-        REDIS.set("stats_{0}_{1}_{2}".format(searchArray, currentKeyDateTime.split(':')[0], currentKeyDateTime.split(':')[1]), ((counAll, countLoc), (countAll_intervall, countLoc_intervall)))
-        countAll_intervall = 0 
-        countLoc_intervall = 0 
-        
-        # Delete old file?
-        if DELETE_OLD: os.remove(outputgeo)
-
-        # update KeyDateTime and nowDateTime:
-        currentKeyDateTime = getCurrentDateKey()
-        nowDateTime = getCurrentDateKey()        
-        # set new name:
-        outputgeo = outputgeo_tpl % (searchArray, currentKeyDateTime.split(':')[0], currentKeyDateTime.split(':')[1])
-
-        # write first line of new one
-        with open(outputgeo, 'a+') as outPgeo:
-            outPgeo.write('{"type":"FeatureCollection","features":[')
-            outPgeo.write('\n')
-        outPgeo.close()
-
-        # not the fist one anymore:
-        first = False
-        # Now back to main loop
+        #if KeyboardInterrupt:
+        #       print "\n\nYOU INTERRUPTED!\nFINISH WRITING FILE\n"
+        #        print "Saw {0} tweets; {1} of them had location information!\n".format(countAll, countLoc)
+        #        with open(outputgeo, 'a+') as outPgeo:
+        #            outPgeo.write(']}')
+        #        outPgeo.close()
+        #        break
+          
 
 
 

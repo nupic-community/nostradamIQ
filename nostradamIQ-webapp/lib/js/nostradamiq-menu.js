@@ -2,9 +2,9 @@
 
 // Set web root url
 var baseURL = window.location.protocol + "//" + window.location.host + "/webapp/";  // production
-//var proxyURL = 'http://climateviewer.net/netj1/proxy';  // production
+var proxyURL = 'http://climateviewer.net/netj1/proxy';  // production
 //var proxyURL = 'http://nostradamiq.org/webapp/proxy/proxy:8081/?url=';  // local
-var proxyURL = '//nostradamiq.org/webapp/proxy/old/kmz.php';  // dev
+//var proxyURL = '//nostradamiq.org/webapp/proxy/old/kmz.php';  // dev
 //var proxyURL = '//cors-anywhere.herokuapp.com/';
 var proxyEverything = false;
 
@@ -323,13 +323,13 @@ function loadGeoJson(layerId, geoDataSrc, proxy, markerScale, markerImg, markerC
     }
 }
 
-// primarily for PDC's weired JSON format:
-function loadJson(layerId, geoDataSrc, proxy, markerLabel, markerScale, markerImg, markerColor, zoom) {
+// primarily for PDC's weired XML format:
+function loadXML(layerId, geoDataSrc, proxy, markerLabel, markerScale, markerImg, markerColor, zoom) {
     console.log('load json');
     if (proxy) {
-      new Cesium.loadJson(proxy + '?' + geoDataSrc).then(function(jsonData) {
-          // convert json to geoJSON:
-          var geoData = toGeoJSON(jsonData);
+      new Cesium.loadJson(proxy + '?' + geoDataSrc).then(function(xmlData) {
+          // convert xml to geoJSON:
+          var geoData = xml2geoj(jsonData);
           modMarkers(geoData, markerImg, markerScale, markerColor, markerLabel);
           viewer.dataSources.add(geoData);
           activeLayers[layerId] = geoData;
@@ -342,9 +342,9 @@ function loadJson(layerId, geoDataSrc, proxy, markerLabel, markerScale, markerIm
           loadError(layerId, geoDataSrc, error);
       });
     } else {
-      new Cesium.loadJson(geoDataSrc).then(function(jsonData) {
-          // convert json to geoJSON:
-          var geoData = toGeoJSON(jsonData);
+      new Cesium.loadJson(geoDataSrc).then(function(xmlData) {
+          // convert xml to geoJSON:
+          var geoData = xml2geojson(jsonData);
           modMarkers(geoData, markerImg, markerScale, markerColor, markerLabel);
           viewer.dataSources.add(geoData);
           activeLayers[layerId] = geoData;
@@ -561,15 +561,15 @@ function updateLayer(layerId) {
             loadWmts(layerId, geoDataSrc, proxy, geoLayers);
         } else if (l.T === ("base-layer")) {
            loadOsmLayer(layerId, geoDataSrc, proxy, source);
-        } else if (l.T === ('geojson') && layerId.substring(0,6) === 'twitter') { // load twitter data extra
+        } else if (l.T === ("geojson") && layerId.substring(0,10) === "twitter-api") { // load twitter data extra
             loadTwitter(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod);
         } else if (l.T === ("geojson")) {
             loadGeoJson(layerId, geoDataSrc, proxy, markerLabel, markerScale, markerImg, markerColor, zoom);
         } else if (l.T === ("json")) { // PDC
             loadGeoJson(layerId, geoDataSrc, proxy, markerLabel, markerScale, markerImg, markerColor, zoom);
-        } else if (l.T === ('kml')) {
+        } else if (l.T === ("kml")) {
             loadKml(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod);
-        } else if (l.T === ('czml')) {
+        } else if (l.T === ("czml")) {
             loadCzml(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod);
         } else {
             console.log(layerId + ' failed to load map type: ' + l.T);

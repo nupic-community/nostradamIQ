@@ -4,4 +4,7 @@ RUN pip install --upgrade pip
 ADD * /twitter/
 RUN pip install -r /twitter/requirements.txt
 EXPOSE 8088
-# CMD redis-server & cd /twitter && (python twitter_docker.py quake & python server.py & )
+CMD redis-server & 
+WORKDIR /twitter
+# CMD python server.py & 
+# CMD python twitter_docker.py quake & 
