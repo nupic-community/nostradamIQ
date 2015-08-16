@@ -11,27 +11,27 @@
     
     <title>nostradamIQ - sensing our World's disasters</title>
     
-    <link rel="shortcut icon" href="//nostradamiq.org/landing/img/favicon.ico?v=2" />
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="//nostradamiq.org/landing/img/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//nostradamiq.org/landing/img/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//nostradamiq.org/landing/img/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//nostradamiq.org/landing/img/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="//nostradamiq.org/landing/img/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="//nostradamiq.org/landing/img/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="//nostradamiq.org/landing/img/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="//nostradamiq.org/landing/img/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="//nostradamiq.org/landing/img/favicon-196x196.png" sizes="196x196" />
-    <link rel="icon" type="image/png" href="//nostradamiq.org/landing/img/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="//nostradamiq.org/landing/img/favicon-64x64.png" sizes="64x64" />
-    <link rel="icon" type="image/png" href="//nostradamiq.org/landing/img/favicon-48x48.png" sizes="48x48" />
-    <link rel="icon" type="image/png" href="//nostradamiq.org/landing/img/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="//nostradamiq.org/landing/img/favicon-24x24.png" sizes="24x24" />
-    <link rel="icon" type="image/png" href="//nostradamiq.org/landing/img/favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="//nostradamiq.org/landing/img/favicon-128x128.png" sizes="128x128" />
-    <meta name="msapplication-square70x70logo" content="//nostradamiq.org/landing/img/mstile-70x70.png" />
-    <meta name="msapplication-square150x150logo" content="//nostradamiq.org/landing/img/mstile-150x150.png" />
-    <meta name="msapplication-wide310x150logo" content="//nostradamiq.org/landing/img/mstile-310x150.png" />
-    <meta name="msapplication-square310x310logo" content="//nostradamiq.org/landing/img/mstile-310x310.png" />
+    <link rel="shortcut icon" href="//nostradamiq.org/img/favicon.ico?v=2" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="//nostradamiq.org/img/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//nostradamiq.org/img/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//nostradamiq.org/img/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//nostradamiq.org/img/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="//nostradamiq.org/img/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="//nostradamiq.org/img/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="//nostradamiq.org/img/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="//nostradamiq.org/img/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="//nostradamiq.org/img/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="//nostradamiq.org/img/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="//nostradamiq.org/img/favicon-64x64.png" sizes="64x64" />
+    <link rel="icon" type="image/png" href="//nostradamiq.org/img/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/png" href="//nostradamiq.org/img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="//nostradamiq.org/img/favicon-24x24.png" sizes="24x24" />
+    <link rel="icon" type="image/png" href="//nostradamiq.org/img/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="//nostradamiq.org/img/favicon-128x128.png" sizes="128x128" />
+    <meta name="msapplication-square70x70logo" content="//nostradamiq.org/img/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="//nostradamiq.org/img/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="//nostradamiq.org/img/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="//nostradamiq.org/img/mstile-310x310.png" />
     <meta name="application-name" content="nostradamIQ"/>
     <meta name="msapplication-TileColor" content="#e3000b"/>
     
@@ -40,10 +40,10 @@
     <!-- Open Graph Tags -->
         <meta property="og:title" content="sensing our world's disasters">
         <meta property="og:site_name" content="nostradamIQ">
-        <meta property="og:url" content="http://nostradamiq.org/landing/">
+        <meta property="og:url" content="http://nostradamiq.org/">
         <meta property="og:description" content="This is the site description."><!-- description with at least 2 sentences, please ! -->
         <meta property="og:type" content="website">
-        <meta property="og:image" content="http://nostradamiq.org/landing/img/intro_bg.jpg"><!-- at least 1200 x 630 px -->
+        <meta property="og:image" content="http://nostradamiq.org/img/intro_bg.jpg"><!-- at least 1200 x 630 px -->
     <!-- End of Open Graph Tags -->
     
     <!-- Twitter -->
@@ -51,12 +51,12 @@
         <meta name="twitter:site" content="@nostradamiq">
         <meta name="twitter:title" content="sensing our world's disasters">
         <meta name="twitter:description" content="This is the site description."><!-- description with at least 2 sentences, please ! -->
-        <meta name="twitter:image" content="http://nostradamiq.org/landing/img/intro_bg.jpg"><!-- at least 1024 x 512 (collapse to 505 x 253) px -->
+        <meta name="twitter:image" content="http://nostradamiq.org/img/intro_bg.jpg"><!-- at least 1024 x 512 (collapse to 505 x 253) px -->
     <!-- End of Twitter -->
     
     <!-- Google Plus -->
         <meta itemprop="name" content="sensing our world's disasters">
-        <meta itemprop="image" content="http://nostradamiq.org/landing/img/intro_bg.jpg"><!-- at least 497 px in width -->
+        <meta itemprop="image" content="http://nostradamiq.org/img/intro_bg.jpg"><!-- at least 497 px in width -->
     <!-- End of Google Plus -->
     
     <!-- Bootstrap Core CSS: --><link href="css/bootstrap.min.css" rel="stylesheet">
@@ -128,7 +128,7 @@
                                 <a href="//github.com/nupic-community/nostradamIQ/blob/master/CONTRIBUTING.md" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Contribute Now</span></a>
                             </li>
                             <li>
-                                <a href="//nostradamiq.org/webapp" class="btn btn-default btn-lg"><i class="fa fa-rocket fa-fw"></i><span class="network-name">Try our BETA</span></a>
+                                <a href="//nostradamiq.org/webapp" class="btn btn-default btn-lg"><i class="fa fa-rocket fa-fw"></i><span class="network-name"> Try our BETA</span></a>
                             </li>
                         </ul>
                         <a href="#about" class="btn btn-circle page-scroll">
@@ -236,15 +236,15 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Be prepared</h2>
                 <ul class="list-inline banner-social-buttons">
-                    <li><a href="//nostradamiq.org/landing/resources/disaster_supply_kit.html" class="btn btn-default btn-lg">Supply Kit</a></li>
-                    <li><a href="//nostradamiq.org/landing/resources/family_awareness_plan.html" class="btn btn-default btn-lg">Prepare Your Family!</a></li>
-                    <li><a href="//nostradamiq.org/landing/resources/general_disaster_resources.html" class="btn btn-default btn-lg">Generally useful Resources for your House, Pet and more!</a></li>
-                    <li><a href="//nostradamiq.org/landing/resources/floods_resources.html" class="btn btn-default btn-lg">Floods</a></li>
-                    <li><a href="//nostradamiq.org/landing/resources/earthquake_resources.html" class="btn btn-default btn-lg">Earthquakes</a></li>
-                    <li><a href="//nostradamiq.org/landing/resources/tsunami_resources.html" class="btn btn-default btn-lg">Tsunamis</a></li>
-                    <li><a href="//nostradamiq.org/landing/resources/high_surf_resources.html" class="btn btn-default btn-lg">High Surf</a></li>
-                    <li><a href="//nostradamiq.org/landing/resources/volcanoes_resources.html" class="btn btn-default btn-lg">Volcanoes</a></li>
-                    <li><a href="//nostradamiq.org/landing/resources/tropical_cyclones_resources.html" class="btn btn-default btn-lg">Tropical Cyclones</a></li>
+                    <li><a href="//nostradamiq.org/resources/disaster_supply_kit.html" class="btn btn-default btn-lg">Supply Kit</a></li>
+                    <li><a href="//nostradamiq.org/resources/family_awareness_plan.html" class="btn btn-default btn-lg">Prepare Your Family!</a></li>
+                    <li><a href="//nostradamiq.org/resources/general_disaster_resources.html" class="btn btn-default btn-lg">Generally useful Resources for your House, Pet and more!</a></li>
+                    <li><a href="//nostradamiq.org/resources/floods_resources.html" class="btn btn-default btn-lg">Floods</a></li>
+                    <li><a href="//nostradamiq.org/resources/earthquake_resources.html" class="btn btn-default btn-lg">Earthquakes</a></li>
+                    <li><a href="//nostradamiq.org/resources/tsunami_resources.html" class="btn btn-default btn-lg">Tsunamis</a></li>
+                    <li><a href="//nostradamiq.org/resources/high_surf_resources.html" class="btn btn-default btn-lg">High Surf</a></li>
+                    <li><a href="//nostradamiq.org/resources/volcanoes_resources.html" class="btn btn-default btn-lg">Volcanoes</a></li>
+                    <li><a href="//nostradamiq.org/resources/tropical_cyclones_resources.html" class="btn btn-default btn-lg">Tropical Cyclones</a></li>
                  </ul>
             </div>
         </div>
@@ -277,7 +277,7 @@
                 
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="//nostradamiq.org/landing/contributors.html" class="btn btn-default btn-lg"><i class="fa fa-heart fa-fw"></i> All Contributors</a>
+                        <a href="//nostradamiq.org/contributors.html" class="btn btn-default btn-lg"><i class="fa fa-heart fa-fw"></i> All Contributors</a>
                     </li>
                 </ul>
             </div>
@@ -311,7 +311,7 @@
                 <span>Thank you for your support. <i class="fa fa-heart fa-fw"></i></span>
 
                 <p>
-                    <iframe src="http://nostradamiq.herokuapp.com/" width="400" height="350" scrolling="off" overflow="hidden" frameborder="0" seamless>
+                    <iframe src="//nostradamiq.herokuapp.com/" width="400" height="350" scrolling="off" overflow="hidden" frameborder="0" seamless>
                         <p><a href="//nostradamiq.herokuapp.com/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-slack fa-fw"></i><span class="network-name">Join our slack team</span></a></p>
                     </iframe>
                 </p>
@@ -494,7 +494,7 @@
                     <i class="fa fa-fw"></i></a>
             </li><li><a id="pin" href="//pinterest.com/pin/create/bookmarklet/?media=http%3A%2F%2Fnostradamiq.org%2Flanding%2Fimg%2Fintro_bg.jpg&url=http%3A%2F%2Fnostradamiq.org%2Flanding%2F&is_video=false&description=nostradamIQ%20-%20Sensing%20our%20World%27s%20disasters" target="_blank">
                     <i class="fa fa-fw"></i></a>
-            </li><li><a id="mail" href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site http://nostradamiq.org/landing.">
+            </li><li><a id="mail" href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site http://nostradamiq.org.">
                     <i class="fa fa-fw"></i></a>
             </li><li><a id="print" href="javascript:window.print()">
                     <i class="fa fa-fw"></i></a>
