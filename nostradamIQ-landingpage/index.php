@@ -400,7 +400,7 @@
             mail ($to, $subject, $body, $from);
             echo "<div class='alert alert-success'>Thank You! We will be in touch with You soon!</div>";
         } else {
-            echo " " . $form . "<div class='alert alert-danger'>Sorry there was an error sending your message. Please try again later</div>";
+            echo " " . $form . "<div class='alert alert-danger'>Sorry, there was an Error processing your message. Please try again later and make sure to fill out all fields correctly</div>";
         }        
     } else {
         echo $form;  
