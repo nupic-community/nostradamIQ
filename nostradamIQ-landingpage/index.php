@@ -293,9 +293,6 @@
                         <a href="//github.com/nupic-community/nostradamIQ" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">GitHub Project</span></a>
                     </li>
                     <li>
-                        <a href="//nostradamiq.herokuapp.com/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-slack fa-fw"></i> <span class="network-name">Join our slack team</span></a>
-                    </li>
-                    <li>
                         <a href="//gitter.im/nupic-community/nostradamIQ" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-external-link-square fa-fw"></i> <span class="network-name">Talk to us on Gitter</span></a>
                     </li>
                     <li>
@@ -306,9 +303,15 @@
                     </li>
                     <li>
                         <a href="//www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JH4BWPHA326TL" target="_blank"  rel="nofollow" class="btn btn-default btn-lg" title="PayPal Link"><i class="fa fa-paypal fa-fw"></i> <span class="network-name">Donate</span></a><br>
-                        <span>Thank you for your support. <i class="fa fa-heart fa-fw"></i></span>
                     </li>
                 </ul>
+                <span>Thank you for your support. <i class="fa fa-heart fa-fw"></i></span>
+
+                <p>
+                    <iframe src="http://nostradamiq.herokuapp.com/" width="400" height="350" scrolling="off" frameborder="0" seamless>
+                        <p><a href="//nostradamiq.herokuapp.com/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-slack fa-fw"></i><span class="network-name">Join our slack team</span></a></p>
+                    </iframe>
+                </p>
                 
 <?php
 

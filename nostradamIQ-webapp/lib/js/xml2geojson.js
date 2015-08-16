@@ -36,15 +36,47 @@ http://hpxml.pdc.org/public.xml
 	<product_total>9</product_total>
 	<uuid>0fb72408-ac31-4945-9ab8-08e5976802cb</uuid>
 </hazardBean>
+<hazardBean>
+...
+
+
+
+needs to become of the sort:
+
+{"type":"FeatureCollection","features":[
+	{
+	  "type": "Feature",
+	  "geometry": {
+	    "type": "Point",
+	    "coordinates": [125.6, 10.1]
+	  },
+	  "properties": {
+	    "name": "Dinagat Islands"
+	  }
+	}, 
+	...
+]}
 
 */
 
+// TODO
 
 // Changes XML to geoJSON
 function xml2geojson(xml) {
 	
 	// Create the return object
-	var obj = {};
+	var features = [];
+	var obj = {"type":"FeatureCollection","features":features};
+
+	// for each hazardBean, append a obj to features:
+	var hazardObj = {
+					  "type": "Feature",
+					  "geometry": {
+					    "type": "Point",
+					    "coordinates": [latitide, longitude]
+					  },
+					  "properties": {}
+		}
 
 	if (xml.nodeType == 1) { // element
 		// do attributes
@@ -65,14 +97,14 @@ function xml2geojson(xml) {
 			var item = xml.childNodes.item(i);
 			var nodeName = item.nodeName;
 			if (typeof(obj[nodeName]) == "undefined") {
-				obj[nodeName] = xmlToJson(item);
+				obj[nodeName] =xml2geojson(item);
 			} else {
 				if (typeof(obj[nodeName].push) == "undefined") {
 					var old = obj[nodeName];
 					obj[nodeName] = [];
 					obj[nodeName].push(old);
 				}
-				obj[nodeName].push(xmlToJson(item));
+				obj[nodeName].push(xml2geojson(item));
 			}
 		}
 	}

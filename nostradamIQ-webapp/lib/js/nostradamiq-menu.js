@@ -324,12 +324,12 @@ function loadGeoJson(layerId, geoDataSrc, proxy, markerScale, markerImg, markerC
 }
 
 // primarily for PDC's weired XML format:
-function loadXML(layerId, geoDataSrc, proxy, markerLabel, markerScale, markerImg, markerColor, zoom) {
-    console.log('load json');
+function loadPDC_XML(layerId, geoDataSrc, proxy, markerLabel, markerScale, markerImg, markerColor, zoom) {
+    console.log('load PDC-XML');
     if (proxy) {
-      new Cesium.loadJson(proxy + '?' + geoDataSrc).then(function(xmlData) {
+      new Cesium.loadXML(proxy + '?' + geoDataSrc).then(function(xmlData) {
           // convert xml to geoJSON:
-          var geoData = xml2geoj(jsonData);
+          var geoData = xml2geojson(xmlData);
           modMarkers(geoData, markerImg, markerScale, markerColor, markerLabel);
           viewer.dataSources.add(geoData);
           activeLayers[layerId] = geoData;
@@ -342,9 +342,9 @@ function loadXML(layerId, geoDataSrc, proxy, markerLabel, markerScale, markerImg
           loadError(layerId, geoDataSrc, error);
       });
     } else {
-      new Cesium.loadJson(geoDataSrc).then(function(xmlData) {
+      new Cesium.loadXML(geoDataSrc).then(function(xmlData) {
           // convert xml to geoJSON:
-          var geoData = xml2geojson(jsonData);
+          var geoData = xml2geojson(xmlData);
           modMarkers(geoData, markerImg, markerScale, markerColor, markerLabel);
           viewer.dataSources.add(geoData);
           activeLayers[layerId] = geoData;
@@ -561,7 +561,7 @@ function updateLayer(layerId) {
             loadWmts(layerId, geoDataSrc, proxy, geoLayers);
         } else if (l.T === ("base-layer")) {
            loadOsmLayer(layerId, geoDataSrc, proxy, source);
-        } else if (l.T === ("geojson") && layerId.substring(0,10) === "twitter-api") { // load twitter data extra
+        } else if (l.T === ("geojson") && layerId.substring(0, 10) === "twitter-api") { // load twitter data extra
             loadTwitter(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod);
         } else if (l.T === ("geojson")) {
             loadGeoJson(layerId, geoDataSrc, proxy, markerLabel, markerScale, markerImg, markerColor, zoom);
@@ -571,7 +571,9 @@ function updateLayer(layerId) {
             loadKml(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod);
         } else if (l.T === ("czml")) {
             loadCzml(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, markerLabel, markerColor, markerMod);
-        } else {
+        } else if (l.T ===("pdc-xml")) {
+            loadPDC_XML(layerId, geoDataSrc, proxy, markerLabel, markerScale, markerImg, markerColor, zoom);
+        }else {
             console.log(layerId + ' failed to load map type: ' + l.T);
         }
         shareLink();

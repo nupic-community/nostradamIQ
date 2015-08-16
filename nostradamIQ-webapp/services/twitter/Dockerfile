@@ -6,5 +6,4 @@ RUN pip install -r /twitter/requirements.txt
 EXPOSE 8088
 CMD redis-server & 
 WORKDIR /twitter
-# CMD python server.py & 
-# CMD python twitter_docker.py quake & 
+CMD python server.py & python twitter_docker.py quake & 

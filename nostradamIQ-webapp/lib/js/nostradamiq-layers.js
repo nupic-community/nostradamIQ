@@ -25,6 +25,9 @@ var layers = {
     I: 'nostradamIQ',
 
     Live: { N: "Live",
+        Active : { N: "Active Hazards", icon: "warning", '>': [
+                { I: "acitve-hazards-pdc", T: "pdc-xml", G: "http://hpxml.pdc.org/public.xml", S: "PDC Hazard Live Feed", U: "http://hpxml.pdc.org/public.xml", N: "Active Hazards"}
+        ]},
         Earthquake: { N: "Earthquake", icon: "rss", '>': [
             { I: "usgs-all-hour", T: 'geojson', ML: "usgs-eq", MI: "//nostradamiq.org/webapp/img/earthquakes.png", G: "//earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson", S: "United States Geological Society (USGS) Earthquake Hazards Program", U: "//earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php", N: "USGS - All Earthquakes (Last Hour)"},
             { I: "usgs-big-today", T: 'geojson', ML: "usgs-eq", MI: "//nostradamiq.org/webapp/img/earthquakes.png", G: "//earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_day.geojson", S: "United States Geological Society (USGS) Earthquake Hazards Program", U: "//earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php", N: "USGS - Significant Earthquakes (Today)"},
