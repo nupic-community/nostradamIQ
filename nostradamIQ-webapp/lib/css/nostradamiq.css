@@ -416,6 +416,7 @@ div.cesium-baseLayerPicker-sectionTitle:not(:first-child) {
 
 /* --------------------- CONTROL BUTTONS ----------------- */
 .cv-toolbar {
+    padding: 10px 15px 10px 20px;
 	position:fixed;
 	top:60px;
 	right:30px;
@@ -468,7 +469,7 @@ button.ui.button.cv-button span {
 }
 
 button.ui.button.cv-button:focus,button.ui.button.cv-button:hover {
-	background:#8c0c12!important;
+	background:#ff4d00!important;
 }
 
 button.ui.button.cv-button:focus i,button.ui.button.cv-button:hover i {
@@ -491,6 +492,7 @@ button.ui.button.cv-button:focus span,button.ui.button.cv-button:hover span {
 @media only screen and (max-width:570px) {
     /* -------------- Nav collapsed ----------*/
     .cv-toolbar {
+        padding: 0;
         position: fixed;
         top: 8px;
         right: 8px;
@@ -583,7 +585,7 @@ iframe.cesium-infoBox-iframe {
 	right:0;
 	left:auto;
 	z-index:5;
-	background:#000;
+	background:#fff;
 	display:none;
 }
 
@@ -616,10 +618,23 @@ div.folder {
 	bottom:0;
 	height:40px;
 	width:420px!important;
+    border-top: 1px solid #111;
+    border-radius: 0px !important;
+}
+
+.tabmenu-footer.ui.cv-button-group .ui.button.cv-button {
+    background-color: #fff;
+    color: #111;
+    border-top: 0px !important;
+    border-radius: 0px !important;
+}
+
+.tabmenu-footer.ui.cv-button-group .ui.button.cv-button i {
+    font-weight: normal !important;
 }
 
 .ui.cv-button-group {
-	border:1px solid #999;
+	border: none;
 	margin-bottom:20px;
 	margin:0;
 }
@@ -644,13 +659,13 @@ div.folder {
 }
 
 .ui.cv-button-group .ui.button.cv-button:hover,.ui.cv-button-group .ui.button.cv-button:focus {
-	background-color:#111;
+	background-color:#eee;
 	color:#ff4d00;
 }
 
 /* SIDEBAR TABS */
 p.instruct {
-	color:#999;
+	color:#111;
 	text-align:center;
 	font-size:1rem;
 	text-transform:uppercase;
@@ -669,29 +684,40 @@ p.instruct:not(:first-child) {
 }
 
 .ui.tabular.menu {
-    border: 0px !important;
+    border-bottom: 1px solid #111;
+}
+
+@media only screen and (max-width:570px) {
+    .ui.tabular.menu {
+        height: auto;
+        overflow: auto;
+        overflow-y: hidden;
+        -ms-overflow-y: hidden;
+    }
 }
 
 .ui.tabular.menu .item {
-	color:#CCC;
+	color:#333;
 }
 
 .ui.tabular.menu .item:hover {
-	background-color:transparent;
-	color:#FFF;
+	background-color:#eee;
+	color:#ff4d00;
 }
 
 .ui.tabular.menu .active.item {
-	background-color:#222;
-	color:#FFF;
+	background-color:#ff4d00;
+	color:#fff;
     border: 0px !important;
 	border-bottom:transparent;
 	border-radius: 0 !important;
+    font-weight: normal;
 }
 
+/* ----------- category content ----------- */
 .ui.tabular.menu+.bottom.attached.segment,.ui.tabular.menu~.bottom.attached.segment+.bottom.attached.segment {
 	padding:10px 0 0;
-	background-color:#222;
+	background-color:#fff;
 }
 
 .ui.menu .item>a:not(.ui),.ui.menu .item>p:only-child,.ui.menu .text.item>* {
@@ -722,9 +748,14 @@ p.instruct:not(:first-child) {
 	width:42px;
 	top:1px;
 	right:1px;
-	height:30px;
+	height:35px;
 	vertical-align:middle;
-	fill:#DDD;
+	fill:#333;
+}
+
+.cesium-geocoder-searchButton:hover {
+    background-color: #ff4d00;
+    fill: #fff;
 }
 
 .cesium-svgPath-svg {
@@ -737,13 +768,12 @@ p.instruct:not(:first-child) {
 div.cesium-viewer-geocoderContainer {
 	margin:10px 0;
 	display:block;
-	background-color:transparent;
+	background-color:#eee;
 }
 
 .cesium-viewer-geocoderContainer:hover .cesium-geocoder-input,.cesium-viewer-geocoderContainer .cesium-geocoder-input:focus,.cesium-viewer-geocoderContainer .cesium-geocoder-input-wide {
 	width:100%;
-	color:#fff;
-	outline-color:#1982d1;
+	color:#111;
 	border:0;
 	border-top:0;
 	background-color:transparent;
@@ -759,7 +789,7 @@ div.cesium-viewer-geocoderContainer {
  .lb = layer button
  */
 div.map-layers {
-	border-bottom:1px solid rgba(255,255,255,0.2);
+	border-bottom:1px solid #eee;
 }
 
 div.map-layers h2.toggle {
@@ -783,7 +813,7 @@ div.map-layers h2.toggle {
 div.map-layers > h2.toggle {
 	font-size:1.3em;
 	color:#ff4d00;
-	border-top:1px solid #555;
+	border-top:1px solid #eee;
 	text-align:center;
 	padding-left:0;
 }
