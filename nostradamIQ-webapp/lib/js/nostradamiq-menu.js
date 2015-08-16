@@ -329,6 +329,7 @@ function loadPDC_XML(layerId, geoDataSrc, proxy, markerLabel, markerScale, marke
     if (proxy) {
       new Cesium.loadXML(proxy + '?' + geoDataSrc).then(function(xmlData) {
           // convert xml to geoJSON:
+          console.log(xmlData);
           var geoData = xml2geojson(xmlData);
           modMarkers(geoData, markerImg, markerScale, markerColor, markerLabel);
           viewer.dataSources.add(geoData);
@@ -344,6 +345,7 @@ function loadPDC_XML(layerId, geoDataSrc, proxy, markerLabel, markerScale, marke
     } else {
       new Cesium.loadXML(geoDataSrc).then(function(xmlData) {
           // convert xml to geoJSON:
+          console.log(xmlData);
           var geoData = xml2geojson(xmlData);
           modMarkers(geoData, markerImg, markerScale, markerColor, markerLabel);
           viewer.dataSources.add(geoData);
