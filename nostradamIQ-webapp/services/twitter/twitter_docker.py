@@ -126,11 +126,12 @@ if __name__ == '__main__':
                 outPgeo.close()
                 # publish old one for one week
                 with open(outputgeo, 'r') as uploadFile:
+                    # use a blob in redis to keep structure for better reading in the app
                     uploadFileJSON = json.loads(uploadFile)
                 uploadFile.close()
                 REDIS.setex(outputgeo, uploadFileJSON, 60*60*24*7) # a week in seconds
                 # stats_ARRAY_HOUR_DATE -> ((ALL, WITH_GEO), (ALL_INTV, WITH_GEO_INTV))
-                REDIS.set("stats_{0}_{1}_{2}".format(searchArray, currentKeyDateTime.split(':')[0], currentKeyDateTime.split(':')[1]), ((counAll, countLoc), (countAll_intervall, countLoc_intervall)))
+                REDIS.set("stats_{0}_{1}_{2}".format(searchArray, currentKeyDateTime.split(':')[0], currentKeyDateTime.split(':')[1]), {"All_Tweets_seen":countAll, "Location_Tweets_seen":countLoc, "All_Tweets_Intervall":countAll_intervall, "Location_Tweets_Intervall":countLoc_intervall})
                 countAll_intervall = 0 
                 countLoc_intervall = 0             
                 # Delete old file?
