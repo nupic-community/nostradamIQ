@@ -311,7 +311,7 @@
                 <span>Thank you for your support. <i class="fa fa-heart fa-fw"></i></span>
 
                 <p>
-                    <iframe src="//nostradamiq.herokuapp.com/" width="310" height="330" scrolling="no" overflow="hidden" frameborder="0" seamless>
+                    <iframe style="display: none;" onload="this.style.display='inline-block';" src="//nostradamiq.herokuapp.com/" width="310" height="330" scrolling="no" overflow="hidden" frameborder="0" seamless>
                         <p><a href="//nostradamiq.herokuapp.com/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-slack fa-fw"></i><span class="network-name">Join our slack team</span></a></p>
                     </iframe>
                 </p>
