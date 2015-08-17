@@ -18,7 +18,7 @@ def get_coordinates(query, from_sensor=False):
         location = response['results'][0]['geometry']['location']
         form_address = response['results'][0]['formatted_address']
         latitude, longitude = location['lat'], location['lng']
-        print "Found for:\n", query, "\nFormatted Address::\n", form_address, "\nHighest Accuracy:\n", latitude, longitude
+        print "Found", len(response['results']), "for:\n", query, "\nFormatted Address::\n", form_address, "\nHighest Accuracy:\n", latitude, longitude
     else:
         #latitude, longitude = None, None
         print query, "<no results>"
