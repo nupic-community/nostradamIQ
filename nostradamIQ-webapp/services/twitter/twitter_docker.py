@@ -44,6 +44,7 @@ def getCurrentDateKey():
     date = "{0}-{1}-{2}".format(datetime.datetime.now().day,datetime.datetime.now().month, datetime.datetime.now().year)
     return "{0}:{1}".format(hour, date)
 
+# to check validity and update every hour
 nowDateTime = getCurrentDateKey()
 currentKeyDateTime = None
 
@@ -61,10 +62,9 @@ class StdOutListener(StreamListener):
             print('@%s tweeted: %s\nPlace: %s (%s)\n' % ( tweet['user']['screen_name'], tweet['text'], tweet['place'], tweet['coordinates']))
             countAll += 1
             countAll_intervall += 1
-            # convert to and write as .geoJSON:
+            # convert to and write as .geojson // returns None if no geoInfo is provided
             geoJson = format2geoJSON(tweet)
             if geoJson != None:
-                # TODO write in Redis Proxy instance
                 with open(outputgeo, 'a+') as outPgeo:
                     json.dump(geoJson, outPgeo)
                     if nowDateTime == currentKeyDateTime: outPgeo.write(',')
@@ -100,7 +100,7 @@ if __name__ == '__main__':
     keywordArray = ["#earthquake", "#quake", "#shakeAlert", "#quakeAlert", "shakeAlert", "quakeAlert", "earthquake", "quake", "from:USGSted", "from:everyEarthquake"]
     
     while True:
-        while nowDateTime == currentKeyDateTime: # Changes every hour, so that we publish hourly
+        if nowDateTime == currentKeyDateTime: # Changes every hour, so that we publish hourly
             try:
                 l = StdOutListener()
                 auth = OAuthHandler(consumer_key, consumer_secret)
@@ -130,7 +130,7 @@ if __name__ == '__main__':
                     uploadFileJSON = json.loads(uploadFile)
                 uploadFile.close()
                 REDIS.setex(outputgeo, uploadFileJSON, 60*60*24*7) # a week in seconds
-                # stats_ARRAY_HOUR_DATE -> ((ALL, WITH_GEO), (ALL_INTV, WITH_GEO_INTV))
+                # stats_ARRAY_HOUR_DATE ->  {"All_Tweets_seen":countAll, "Location_Tweets_seen":countLoc, "All_Tweets_Intervall":countAll_intervall, "Location_Tweets_Intervall":countLoc_intervall}
                 REDIS.set("stats_{0}_{1}_{2}".format(searchArray, currentKeyDateTime.split(':')[0], currentKeyDateTime.split(':')[1]), {"All_Tweets_seen":countAll, "Location_Tweets_seen":countLoc, "All_Tweets_Intervall":countAll_intervall, "Location_Tweets_Intervall":countLoc_intervall})
                 countAll_intervall = 0 
                 countLoc_intervall = 0             

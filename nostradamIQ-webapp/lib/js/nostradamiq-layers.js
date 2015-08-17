@@ -197,7 +197,8 @@ var layers = {
                 { I: "kml-ccmce", T: 'kml', G: "/webapp/layers/kml/3rdparty/weather/space-weather/CCMC-15Mhz-HF-loss-CVDB.kmz", S: "Community Coordinated Modeling Center (CCMC), NASA Goddard Space Flight Center", U: "//ccmc.gsfc.nasa.gov/", N: "20 Mhz Ionospheric HF signal loss"},
                 { I: "kml-ngdciono", T: 'kml', G: "//ngdc.noaa.gov/stp/IONO/ionosonde/MIDS/catalog/mapping/ionosonde_content_realtime.kml", S: "NOAA National Geophysical Data Center, Ionosonde Physics Group", U: "//ngdc.noaa.gov/stp/IONO/", N: "Ionosonde Plots"},
                 { I: "kml-es4dtec", T: 'kml', G: "//sol.spacenvironment.net/~ionops/kml_files/ES4D_ionops_TEC.kml", S: "Communcation Alert and Prediction Center (CAPS) / Earth Space 4D (ES4D) Ionops, Utah State University", U: "//sol.spacenvironment.net/~ionops/", N: "Total Electron Content"},
-                { C: true, I: "kml-es4dteca", T: 'kml', G: "//sol.spacenvironment.net/~ionops/kml_files/ES4D_TEC_anim_Ionops.kml", S: "Communcation Alert and Prediction Center (CAPS) / Earth Space 4D (ES4D) Ionops, Utah State University", U: "//sol.spacenvironment.net/~ionops/", N: "Total Electron Content (animated)"}
+                { C: true, I: "kml-es4dteca", T: 'kml', G: "//sol.spacenvironment.net/~ionops/kml_files/ES4D_TEC_anim_Ionops.kml", S: "Communcation Alert and Prediction Center (CAPS) / Earth Space 4D (ES4D) Ionops, Utah State University", U: "//sol.spacenvironment.net/~ionops/", N: "Total Electron Content (animated)"},
+                { I: "impact-points-2010", T: "geojson", Z: true, G: "/webapp/layers/geojson/impact_points_2010.geojson", S: "Rajmon Impact database", U: "http://impacts.rajmon.cz/data/", N: "Impact Points 2010"}
         ]},
         Twitter: { N: "Twitter Stream Listener", icon: "twitter", '>': [
                 // TODO Link to geoJSONs for various twitter streams:
@@ -442,7 +443,8 @@ var layers = {
             { P: true, I: "polar-ice-extents", T: 'kml', G: "//nsidc.org/data/virtual_globes/seaice/NSIC_SepSeaIceExtent.kmz", S: "National Snow and Ice Data Center (NSDIC)", U: "//nsIc.org/", N: "Polar Ice Extents"},
             { I: "greenhouse-gas", T: 'kml', G: "/webapp/layers/kml/pollution/Greenhouse-Gas-Emissions-CV3D.kmz", S: "World Resources Institute EarthTrends", U: "//www.earthtrends.wri.org/", N: "Greenhouse Gas Emissions"},
             { I: "p072", T: 'kml', G: "/webapp/layers/kml/3rdparty/pollution/Geothermal-Potential-SMU.kmz", S: "Southern Methodist University, Geothermal Lab", U: "//www.google.org/egs/", N: "Geothermal Potential"},
-            { C: true, I: "permafrost-zonation", T: 'kml', G: "//www.geo.uzh.ch/microsite/cryodata/pf_global/GlobalPermafrostZonationIndexMap.kmz", S: "Glaciology, Geomorphodynamics & Geochronology group at the Department of Geography, University of Zurich", U: "//www.geo.uzh.ch/microsite/cryodata/", N: "Permafrost Zonation"}     
+            { C: true, I: "permafrost-zonation", T: 'kml', G: "//www.geo.uzh.ch/microsite/cryodata/pf_global/GlobalPermafrostZonationIndexMap.kmz", S: "Glaciology, Geomorphodynamics & Geochronology group at the Department of Geography, University of Zurich", U: "//www.geo.uzh.ch/microsite/cryodata/", N: "Permafrost Zonation"},
+            { I: "Rising-Sea-Level-Animation-v2.1", Z: true, T: 'kml', G: "/webapp/layers/kml/alerts/Rising-Sea-Level-Animation-v2.1.kmz", S: "BZoltan", U: "https://productforums.google.com/forum/#!topic/gec-weather-climate-moderated/_fU8MuYal6M;context-place=forum/gec-weather-climate-moderated", N: "San Francisco Rising Sea Level Animation"} 
         ]}
     },
 
@@ -558,7 +560,9 @@ var layers = {
             { I: "places-of-interest", T: 'kml', G: "/webapp/layers/kml/3rdparty/places/places-of-interest.kmz", S: "Google Earth Community build", S: "http://www.gelib.com/", N: "Some Places of Interest"},
             { I: "WATERS-Data", T: 'kml', G: "/webapp/layers/kml/3rdparty/humanitarian/WATERS-Data.kmz", S: "US EPA", U: "http://water.epa.gov/scitech/datait/tools/waters/tools/waters_kmz.cfm", N: "WATERS Water assessment data"},
             { I: "geonames-features", T: 'kml', G: "/webapp/layers/kml/3rdparty/places/geonames-features.kmz", S: "geonames.org", U: "http://www.geonames.org", N: "Geonames network link"},
-            { I: "crimes-hist-usa", Z: true, T: 'kml', G: "/webapp/layers/kml/3rdparty/places/crimes-hist-usa.kmz", S: "Google Earth Community build", U: "http://www.gelib.com/", N: "Crimes and Criminals from the past 200 yrs (only USA)"}
+            { I: "crimes-hist-usa", Z: true, T: 'kml', G: "/webapp/layers/kml/3rdparty/places/crimes-hist-usa.kmz", S: "Google Earth Community build", U: "http://www.gelib.com/", N: "Crimes and Criminals from the past 200 yrs (only USA)"},
+            { I: "north-korea-uncovered", Z: true, T: 'kml', G: "/webapp/layers/kml/3rdparty/places/north-korea-uncovered.kmz", S: "Google Earth Community build", U: "http://www.gelib.com/", N: "North Korean Places"},
+            { I: "oif_oef_casualties", Z: true, T: 'kml', G: "/webapp/layers/kml/3rdparty/places/oif_oef_casualties.kmz", S: "The Map of the Fallen Community", U: "http://www.mapthefallen.org/", N: "The Map of the Fallen"}
             
         ]},
         /*
