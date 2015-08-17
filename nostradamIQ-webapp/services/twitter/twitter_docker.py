@@ -52,7 +52,7 @@ currentKeyDateTime = None
 class StdOutListener(StreamListener):
 
     def on_data(self, data):
-        global countLoc, countAll, countAll_intervall, countLoc_intervall, outputgeo, nowDateTime
+        global countLoc, countAll, countAll_intervall, countLoc_intervall, outputgeo, nowDateTime, currentKeyDateTime
 
         # update nowDateTime:
         nowDateTime = getCurrentDateKey()
@@ -67,7 +67,10 @@ class StdOutListener(StreamListener):
             if geoJson != None:
                 with open(outputgeo, 'a+') as outPgeo:
                     json.dump(geoJson, outPgeo)
-                    if nowDateTime == currentKeyDateTime: outPgeo.write(',')
+                    if nowDateTime == currentKeyDateTime: 
+                        outPgeo.write(',\n')
+                    else: 
+                        outPgeo.write('\n')
                 outPgeo.close()
                 countLoc += 1
                 countLoc_intervall += 1
