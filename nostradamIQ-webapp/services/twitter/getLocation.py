@@ -14,7 +14,7 @@ def get_coordinates(query, from_sensor=False):
     json_response = urllib.urlopen(url)
     response = simplejson.loads(json_response.read())
     if response['results']:
-    	#print response
+    	print response
         location = response['results'][0]['geometry']['location']
         form_address = response['results'][0]['formatted_address']
         latitude, longitude = location['lat'], location['lng']
@@ -29,7 +29,7 @@ def main():
     if 1 < len(sys.argv):
         address = sys.argv[1]
     else:
-        address = 'Kronberg, Germany'
+        address = 'Kronberg'
 
     coordinates = get_coordinates(address)
     print coordinates

@@ -21,6 +21,7 @@ from getLocation import get_coordinates
 def check_text_for_location(text):
 	# Search the tweet for possible geolocations by checkin if google knows the string:
 	coords_array = [] # What to do when we find multiple?
+	# Maybe have a White and black list? Often RT, USGS or simialr are icluded but not useful...
 	for #TODO
 		query = None 
 		coords = get_coordinates(query) # Returns [lat, lng] or None if not found
@@ -28,7 +29,7 @@ def check_text_for_location(text):
 			# return coords if we find sth:
 			# return coords
 			coords_array.append(coords)
-			
+
 	# otherwise return None if you don't find anything
 	return None
 

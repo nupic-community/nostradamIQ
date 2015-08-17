@@ -41,7 +41,7 @@ outputgeo = None
 def getCurrentDateKey():
     # Returns: str: HH:DD-MM-YYYY 
     hour = datetime.datetime.now().hour
-    date = "{0}-{1}-{2}".format(datetime.datetime.now().day,datetime.datetime.now().month, datetime.datetime.now().year)
+    date = "{0}-{1}-{2}".format(datetime.datetime.now().day, datetime.datetime.now().month, datetime.datetime.now().year)
     return "{0}:{1}".format(hour, date)
 
 # to check validity and update every hour
@@ -50,6 +50,7 @@ currentKeyDateTime = None
 
 
 class StdOutListener(StreamListener):
+    global countLoc, countAll, countAll_intervall, countLoc_intervall, outputgeo, nowDateTime, currentKeyDateTime
 
     def on_data(self, data):
         global countLoc, countAll, countAll_intervall, countLoc_intervall, outputgeo, nowDateTime, currentKeyDateTime
