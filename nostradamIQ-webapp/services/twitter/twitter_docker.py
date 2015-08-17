@@ -67,7 +67,7 @@ class StdOutListener(StreamListener):
                 # TODO write in Redis Proxy instance
                 with open(outputgeo, 'a+') as outPgeo:
                     json.dump(geoJson, outPgeo)
-                    outPgeo.write(',')
+                    if nowDateTime == currentKeyDateTime: outPgeo.write(',')
                 outPgeo.close()
                 countLoc += 1
                 countLoc_intervall += 1
