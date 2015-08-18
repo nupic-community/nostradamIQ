@@ -1,0 +1,1621 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:ns2="http://www.google.com/kml/ext/2.2" xmlns:ns3="http://www.w3.org/2005/Atom" xmlns:ns4="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0">
+    <Document>
+        <LookAt>
+            <longitude>38.77665342052114</longitude>
+            <latitude>35.054234887058065</latitude>
+            <altitude>1985978.2920262758</altitude>
+            <heading>0.0</heading>
+            <tilt>0.0</tilt>
+            <range>1604774.6278358542</range>
+            <altitudeMode>clampToGround</altitudeMode>
+        </LookAt>
+        <Folder>
+            <name>geonode:Syria_BorderCrossings_2015Jun11_HIU_USDoS</name>
+            <LookAt>
+                <longitude>39.06932873414618</longitude>
+                <latitude>34.96741325930669</latitude>
+                <altitude>972010.1306714147</altitude>
+                <heading>0.0</heading>
+                <tilt>0.0</tilt>
+                <range>785435.1691374185</range>
+                <altitudeMode>clampToGround</altitudeMode>
+            </LookAt>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.1">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.1</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Abu Kamal&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;34.398&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;40.976&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Iraq&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Al Qaim&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;760.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;IZ&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;IQ&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;IRQ&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;368.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;IRQ&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.iq&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>40.976</longitude>
+                    <latitude>34.398</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>40.976,34.398</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.2">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.2</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;At Tanf&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;33.434&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;38.921&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Iraq&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Waleed&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;765.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;IZ&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;IQ&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;IRQ&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;368.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;IRQ&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.iq&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>38.921000000000014</longitude>
+                    <latitude>33.434</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>38.921,33.434</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.3">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.3</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Peshkapor&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;37.09&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;42.348&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Iraq&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Faysh Khabur&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;780.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;IZ&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;IQ&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;IRQ&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;368.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;IRQ&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.iq&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>42.348000000000006</longitude>
+                    <latitude>37.089999999999996</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>42.348,37.09</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.4">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.4</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Sahela&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;37.040369&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;42.339283&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Iraq&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Sahela&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;783.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;IZ&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;IQ&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;IRQ&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;368.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;IRQ&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.iq&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>42.33928284270001</longitude>
+                    <latitude>37.0403692972</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>42.3392828427,37.0403692972</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.5">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.5</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Tall Kujik&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.806&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;42.076&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Iraq&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Rabiah&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;785.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;IZ&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;IQ&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;IRQ&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;368.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;IRQ&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.iq&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>42.07600000000001</longitude>
+                    <latitude>36.806</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>42.076,36.806</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.6">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.6</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Dara&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;32.603&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.081&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Jordan&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Ar Ramtha&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;772.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;JO&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;JO&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;JOR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;400.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;JOR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.jo&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>36.081</longitude>
+                    <latitude>32.603</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>36.081,32.603</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.7">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.7</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Hadallat (Tower 30/31)&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;32.856268&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;37.821025&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Jordan&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Hadallat&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;774.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;JO&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;JO&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;JOR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;400.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;JOR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.jo&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>37.8210249221</longitude>
+                    <latitude>32.85626818539999</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>37.8210249221,32.8562681854</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.8">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.8</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Nasib&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;32.543&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.202&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Jordan&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Jabir&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;779.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;JO&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;JO&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;JOR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;400.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;JOR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.jo&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>36.201999999999984</longitude>
+                    <latitude>32.54299999999999</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>36.202,32.543</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.9">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.9</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Tower 22&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;33.324823&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;38.701395&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Jordan&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Tower 22&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;787.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;JO&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;JO&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;JOR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;400.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;JOR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.jo&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>38.70139483160001</longitude>
+                    <latitude>33.3248233481</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>38.7013948316,33.3248233481</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.10">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.10</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Ash Shaykh Jabir&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;34.636&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;35.976&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Lebanon&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Al Aridah&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;764.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;LE&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;LB&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;LBN&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;422.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;LBN&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.lb&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>35.97599999999999</longitude>
+                    <latitude>34.636</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>35.976,34.636</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.11">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.11</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Judaydat Yabus&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;33.66&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;35.977&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Lebanon&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Al Masna&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;777.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;LE&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;LB&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;LBN&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;422.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;LBN&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.lb&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>35.977</longitude>
+                    <latitude>33.660000000000004</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>35.977,33.66</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.12">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.12</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Riblah&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;34.423&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.544&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Lebanon&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Al Qa&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;782.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;LE&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;LB&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;LBN&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;422.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;LBN&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.lb&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>36.544</longitude>
+                    <latitude>34.423</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>36.544,34.423</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.13">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.13</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Tallkalakh&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;34.668012&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.303241&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Lebanon&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Tallkalakh&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;786.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;LE&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;LB&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;LBN&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;422.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;LBN&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.lb&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>36.303240999999986</longitude>
+                    <latitude>34.668012</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>36.303241,34.668012</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.14">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.14</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Al Abbudiyah&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;34.642&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.12&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Lebanon&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Al Abbudiyah&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;788.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;LE&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;LB&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;LBN&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;422.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;LBN&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.lb&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>36.12</longitude>
+                    <latitude>34.642</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>36.12,34.642</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.15">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.15</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Ad Darbasiyah&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;37.078&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;40.645&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Turkey&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Senyurt&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;761.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TU&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;792.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.tr&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>40.645</longitude>
+                    <latitude>37.077999999999996</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>40.645,37.078</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.16">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.16</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Al Qamishli&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;37.061&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;41.219&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Turkey&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Nusaybin&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;762.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TU&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;792.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.tr&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>41.219</longitude>
+                    <latitude>37.061</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>41.219,37.061</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.17">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.17</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Ar Ra'-ee&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.635121&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;37.475781&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Turkey&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Çobanbey&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;763.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TU&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;792.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.tr&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>37.4757806646</longitude>
+                    <latitude>36.6351207065</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>37.4757806646,36.6351207065</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.18">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.18</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Atmeh&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.325483&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.661886&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Turkey&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Atmeh&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;766.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TU&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;792.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.tr&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>36.6618855099</longitude>
+                    <latitude>36.325483492299995</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>36.6618855099,36.3254834923</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.19">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.19</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Ayn al Arab&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.9&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;38.35&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Turkey&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Mursitpinar&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;767.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TU&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;792.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.tr&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>38.35</longitude>
+                    <latitude>36.90000000000001</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>38.35,36.9</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.20">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.20</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Bab al Hawa&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.23&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.692&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Turkey&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Cilvegozu&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;768.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TU&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;792.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.tr&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>36.692</longitude>
+                    <latitude>36.23</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>36.692,36.23</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.21">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.21</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Bab al Kasab&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;35.905&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.009&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Turkey&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Yayladagi&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;769.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TU&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;792.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.tr&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>36.009</longitude>
+                    <latitude>35.905</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>36.009,35.905</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.22">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.22</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Bab al-Salam&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.646&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;37.085&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Turkey&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Oncupinar&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;770.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TU&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;792.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.tr&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>37.084999999999994</longitude>
+                    <latitude>36.646</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>37.085,36.646</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.23">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.23</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Cizre&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;37.308672&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;42.194966&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Turkey&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Cizre&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;771.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TU&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;792.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.tr&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>42.194966</longitude>
+                    <latitude>37.308671999999994</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>42.194966,37.308672</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.24">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.24</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Hacipasa&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.227561&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.55766&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Turkey&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Hacipasa&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;773.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TU&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;792.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.tr&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>36.5576600562</longitude>
+                    <latitude>36.22756079419999</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>36.5576600562,36.2275607942</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.25">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.25</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Harem&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.005796&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.371556&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Turkey&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Harem&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;775.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TU&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;792.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.tr&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>36.371555871899986</longitude>
+                    <latitude>36.0057963984</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>36.3715558719,36.0057963984</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.26">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.26</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Jarabulus&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.831&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;37.999&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Turkey&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Kargamis RR Yard&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;776.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TU&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;792.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.tr&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>37.999</longitude>
+                    <latitude>36.831</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>37.999,36.831</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.27">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.27</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Meidan Ekbis&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.828069&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.674924&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Turkey&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Islahiye&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;778.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TU&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;792.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.tr&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>36.674924013100004</longitude>
+                    <latitude>36.8280694778</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>36.6749240131,36.8280694778</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.28">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.28</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Ras al Ain&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.843&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;40.053&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Turkey&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Ceylanpinar&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;781.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TU&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;792.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.tr&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>40.053000000000004</longitude>
+                    <latitude>36.843</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>40.053,36.843</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="Syria_BorderCrossings_2015Jun11_HIU_USDoS.29">
+                <name>Syria_BorderCrossings_2015Jun11_HIU_USDoS.29</name>
+                <description>&lt;h4&gt;Syria_BorderCrossings_2015Jun11_HIU_USDoS&lt;/h4&gt;
+
+&lt;ul class=&quot;textattributes&quot;&gt;
+  
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Country&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Syria&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Crossing&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Tall Al Abyad&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LAT_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;36.703&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;LON_DD&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;38.959&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_Cou&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Turkey&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;Border_C_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;Akcakale Customs&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha2&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SY&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_alpha3&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;784.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;SYR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.sy&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_fips&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TU&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_alp&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_a_1&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_iso_num&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;792.0&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_stanag&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;TUR&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;span class=&quot;atr-name&quot;&gt;BC_tld&lt;/span&gt;:&lt;/strong&gt; &lt;span class=&quot;atr-value&quot;&gt;.tr&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <LookAt>
+                    <longitude>38.95900000000001</longitude>
+                    <latitude>36.702999999999996</latitude>
+                    <altitude>0.0</altitude>
+                    <heading>0.0</heading>
+                    <tilt>0.0</tilt>
+                    <range>0.0</range>
+                    <altitudeMode>clampToGround</altitudeMode>
+                </LookAt>
+                <Style>
+                    <IconStyle>
+                        <scale>0.75</scale>
+                        <heading>0.0</heading>
+                        <Icon>
+                            <href>http://geonode.state.gov/geoserver/kml/icon/geonode_Syria_BorderCrossings_2015Jun11_HIU_USDoS?0.0.0=</href>
+                            <refreshInterval>0.0</refreshInterval>
+                            <viewRefreshTime>0.0</viewRefreshTime>
+                            <viewBoundScale>0.0</viewBoundScale>
+                        </Icon>
+                    </IconStyle>
+                    <LabelStyle>
+                        <color>00ffffff</color>
+                        <scale>0.0</scale>
+                    </LabelStyle>
+                </Style>
+                <Point>
+                    <coordinates>38.959,36.703</coordinates>
+                </Point>
+            </Placemark>
+        </Folder>
+    </Document>
+</kml>
