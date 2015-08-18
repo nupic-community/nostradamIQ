@@ -891,7 +891,7 @@ $('.top-layers').click(function () {
 
 /*
 // http://openlayers.org/en/v3.5.0/examples/kml-timezones.html
-// Timezones:
+// Timezones: TODO
 function showTimezones() {
   var styleFunction = function(feature, resolution) {
     var offset = 0;
