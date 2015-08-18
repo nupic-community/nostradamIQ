@@ -18,7 +18,7 @@ REDIS = redis.Redis()
 # DATE = DD-MM-YYYY (str)
 # ARRAY = key for keywords Dict that contains filterwords for twitter stream object (str)
 # tweets_ARRAY_HOUR_DATE.geojson -> geoJSON object to be read by Cesium
-# stats_ARRAY_HOUR_DATE -> ((ALL, WITH_GEO), (ALL_INTV, WITH_GEO_INTV))
+# stats_ARRAY_HOUR_DATE ->  {"All_Tweets_seen":countAll, "Location_Tweets_seen":countLoc, "All_Tweets_Intervall":countAll_intervall, "Location_Tweets_Intervall":countLoc_intervall}
 
 def app(environ, start_response):
     start_response('200 OK', [('Content-Type', 'application/json'), ('Access-Control-Allow-Origin', '*')])
