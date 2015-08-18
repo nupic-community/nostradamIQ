@@ -282,7 +282,7 @@
 	margin-top:5px;
 	background-color:rgba(38,38,38,0.75);
 	border:1px solid #444;
-	padding:6px;
+	padding:6px 0;
 	overflow:auto;
 	border-radius:10px;
 	-moz-user-select:none;
