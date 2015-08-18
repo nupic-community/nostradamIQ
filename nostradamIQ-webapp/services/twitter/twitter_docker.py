@@ -69,9 +69,7 @@ class StdOutListener(StreamListener):
                 with open(outputgeo, 'a+') as outPgeo:
                     json.dump(geoJson, outPgeo)
                     if nowDateTime == currentKeyDateTime: 
-                        outPgeo.write(',\n')
-                    else: 
-                        outPgeo.write('\n')
+                        outPgeo.write(',')
                 outPgeo.close()
                 countLoc += 1
                 countLoc_intervall += 1
@@ -150,7 +148,6 @@ if __name__ == '__main__':
             # write first line of new one
             with open(outputgeo, 'a+') as outPgeo:
                 outPgeo.write('{"type":"FeatureCollection","features":[')
-                outPgeo.write('\n')
             outPgeo.close()
 
             # not the fist one anymore:

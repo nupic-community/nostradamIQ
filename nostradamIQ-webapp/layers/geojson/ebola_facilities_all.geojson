@@ -1,0 +1,1591 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -13.280407,8.424321 ]
+    },
+    "properties": {
+    "FID":"sle_heal_pt_unmeer_ebolacarefacilities.1",
+    "the_geom":"POINT (-13.280407 8.424321)",
+    "ECF_Code":"SLE_0001",
+    "ECF_Name":"Goderich",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"SLE04010402",
+    "Beds_Open":32,
+    "Beds_Plan":100,
+    "Open_Date":"2014-12-14T00:00:00",
+    "Partner":"EMERGENCY",
+    "Lead_Donor":"DFID",
+    "Accuracy":"WAERC Confirmed Coordinates",
+    "Updated":"2015-02-26T00:00:00",
+    "LabPresent":"Yes",
+    "Country":"Sierra Leone",
+    "Comment":"On school ground"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -13.140652,8.382142 ]
+    },
+    "properties": {
+    "FID":"sle_heal_pt_unmeer_ebolacarefacilities.2",
+    "the_geom":"POINT (-13.140652 8.382142)",
+    "ECF_Code":"SLE_0002",
+    "ECF_Name":"Hastings",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"SLE04010303",
+    "Beds_Open":10,
+    "Beds_Plan":100,
+    "Open_Date":"2014-12-17T00:00:00",
+    "Partner":"RSLAF/KINGS/EU",
+    "Lead_Donor":"DFID",
+    "Accuracy":"WAERC Confirmed Coordinates",
+    "Updated":"2015-02-26T00:00:00",
+    "LabPresent":"Yes",
+    "Country":"Sierra Leone",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -13.125851,8.382705 ]
+    },
+    "properties": {
+    "FID":"sle_heal_pt_unmeer_ebolacarefacilities.3",
+    "the_geom":"POINT (-13.125851 8.382705)",
+    "ECF_Code":"SLE_0004",
+    "ECF_Name":"Police Training Sch-Hastings 1",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"SLE04010303",
+    "Beds_Open":20,
+    "Beds_Plan":126,
+    "Open_Date":"",
+    "Partner":"MOH / RSLAF",
+    "Lead_Donor":"GOSL",
+    "Accuracy":"WAERC Confirmed Coordinates",
+    "Updated":"2015-02-26T00:00:00",
+    "LabPresent":"No",
+    "Country":"Sierra Leone",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -13.086371,8.257095 ]
+    },
+    "properties": {
+    "FID":"sle_heal_pt_unmeer_ebolacarefacilities.4",
+    "the_geom":"POINT (-13.086371 8.257095)",
+    "ECF_Code":"SLE_0005",
+    "ECF_Name":"Kerry Town STC",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"SLE04010406",
+    "Beds_Open":7,
+    "Beds_Plan":100,
+    "Open_Date":"",
+    "Partner":"Save the Children/PHE",
+    "Lead_Donor":"DFID",
+    "Accuracy":"WAERC Confirmed Coordinates",
+    "Updated":"2015-02-26T00:00:00",
+    "LabPresent":"Yes",
+    "Country":"Sierra Leone",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -12.76239,8.77665 ]
+    },
+    "properties": {
+    "FID":"sle_heal_pt_unmeer_ebolacarefacilities.5",
+    "the_geom":"POINT (-12.76239 8.77665)",
+    "ECF_Code":"SLE_0006",
+    "ECF_Name":"Port Loko ETU",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"SLE02040726",
+    "Beds_Open":20,
+    "Beds_Plan":20,
+    "Open_Date":"2014-12-14T00:00:00",
+    "Partner":"GOAL/PHE",
+    "Lead_Donor":"DFID",
+    "Accuracy":"CDC Checked Coordinate",
+    "Updated":"2015-02-23T00:00:00",
+    "LabPresent":"Yes",
+    "Country":"Sierra Leone",
+    "Comment":"Facility is both ETC & EHU. Bed Capacity includes 16 Suspect, 16 Probable and 20 EVD Confirmed"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -12.57656,8.69854 ]
+    },
+    "properties": {
+    "FID":"sle_heal_pt_unmeer_ebolacarefacilities.6",
+    "the_geom":"POINT (-12.57656 8.69854)",
+    "ECF_Code":"SLE_0007",
+    "ECF_Name":"Lunsar ETU",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"SLE02040811",
+    "Beds_Open":20,
+    "Beds_Plan":20,
+    "Open_Date":"2014-12-01T00:00:00",
+    "Partner":"IMC",
+    "Lead_Donor":"DFID/ECHO/OFDA",
+    "Accuracy":"CDC Checked Coordinate",
+    "Updated":"2015-02-23T00:00:00",
+    "LabPresent":"No",
+    "Country":"Sierra Leone",
+    "Comment":"Facility is both ETC & EHU. Bed Capacity includes 16 Suspect, 16 Probable and 20 EVD Confirmed"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -12.41256334,8.1778929 ]
+    },
+    "properties": {
+    "FID":"sle_heal_pt_unmeer_ebolacarefacilities.7",
+    "the_geom":"POINT (-12.41256334 8.1778929)",
+    "ECF_Code":"SLE_0008",
+    "ECF_Name":"Moyamba ETU",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"SLE03030606",
+    "Beds_Open":30,
+    "Beds_Plan":100,
+    "Open_Date":"2014-12-17T00:00:00",
+    "Partner":"MDM/DTRA",
+    "Lead_Donor":"DFID",
+    "Accuracy":"UNMEER Checked coordinate",
+    "Updated":"2015-02-25T00:00:00",
+    "LabPresent":"Yes",
+    "Country":"Sierra Leone",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -13.14954849,8.38686091 ]
+    },
+    "properties": {
+    "FID":"sle_heal_pt_unmeer_ebolacarefacilities.8",
+    "the_geom":"POINT (-13.14954849 8.386860908)",
+    "ECF_Code":"SLE_0010",
+    "ECF_Name":"China-SL Friendship Hospital ETU, Jui",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"SLE04010303",
+    "Beds_Open":5,
+    "Beds_Plan":22,
+    "Open_Date":"",
+    "Partner":"Chinese CDC",
+    "Lead_Donor":"China",
+    "Accuracy":"WAERC Confirmed Coordinates",
+    "Updated":"2015-02-26T00:00:00",
+    "LabPresent":"Yes",
+    "Country":"Sierra Leone",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0,0 ]
+    },
+    "properties": {
+    "FID":"sle_heal_pt_unmeer_ebolacarefacilities.9",
+    "the_geom":"POINT (-179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 -179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)",
+    "ECF_Code":"SLE_0012",
+    "ECF_Name":"Kailahun MSF",
+    "Status":"Closed",
+    "Type":"ETU",
+    "AdminCode":"SLE01010806",
+    "Beds_Open":0,
+    "Beds_Plan":100,
+    "Open_Date":"",
+    "Partner":"MSF/PHA-Canada",
+    "Lead_Donor":"Canadian Outfit",
+    "Accuracy":"",
+    "Updated":"2015-02-23T00:00:00",
+    "LabPresent":"No",
+    "Country":"Sierra Leone",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -11.1156,8.005088 ]
+    },
+    "properties": {
+    "FID":"sle_heal_pt_unmeer_ebolacarefacilities.10",
+    "the_geom":"POINT (-11.1156 8.005088)",
+    "ECF_Code":"SLE_0013",
+    "ECF_Name":"Rural Kenema Field Hospital (IFRC)",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"SLE01021208",
+    "Beds_Open":12,
+    "Beds_Plan":25,
+    "Open_Date":"",
+    "Partner":"IFRC",
+    "Lead_Donor":"IFRC",
+    "Accuracy":"British Red Cross GPS",
+    "Updated":"2014-11-26T00:00:00",
+    "LabPresent":"No",
+    "Country":"Sierra Leone",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.958743,8.630038 ]
+    },
+    "properties": {
+    "FID":"sle_heal_pt_unmeer_ebolacarefacilities.11",
+    "the_geom":"POINT (-10.958743 8.630038)",
+    "ECF_Code":"SLE_0014",
+    "ECF_Name":"Dorma ETU - Koidu Town",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"#N/A",
+    "Beds_Open":25,
+    "Beds_Plan":48,
+    "Open_Date":"2015-01-15T00:00:00",
+    "Partner":"Well Body/ PIH",
+    "Lead_Donor":"IFRC",
+    "Accuracy":"UNMEER Checked coordinate",
+    "Updated":"2015-03-03T00:00:00",
+    "LabPresent":"Yes",
+    "Country":"Sierra Leone",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -11.6697,7.94104 ]
+    },
+    "properties": {
+    "FID":"sle_heal_pt_unmeer_ebolacarefacilities.12",
+    "the_geom":"POINT (-11.6697 7.94104)",
+    "ECF_Code":"SLE_0015",
+    "ECF_Name":"Bo Town MSF",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"#N/A",
+    "Beds_Open":104,
+    "Beds_Plan":104,
+    "Open_Date":"",
+    "Partner":"CDC",
+    "Lead_Donor":"CDC",
+    "Accuracy":"UNMEER Checked coordinate",
+    "Updated":"2015-02-24T00:00:00",
+    "LabPresent":"Yes",
+    "Country":"Sierra Leone",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -12.03104834,8.7985682 ]
+    },
+    "properties": {
+    "FID":"sle_heal_pt_unmeer_ebolacarefacilities.13",
+    "the_geom":"POINT (-12.03104834 8.7985682)",
+    "ECF_Code":"SLE_0009",
+    "ECF_Name":"Makeni TU",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"SLE02010203",
+    "Beds_Open":100,
+    "Beds_Plan":100,
+    "Open_Date":"2014-12-08T00:00:00",
+    "Partner":"IMC/PHE",
+    "Lead_Donor":"DFID",
+    "Accuracy":"UNMEER Checked coordinate",
+    "Updated":"2015-03-03T00:00:00",
+    "LabPresent":"Yes",
+    "Country":"Sierra Leone",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -13.12585093,8.3827045 ]
+    },
+    "properties": {
+    "FID":"sle_heal_pt_unmeer_ebolacarefacilities.14",
+    "the_geom":"POINT (-13.12585093 8.382704501)",
+    "ECF_Code":"SLE_0022",
+    "ECF_Name":"Police Training Sch-Hastings 2",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"SLE04010303",
+    "Beds_Open":50,
+    "Beds_Plan":200,
+    "Open_Date":"2014-12-19T00:00:00",
+    "Partner":"MOH/RSLAF",
+    "Lead_Donor":"GOSL",
+    "Accuracy":"WAERC Confirmed Coordinates",
+    "Updated":"2015-02-26T00:00:00",
+    "LabPresent":"No",
+    "Country":"Sierra Leone",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -12.7724,8.74984 ]
+    },
+    "properties": {
+    "FID":"sle_heal_pt_unmeer_ebolacarefacilities.15",
+    "the_geom":"POINT (-12.7724 8.74984)",
+    "ECF_Code":"SLE_0023",
+    "ECF_Name":"Maforki ETU",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"SLE02011109",
+    "Beds_Open":44,
+    "Beds_Plan":44,
+    "Open_Date":"",
+    "Partner":"MoH / Plan",
+    "Lead_Donor":"GOSL",
+    "Accuracy":"CDC Checked Coordinate",
+    "Updated":"2015-02-23T00:00:00",
+    "LabPresent":"No",
+    "Country":"Sierra Leone",
+    "Comment":"Facility is both ETC & EHU. Bed Capacity includes 16 Suspect, 16 Probable and 20 EVD Confirmed"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0,0 ]
+    },
+    "properties": {
+    "FID":"sle_heal_pt_unmeer_ebolacarefacilities.16",
+    "the_geom":"POINT (-179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 -179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)",
+    "ECF_Code":"SLE_0020",
+    "ECF_Name":"Magbenteh Hospital",
+    "Status":"Closed",
+    "Type":"ETU",
+    "AdminCode":"SLE02010202",
+    "Beds_Open":0,
+    "Beds_Plan":110,
+    "Open_Date":"2014-11-15T00:00:00",
+    "Partner":"MoH/Addax/AU/WHO",
+    "Lead_Donor":"GOSL",
+    "Accuracy":"",
+    "Updated":"2015-02-18T00:00:00",
+    "LabPresent":"No",
+    "Country":"Sierra Leone",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -13.261242,8.464217 ]
+    },
+    "properties": {
+    "FID":"sle_heal_pt_unmeer_ebolacarefacilities.17",
+    "the_geom":"POINT (-13.261242 8.464217)",
+    "ECF_Code":"SLE_0109",
+    "ECF_Name":"34 Military Hospital",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"SLE04020810",
+    "Beds_Open":10,
+    "Beds_Plan":30,
+    "Open_Date":"2014-12-01T00:00:00",
+    "Partner":"British Medical Team",
+    "Lead_Donor":"MOD/RSLAF",
+    "Accuracy":"WAERC Confirmed Coordinates",
+    "Updated":"2014-12-01T00:00:00",
+    "LabPresent":"No",
+    "Country":"Sierra Leone",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -11.92354,8.73617 ]
+    },
+    "properties": {
+    "FID":"sle_heal_pt_unmeer_ebolacarefacilities.18",
+    "the_geom":"POINT (-11.92354 8.73617)",
+    "ECF_Code":"SLE_0110",
+    "ECF_Name":"Magbankor MSF ETU",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"#N/A",
+    "Beds_Open":50,
+    "Beds_Plan":50,
+    "Open_Date":"2014-12-15T00:00:00",
+    "Partner":"MSF/OCNML",
+    "Lead_Donor":"MSF",
+    "Accuracy":"",
+    "Updated":"2015-02-24T00:00:00",
+    "LabPresent":"Yes",
+    "Country":"Sierra Leone",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0,0 ]
+    },
+    "properties": {
+    "FID":"sle_heal_pt_unmeer_ebolacarefacilities.19",
+    "the_geom":"POINT (-179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 -179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)",
+    "ECF_Code":"SLE_0146",
+    "ECF_Name":"MSF POW School (ETU)",
+    "Status":"Closed",
+    "Type":"ETU",
+    "AdminCode":"#N/A",
+    "Beds_Open":15,
+    "Beds_Plan":15,
+    "Open_Date":"",
+    "Partner":"MSF/EU",
+    "Lead_Donor":"",
+    "Accuracy":"UNMEER Checked coordinate",
+    "Updated":"2015-02-26T00:00:00",
+    "LabPresent":"Yes",
+    "Country":"Sierra Leone",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -13.07302,8.334213 ]
+    },
+    "properties": {
+    "FID":"sle_heal_pt_unmeer_ebolacarefacilities.20",
+    "the_geom":"POINT (-13.07302 8.334213)",
+    "ECF_Code":"SLE_0147",
+    "ECF_Name":"ADRA",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"#N/A",
+    "Beds_Open":10,
+    "Beds_Plan":62,
+    "Open_Date":"2014-12-14T00:00:00",
+    "Partner":"Cuban Medical Brigade",
+    "Lead_Donor":"MoHS",
+    "Accuracy":"",
+    "Updated":"2015-02-03T00:00:00",
+    "LabPresent":"No",
+    "Country":"Sierra Leone",
+    "Comment":"Coordinates are approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -9.471,8.541 ]
+    },
+    "properties": {
+    "FID":"gin_heal_pt_unmeer_ebolacarefacilities.1",
+    "the_geom":"POINT (-9.46558200499993 8.518240000000048)",
+    "ECF_Code":"GIN_0011",
+    "ECF_Name":"Macenta",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"GIN00800308",
+    "Beds_Open":70,
+    "Beds_Plan":70,
+    "Open_Date":"2014-12-05T00:00:00",
+    "Partner":"FRENCH RED CROSS",
+    "Lead_Donor":"",
+    "Accuracy":"WHO - GPS",
+    "Updated":"2014-12-15T00:00:00",
+    "LabPresent":"Yes",
+    "Country":"Guinea",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.133,8.562 ]
+    },
+    "properties": {
+    "FID":"gin_heal_pt_unmeer_ebolacarefacilities.2",
+    "the_geom":"POINT (-10.120963604999929 8.552846000000045)",
+    "ECF_Code":"GIN_0010",
+    "ECF_Name":"Gueckedou",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"GIN00800603",
+    "Beds_Open":100,
+    "Beds_Plan":100,
+    "Open_Date":"2014-12-05T00:00:00",
+    "Partner":"MSF",
+    "Lead_Donor":"",
+    "Accuracy":"WHO - GPS",
+    "Updated":"2014-12-15T00:00:00",
+    "LabPresent":"Yes",
+    "Country":"Guinea",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -13.683,9.535 ]
+    },
+    "properties": {
+    "FID":"gin_heal_pt_unmeer_ebolacarefacilities.3",
+    "the_geom":"POINT (-13.68319299999996 9.535421000000042)",
+    "ECF_Code":"GIN_0001",
+    "ECF_Name":"Conakry Donka Hospital",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"GIN00200101",
+    "Beds_Open":70,
+    "Beds_Plan":70,
+    "Open_Date":"2014-12-05T00:00:00",
+    "Partner":"MSF",
+    "Lead_Donor":"",
+    "Accuracy":"WHO - GPS",
+    "Updated":"2014-12-15T00:00:00",
+    "LabPresent":"Yes",
+    "Country":"Guinea",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -13.421,9.73 ]
+    },
+    "properties": {
+    "FID":"gin_heal_pt_unmeer_ebolacarefacilities.4",
+    "the_geom":"POINT (-13.420806149999976 9.730112226000074)",
+    "ECF_Code":"GIN_0003",
+    "ECF_Name":"Coyah",
+    "Status":"Under Construction",
+    "Type":"ETU",
+    "AdminCode":"GIN00500103",
+    "Beds_Open":0,
+    "Beds_Plan":70,
+    "Open_Date":"2014-12-01T00:00:00",
+    "Partner":"Cuba?",
+    "Lead_Donor":"",
+    "Accuracy":"Needs location verified",
+    "Updated":"2014-12-15T00:00:00",
+    "LabPresent":"No",
+    "Country":"Guinea",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -8.648,8.69 ]
+    },
+    "properties": {
+    "FID":"gin_heal_pt_unmeer_ebolacarefacilities.5",
+    "the_geom":"POINT (-8.648371163999968 8.689988011000025)",
+    "ECF_Code":"GIN_0009",
+    "ECF_Name":"Beyla",
+    "Status":"Under Construction",
+    "Type":"ETU",
+    "AdminCode":"GIN00800101",
+    "Beds_Open":0,
+    "Beds_Plan":70,
+    "Open_Date":"2014-12-17T00:00:00",
+    "Partner":"WAHA",
+    "Lead_Donor":"",
+    "Accuracy":"Needs location verified",
+    "Updated":"2014-12-15T00:00:00",
+    "LabPresent":"No",
+    "Country":"Guinea",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -8.82,7.756 ]
+    },
+    "properties": {
+    "FID":"gin_heal_pt_unmeer_ebolacarefacilities.6",
+    "the_geom":"POINT (-8.819621349999977 7.755827287000045)",
+    "ECF_Code":"GIN_0007",
+    "ECF_Name":"Nzerekore",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"GIN00400203",
+    "Beds_Open":0,
+    "Beds_Plan":70,
+    "Open_Date":"2014-12-01T00:00:00",
+    "Partner":"ALIMA",
+    "Lead_Donor":"",
+    "Accuracy":"Needs location verified",
+    "Updated":"2014-12-15T00:00:00",
+    "LabPresent":"No",
+    "Country":"Guinea",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -9.00326,9.2741 ]
+    },
+    "properties": {
+    "FID":"gin_heal_pt_unmeer_ebolacarefacilities.7",
+    "the_geom":"POINT (-9.00967686 9.271138659999998)",
+    "ECF_Code":"GIN_0054",
+    "ECF_Name":"Kerouane",
+    "Status":"Under Construction",
+    "Type":"ETU",
+    "AdminCode":"GIN00400203",
+    "Beds_Open":0,
+    "Beds_Plan":50,
+    "Open_Date":"2014-12-17T00:00:00",
+    "Partner":"French Red Cross",
+    "Lead_Donor":"",
+    "Accuracy":"Approximate",
+    "Updated":"2014-12-15T00:00:00",
+    "LabPresent":"No",
+    "Country":"Guinea",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -13.42081,9.730112 ]
+    },
+    "properties": {
+    "FID":"gin_heal_pt_unmeer_ebolacarefacilities.8",
+    "the_geom":"POINT (-13.420806149999919 9.730112226000188)",
+    "ECF_Code":"GIN_0058",
+    "ECF_Name":"Wonkifong",
+    "Status":"Under Construction",
+    "Type":"ETU",
+    "AdminCode":"GIN005001",
+    "Beds_Open":0,
+    "Beds_Plan":70,
+    "Open_Date":"2014-12-22T00:00:00",
+    "Partner":"",
+    "Lead_Donor":"",
+    "Accuracy":"WHO supplied",
+    "Updated":"2014-12-15T00:00:00",
+    "LabPresent":"No",
+    "Country":"Guinea",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -9.305,10.383 ]
+    },
+    "properties": {
+    "FID":"gin_heal_pt_unmeer_ebolacarefacilities.9",
+    "the_geom":"POINT (-9.305 10.383)",
+    "ECF_Code":"GIN_0059",
+    "ECF_Name":"Kankan",
+    "Status":"Under Construction",
+    "Type":"ETU",
+    "AdminCode":"GN001004",
+    "Beds_Open":0,
+    "Beds_Plan":0,
+    "Open_Date":"",
+    "Partner":"MSF",
+    "Lead_Donor":"",
+    "Accuracy":"Needs location supplied",
+    "Updated":"2014-12-15T00:00:00",
+    "LabPresent":"No",
+    "Country":"Guinea",
+    "Comment":"No name, location or bed numbers provided"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -8.23489495,4.67654149 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.1",
+    "the_geom":"POINT (-8.234894946337647 4.676541494899709)",
+    "ECF_Code":"LBR_0001",
+    "ECF_Name":"Barclayville",
+    "Status":"Under Construction",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":0,
+    "Beds_Plan":50,
+    "Open_Date":"2014-12-25T00:00:00",
+    "Partner":"PAE/Aspen",
+    "Lead_Donor":"",
+    "Accuracy":"WFP - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":"Scheduled to complete 26/12/2014 - opening date TBC"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.4906908,7.06390178 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.2",
+    "the_geom":"POINT (-10.490690797999946 7.063901776000023)",
+    "ECF_Code":"LBR_0002",
+    "ECF_Name":"Bopulu",
+    "Status":"Under Construction",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":0,
+    "Beds_Plan":50,
+    "Open_Date":"2014-12-25T00:00:00",
+    "Partner":"PAE/Aspen",
+    "Lead_Donor":"",
+    "Accuracy":"WFP - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":"Scheduled to complete 25/12/2014 - opening date TBC"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.03322255,5.88810337 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.3",
+    "the_geom":"POINT (-10.033222554436634 5.888103365665643)",
+    "ECF_Code":"LBR_0003",
+    "ECF_Name":"Buchanan",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":0,
+    "Beds_Plan":50,
+    "Open_Date":"2014-12-06T00:00:00",
+    "Partner":"IOM",
+    "Lead_Donor":"",
+    "Accuracy":"WFP - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":"Location confirmed by WFP field team, status provided as open needs checking, opening 22 Dec"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -8.85999291,6.4899591 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.4",
+    "the_geom":"POINT (-8.859992908999914 6.489959099000089)",
+    "ECF_Code":"LBR_0026",
+    "ECF_Name":"Tappita",
+    "Status":"Under Construction",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":0,
+    "Beds_Plan":50,
+    "Open_Date":"2014-12-14T00:00:00",
+    "Partner":"Heart to Heart/PAE",
+    "Lead_Donor":"",
+    "Accuracy":"WFP - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -8.66,5.498 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.5",
+    "the_geom":"POINT (-9.033332999999857 5.016666999999984)",
+    "ECF_Code":"LBR_0010",
+    "ECF_Name":"Greenville",
+    "Status":"Under Construction",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":0,
+    "Beds_Plan":50,
+    "Open_Date":"2004-12-10T00:00:00",
+    "Partner":"PAE/MSB",
+    "Lead_Donor":"",
+    "Accuracy":"WFP - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":"Location confirmed by WFP field team, status provided as open needs checking"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -7.69252002,4.39341051 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.6",
+    "the_geom":"POINT (-7.692520015999946 4.393410511000127)",
+    "ECF_Code":"LBR_0011",
+    "ECF_Name":"Harper",
+    "Status":"Under Construction",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":0,
+    "Beds_Plan":50,
+    "Open_Date":"2014-12-20T00:00:00",
+    "Partner":"Partners in Health/PAE",
+    "Lead_Donor":"",
+    "Accuracy":"WFP - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":"Nearer to Jackson Ville Township - needs confirmation of location, WFP status provided as open needs checking"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -7.876,5.19639 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.7",
+    "the_geom":"POINT (-7.755559999999946 5.196390000000122)",
+    "ECF_Code":"LBR_0006",
+    "ECF_Name":"Fish Town",
+    "Status":"Under Construction",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":0,
+    "Beds_Plan":50,
+    "Open_Date":"2014-12-14T00:00:00",
+    "Partner":"ARC",
+    "Lead_Donor":"",
+    "Accuracy":"WFP",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":"Construction complete, opening date TBC"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -11.13382627,6.81605455 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.8",
+    "the_geom":"POINT (-11.133826269999872 6.816054550000047)",
+    "ECF_Code":"LBR_0025",
+    "ECF_Name":"Sinje",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":50,
+    "Beds_Plan":50,
+    "Open_Date":"2014-12-06T00:00:00",
+    "Partner":"IOM",
+    "Lead_Donor":"",
+    "Accuracy":"WFP - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":"Construction completed, opening date TBC, opening 24 Dec 2014 - needs checking"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -8.1380602,6.06495705 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.9",
+    "the_geom":"POINT (-8.138060197999948 6.064957047000064)",
+    "ECF_Code":"LBR_0030",
+    "ECF_Name":"Zwedru",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":0,
+    "Beds_Plan":60,
+    "Open_Date":"2015-01-12T00:00:00",
+    "Partner":"Partners in Health/PAE",
+    "Lead_Donor":"",
+    "Accuracy":"WFP - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -9.74996812,8.41658363 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.10",
+    "the_geom":"POINT (-9.74996812199987 8.416583628000126)",
+    "ECF_Code":"LBR_0028",
+    "ECF_Name":"Voinjama",
+    "Status":"Under Construction",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":0,
+    "Beds_Plan":50,
+    "Open_Date":"2014-12-14T00:00:00",
+    "Partner":"WAHA/GOAL/PAE/Aspen",
+    "Lead_Donor":"",
+    "Accuracy":"WFP - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.77325,6.28723 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.11",
+    "the_geom":"POINT (-10.773249999999962 6.287230000000079)",
+    "ECF_Code":"LBR_0012",
+    "ECF_Name":"JFK hospital",
+    "Status":"Closed",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":0,
+    "Beds_Plan":0,
+    "Open_Date":"",
+    "Partner":"MoH/WHO",
+    "Lead_Donor":"",
+    "Accuracy":"WFP - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.70045594,6.25675606 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.12",
+    "the_geom":"POINT (-10.700455938999937 6.256756063000125)",
+    "ECF_Code":"LBR_0021",
+    "ECF_Name":"SKD 1",
+    "Status":"Under Construction",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":0,
+    "Beds_Plan":50,
+    "Open_Date":"2014-12-15T00:00:00",
+    "Partner":"IRC",
+    "Lead_Donor":"",
+    "Accuracy":"WFP - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.7005257,6.25744595 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.13",
+    "the_geom":"POINT (-10.700525704999961 6.257445946000075)",
+    "ECF_Code":"LBR_0022",
+    "ECF_Name":"SKD 2",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":50,
+    "Beds_Plan":50,
+    "Open_Date":"2014-12-22T00:00:00",
+    "Partner":"German RC/German Armed Forces",
+    "Lead_Donor":"",
+    "Accuracy":"WFP - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":"Construction complete, open date TBC"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.731191,6.268152 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.14",
+    "the_geom":"POINT (-10.731190999999853 6.268152000000043)",
+    "ECF_Code":"LBR_0017",
+    "ECF_Name":"Congo Town 2 (old MoD 2)",
+    "Status":"Closed",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":0,
+    "Beds_Plan":0,
+    "Open_Date":"",
+    "Partner":"MBS Sweden",
+    "Lead_Donor":"",
+    "Accuracy":"WFP - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":"Training Site"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.34222136,6.53993904 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.15",
+    "the_geom":"POINT (-10.342221360999929 6.53993904400005)",
+    "ECF_Code":"LBR_0014",
+    "ECF_Name":"Kakata II",
+    "Status":"Closed",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":0,
+    "Beds_Plan":0,
+    "Open_Date":"2014-12-02T00:00:00",
+    "Partner":"",
+    "Lead_Donor":"",
+    "Accuracy":"WFP - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":"On hold"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -11.36470465,6.75201231 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.16",
+    "the_geom":"POINT (-11.364704647999929 6.752012309999998)",
+    "ECF_Code":"LBR_0024",
+    "ECF_Name":"Robertsport",
+    "Status":"Closed",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":0,
+    "Beds_Plan":0,
+    "Open_Date":"",
+    "Partner":"",
+    "Lead_Donor":"",
+    "Accuracy":"WFP - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -8.9814,7.2375 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.17",
+    "the_geom":"POINT (-8.977700000000027 7.235110000000134)",
+    "ECF_Code":"LBR_0048",
+    "ECF_Name":"Ganta",
+    "Status":"Under Construction",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":0,
+    "Beds_Plan":10,
+    "Open_Date":"2014-12-13T00:00:00",
+    "Partner":"Nimba CHT / PCI",
+    "Lead_Donor":"",
+    "Accuracy":"WHO provided",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.70028,6.24443999 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.18",
+    "the_geom":"POINT (-10.700279999999964 6.244439994000118)",
+    "ECF_Code":"LBR_0019",
+    "ECF_Name":"ELWA 3",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":60,
+    "Beds_Plan":60,
+    "Open_Date":"2014-12-02T00:00:00",
+    "Partner":"MSF Brussels",
+    "Lead_Donor":"",
+    "Accuracy":"WFP - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.696,6.23965 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.19",
+    "the_geom":"POINT (-10.695999998999923 6.239650002000076)",
+    "ECF_Code":"LBR_0018",
+    "ECF_Name":"ELWA 2",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":100,
+    "Beds_Plan":100,
+    "Open_Date":"2014-12-02T00:00:00",
+    "Partner":"MoH/WHO",
+    "Lead_Donor":"",
+    "Accuracy":"WFP - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":"Due for closure for renovation"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.70336322,6.25800905 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.20",
+    "the_geom":"POINT (-10.703363224695579 6.258009053209321)",
+    "ECF_Code":"LBR_0110",
+    "ECF_Name":"SKD 3 - Chinese",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":100,
+    "Beds_Plan":100,
+    "Open_Date":"2014-12-02T00:00:00",
+    "Partner":"Chinese FMT",
+    "Lead_Donor":"",
+    "Accuracy":"MGRS Coordinate Provided by US DoD",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":"Position Provided by US DoD. Apparently Called \"SKD 2\""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.46971999,6.35305998 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.21",
+    "the_geom":"POINT (-10.469719989999874 6.353059977000157)",
+    "ECF_Code":"LBR_0005",
+    "ECF_Name":"Firestone",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":31,
+    "Beds_Plan":31,
+    "Open_Date":"2014-12-09T00:00:00",
+    "Partner":"Firestone",
+    "Lead_Donor":"",
+    "Accuracy":"British Red Cross - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":"WFP provided different position of  6.269344, -10.346535 needs checking"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.82040988,6.86875073 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.22",
+    "the_geom":"POINT (-10.820409883999957 6.868750729000169)",
+    "ECF_Code":"LBR_0027",
+    "ECF_Name":"Tubmanburg",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":100,
+    "Beds_Plan":100,
+    "Open_Date":"2014-12-09T00:00:00",
+    "Partner":"IOM",
+    "Lead_Donor":"",
+    "Accuracy":"WFP - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.79283257,6.38903522 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.23",
+    "the_geom":"POINT (-10.792832569999916 6.389035218000004)",
+    "ECF_Code":"LBR_0023",
+    "ECF_Name":"Unity Conference Centre",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":50,
+    "Beds_Plan":50,
+    "Open_Date":"2014-12-09T00:00:00",
+    "Partner":"MoH",
+    "Lead_Donor":"",
+    "Accuracy":"WFP - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":"Due to close for renovations"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -9.555144,7.004669 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.24",
+    "the_geom":"POINT (-9.55514399999987 7.004669000000035)",
+    "ECF_Code":"LBR_0009",
+    "ECF_Name":"Suakoko / Gbarnga",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":71,
+    "Beds_Plan":71,
+    "Open_Date":"2014-12-09T00:00:00",
+    "Partner":"IMC",
+    "Lead_Donor":"",
+    "Accuracy":"British Red Cross - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":"Known as Gbarnga or Suakoko in different documents"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.7871135,6.3843716 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.25",
+    "the_geom":"POINT (-10.787113499999919 6.384371600000179)",
+    "ECF_Code":"LBR_0020",
+    "ECF_Name":"Island Clinic",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":150,
+    "Beds_Plan":150,
+    "Open_Date":"2014-12-09T00:00:00",
+    "Partner":"MoH/WHO/AU",
+    "Lead_Donor":"",
+    "Accuracy":"WFP - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":"Due to close for renovations"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.801389,6.313333 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.26",
+    "the_geom":"POINT (-10.801388999999972 6.313333000000171)",
+    "ECF_Code":"LBR_0015",
+    "ECF_Name":"Monrovia Medical Unit",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":22,
+    "Beds_Plan":22,
+    "Open_Date":"2014-12-09T00:00:00",
+    "Partner":"USPHS",
+    "Lead_Donor":"",
+    "Accuracy":"Needs location verified",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.20575665,8.3789113 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.27",
+    "the_geom":"POINT (-10.205756652999867 8.37891129600007)",
+    "ECF_Code":"LBR_0007",
+    "ECF_Name":"Foya",
+    "Status":"Closed",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":0,
+    "Beds_Plan":0,
+    "Open_Date":"2014-12-09T00:00:00",
+    "Partner":"MSF",
+    "Lead_Donor":"",
+    "Accuracy":"British Red Cross - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":"Closed due to no new cases in Lofa County."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.73417,6.27028 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.28",
+    "the_geom":"POINT (-10.734170003999964 6.27027999500018)",
+    "ECF_Code":"LBR_0016",
+    "ECF_Name":"Congo Town 1 (old MoD)",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":40,
+    "Beds_Plan":40,
+    "Open_Date":"2014-12-02T00:00:00",
+    "Partner":"AU/Cuban FMT/MoH",
+    "Lead_Donor":"",
+    "Accuracy":"British Red Cross - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.36038423,6.52752356 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.29",
+    "the_geom":"POINT (-10.360384231999944 6.527523558000041)",
+    "ECF_Code":"LBR_0013",
+    "ECF_Name":"Kakata 1",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":50,
+    "Beds_Plan":50,
+    "Open_Date":"2014-12-02T00:00:00",
+    "Partner":"IMC",
+    "Lead_Donor":"",
+    "Accuracy":"WFP - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":"Location and status confirmed by WFP field team"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -8.98132287,7.23732659 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.30",
+    "the_geom":"POINT (-8.981322865999914 7.237326592000045)",
+    "ECF_Code":"LBR_0008",
+    "ECF_Name":"Ganta United Methodist Hospital",
+    "Status":"Open",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":36,
+    "Beds_Plan":36,
+    "Open_Date":"2014-12-18T00:00:00",
+    "Partner":"Methodist Church / PCI",
+    "Lead_Donor":"",
+    "Accuracy":"WFP - GPS",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":"Location and status confirmed by WFP field team"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -9.588,5.483 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.31",
+    "the_geom":"POINT (-9.648000000000025 5.687000000000069)",
+    "ECF_Code":"LBR_0116",
+    "ECF_Name":"Gbediah Town",
+    "Status":"Under Construction",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":0,
+    "Beds_Plan":50,
+    "Open_Date":"2014-12-25T00:00:00",
+    "Partner":"PAE/Aspen",
+    "Lead_Donor":"",
+    "Accuracy":"WHO",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":"Opening date TBC"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -9.423,7.776 ]
+    },
+    "properties": {
+    "FID":"lbr_heal_pt_unmeer_ebolacarefacilities.32",
+    "the_geom":"POINT (-9.428165700000022 7.778799499999991)",
+    "ECF_Code":"LBR_0119",
+    "ECF_Name":"Zorzor",
+    "Status":"Planned",
+    "Type":"ETU",
+    "AdminCode":"",
+    "Beds_Open":0,
+    "Beds_Plan":50,
+    "Open_Date":"2014-12-19T00:00:00",
+    "Partner":"PAE / Aspend",
+    "Lead_Donor":"",
+    "Accuracy":"OSM settlement",
+    "Updated":"",
+    "LabPresent":"",
+    "Country":"",
+    "Comment":"Needs Checking"
+    }
+  }
+]
+}
