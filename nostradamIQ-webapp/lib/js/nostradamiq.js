@@ -40,7 +40,7 @@ imageryViewModels.push(new Cesium.ProviderViewModel({
     }
 }));
 
-// Added here
+// Added here TODO : ICON URLS!!!
 imageryViewModels.push(new Cesium.ProviderViewModel({
     name: 'Mapbox-Satellite (HD & 256Colors)',
     iconUrl: '',
@@ -443,8 +443,7 @@ var baseLayerPicker = new Cesium.BaseLayerPicker('baseLayerPickerContainer', {
 });
 
 // Geolocate User and zoom to position: TODO With button and show where you are!
-function showAndFlyPosition(position) {
-    function fly(position) {
+function fly(position) {
             viewer.camera.flyTo({
                 destination : Cesium.Cartesian3.fromDegrees(position.coords.longitude, position.coords.latitude, 100000.0),
                 orientation : {
@@ -453,7 +452,9 @@ function showAndFlyPosition(position) {
                     roll : 0.0
                 }
             });
-    }
+}
+
+function showAndFlyPosition(position) {
     document.getElementById('geolocation_window').innerHTML = "<i><b>Your Position:</b><br>Lat: "+Number((position.coords.latitude).toFixed(3))+"<br>Lng: "+Number((position.coords.longitude).toFixed(3)+"</i><br><button onclick='fly()'>Fly Me there!</button> ");
 }
 function showError(error) {

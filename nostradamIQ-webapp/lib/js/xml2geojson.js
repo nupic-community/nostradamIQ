@@ -117,16 +117,13 @@ function xml2geojson(xml) {
 };
 */
 
-
-
-
 var xml2geojson = function(xml){
     // Initialize the empty GeoJSON object
     var geo = {
         "type" : "FeatureCollection",
         "features" : []
     };
-    // Function to set props for a feature
+    // Function to set props for a feature TODO
     function setProps(element){
         var properties = {};
         var tags = $(element).find("tag");
@@ -149,8 +146,8 @@ var xml2geojson = function(xml){
     // Read out the hazardBeans Object (??)
 
     // Get the Points for Hazards
-    var $points = $("node:hazardBean", $xml);
-    $points.each(function(index, ele){
+    var points = $("node:hazardBean", xml);
+    points.each(function(index, ele){
         var feature = getFeature(ele, "Point");
         feature.geometry.coordinates.push(parseFloat($(ele).attr('longitude')));
         feature.geometry.coordinates.push(parseFloat($(ele).attr('latitude')));

@@ -636,7 +636,9 @@ var layers = {
             { I: "total_CO2_emission", P: true, T: 'kml', G: "/webapp/layers/kml/3rdparty/humanitarian/co2_emission_perCap_tons.kmzco2_emission_perCap_tons.kmz", S: "CIA: Wold-Fact-Book (2008)", U: "http://www.kmlfactbook.org/", N: "Total CO2 emissions including LULUCF/LUCF per Capita (tons) (2006"},
             { I: "total_tecnically_possible_future_emission", P: true, T: 'kml', G: "/webapp/layers/kml/3rdparty/humanitarian/total_tecnically_possible_future_emission.kmz", S: "CIA: Wold-Fact-Book (2008)", U: "http://www.kmlfactbook.org/", N: "Total Tecnically Possible Future Emission (Mega-Tons) (2008)"},
             { I: "mdg_terrestial_areas_protected", P: true, T: 'kml', G: "/webapp/layers/kml/3rdparty/humanitarian/mdg_terrestial_areas_protected.kmz", S: "CIA: Wold-Fact-Book (2008)", U: "http://www.kmlfactbook.org/", N: "MDG Terrestrial areas protected in % of Total Area (2007)"},       
-            { I: "nasa-population", P: true, T: 'kml', G: "/webapp/layers/kml/3rdparty/humanitarian/SEDAC_POP_2000-01-01_rgb_3600x1800.KMZ", S: "National Aeronautics and Space Administration Earth Observatory(NASA-NEO)", U: "http://neo.sci.gsfc.nasa.gov/view.php?datasetId=SEDAC_POP", N: "Population Density (NASA 2000)"}
+            { I: "nasa-population", P: true, T: 'kml', G: "/webapp/layers/kml/3rdparty/humanitarian/SEDAC_POP_2000-01-01_rgb_3600x1800.KMZ", S: "National Aeronautics and Space Administration Earth Observatory(NASA-NEO)", U: "http://neo.sci.gsfc.nasa.gov/view.php?datasetId=SEDAC_POP", N: "Population Density (NASA 2000)"},
+            { I: "ebola-facilities", Z: true, T: 'geojson', G: "webapp/layers/geojson/ebola_facilities_all.geojson", S: "HDX - Humanitarian Data Exchange", U: "https://data.hdx.rwlabs.org/ebola", N: "Ebola Facilities"},
+            { I: "syria-border-crossings", Z: true, T: 'kml', G: "webapp/layers/kml/3rdparty/humanitarian/geonode-Syria_BorderCrossings_2015Jun11_HIU_USDoS.kml", S: "HDX - Humanitarian Data Exchange", U: "https://data.hdx.rwlabs.org/dataset/syria-border-crossings", N: "Syria Border Crossings"}
             ]},
 
         PDC: { N: "PDC", icon: "alarm", '>': [
