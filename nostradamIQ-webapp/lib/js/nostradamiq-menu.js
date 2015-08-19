@@ -3,9 +3,8 @@
 // Set web root url
 var baseURL = window.location.protocol + "//" + window.location.host + "/webapp/";  // production
 //var proxyURL = 'http://climateviewer.net/netj1/proxy';  // production
-var proxyURL = 'http://nostradamiq.org/webapp/proxy/proxy:8081';  
-//var proxyURL = '//nostradamiq.org/webapp/proxy/old/kmz.php';  // dev
-//var proxyURL = '//cors-anywhere.herokuapp.com/';
+//var proxyURL = 'http://nostradamiq.org/webapp/proxy/proxy:8081';  
+var proxyURL = 'http://localhost:8888/proxy/';  // dev
 var proxyEverything = false;
 
 var activeLayers = {};
@@ -551,7 +550,8 @@ function updateLayer(layerId) {
 
     if (proxyEverything) {
       if (geoDataSrc.indexOf('/webapp/layers/') === -1) {
-        geoDataSrc = proxyURL + 'http:' + geoDataSrc;
+        geoDSRC = geoDataSrc;
+        geoDataSrc = proxyURL + 'http:' + geoDSRC;
       }
     }
 

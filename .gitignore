@@ -65,3 +65,17 @@ nostradamIQ-webapp/proxy/node-http-proxy/*
 nostradamIQ-webapp/proxy/node-http-proxy/*/*
 
 nostradamIQ-webapp/services/geodict
+
+nostradamIQ-webapp/proxy/netjs
+nostradamIQ-webapp/proxy/netjs/*
+nostradamIQ-webapp/proxy/netjs/*/*
+
+nostradamIQ-webapp/proxy/traytention
+nostradamIQ-webapp/proxy/traytention/*
+nostradamIQ-webapp/proxy/traytention/*/*
+
+nostradamIQ-webapp/proxy/old
+
+nostradamIQ-webapp/proxy/CORS-Proxy
+
+
