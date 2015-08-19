@@ -7,18 +7,13 @@ import tornado.ioloop
 import tornado.web
 import tornado.log
 
-from proxy import ProxyHandler, ProxyHandler2
+from proxy import ProxyHandler
 
 
 def run_proxy(bind, app_path=None, debug=False,
     proxy_whitelist=None, origin_whitelist=None):
     handler = [
-        #(r'/proxy/(.*)', ProxyHandler, {
-        #    'proxy_whitelist': proxy_whitelist,
-        #    'origin_whitelist': origin_whitelist,
-        #    }
-        #),
-        (r'/proxy/(\w.*)', ProxyHandler2, {
+        (r'/proxy/(\w.*)', ProxyHandler, {
             'proxy_whitelist': proxy_whitelist,
             'origin_whitelist': origin_whitelist,
             }

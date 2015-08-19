@@ -9,9 +9,18 @@ import tornado.web
 
 import datetime
 import redis
+import base64
+
 REDIS = redis.Redis()
 
 CACHE_MIN = 5 # only for dev go for a dict with individual TTLs
+# from chache_times import CACHE_MIN # Production
+FILTER = False # To only accept urls in urls.txt
+
+if FILTER == True:
+    with open('urls.txt') as f:
+        VALID_URLS = f.read().splitlines()
+    f.close()
 
 # headers to remove as of HTTP 1.1 RFC2616
 # http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html
@@ -98,13 +107,17 @@ class ProxyHandler(tornado.web.RequestHandler):
                 return
 
         if response.body:
-            # SAVE RESPONCE IN REDIS AND RETURN IT
-            # TODO self.url is None ?!
-            date = int((datetime.datetime.now()-datetime.datetime(1970,1,1)).total_seconds())
-            REDIS.setex(self.url, response.body, CACHE_MIN*60) #REDIS.setex(url,base64.b64encode(content),CACHE_MIN*60) # CACHE_MIN[url]
-            print "URL: {0} was inserted in cache with TTL: {1} minutes!\n".format(self.url, CACHE_MIN) # CACHE_MIN[url]
+            # SAVE RESPONSE IN REDIS AND RETURN IT
+            content = response.body
+            content = base64.b64encode(content)
+            type_content = response.headers.get('Content-Type', '')
+            print "\nContent-Type: {0}".format(type_content)
+            redis_obj = [type_content, content]
+            # TODO: Write to file as well for long term storage
+            REDIS.setex(self.url, redis_obj, CACHE_MIN*60) # CACHE_MIN[url]
+            print "\nURL: {0} was inserted in REDIS-Cache with TTL: {1} minutes!\n".format(self.url, CACHE_MIN) # CACHE_MIN[url]
             self.write(response.body)
-        self.finish()
+            self.finish()
 
     @tornado.web.asynchronous
     def request_handler(self, url):
@@ -132,19 +145,23 @@ class ProxyHandler(tornado.web.RequestHandler):
 
         # For saving it in Redis
         self.url = url
-
         client = tornado.httpclient.AsyncHTTPClient()
         try:
-            content = REDIS.get(self.url)
-            if content == None:
+            redis_response = REDIS.get(self.url)
+            if redis_response == None:
                 # Have the AJAX Client fetch the content
                 client.fetch(req, self.response_handler)
             else:
+                # REDIS hold everything as a string, so get rid of all the stuff...
+                redis_obj = redis_response[1:-1].split(',')
+                type_content = redis_obj[0]
+                content = redis_obj[1]
                 # Get content from Redis and finish request
+                self.set_header('Content-Type', type_content)
+                content = base64.b64decode(content)
+                print "\nGot Request handeled by Redis! TTL left: {0}".format(REDIS.ttl(self.url))
                 self.write(content)
-                self.finish()
-            
-
+                self.finish()    
 
         except tornado.httpclient.HTTPError as e:
             # pass regular HTTP errors from server to client
@@ -161,53 +178,3 @@ class ProxyHandler(tornado.web.RequestHandler):
     delete = request_handler
     head = request_handler
     options = request_handler
-
-
-class ProxyHandler2(ProxyHandler):
-
-    @tornado.web.asynchronous
-    def request_handler(self, url):
-        # Cesium Proxy adds '?' to the query... But tornado doesn't handle it
-        url_parts = urlparse.urlparse(url)
-        # self.write(str(url_parts) + '\n')
-        # We are from your side ;)
-        self.request.headers['Host'] = url_parts.netloc
-
-        self.check_proxy_host(url_parts)
-        self.check_origin()
-
-        if self.request.query:
-            url = url + '?' + self.request.query
-        req = tornado.httpclient.HTTPRequest(
-            url=url,
-            method=self.request.method,
-            body=self.request.body,
-            headers=self.request.headers,
-            follow_redirects=True, #False,
-            allow_nonstandard_methods=True,
-            use_gzip=False, # otherwise tornado will decode proxied data
-        )
-
-        client = tornado.httpclient.AsyncHTTPClient()
-        try:
-            client.fetch(req, self.response_handler)
-
-        except tornado.httpclient.HTTPError as e:
-            # pass regular HTTP errors from server to client
-            if hasattr(e, 'response') and e.response:
-                self.response_handler(e.response)
-            else:
-                raise
-
-    # alias HTTP methods to generic request handler
-    SUPPORTED_METHODS = ['GET', 'POST', 'PUT', 'DELETE', 'HEAD', 'OPTIONS']
-    get = request_handler
-    post = request_handler
-    put = request_handler
-    delete = request_handler
-    head = request_handler
-    options = request_handler
-
-
-        
-        
