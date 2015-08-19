@@ -481,18 +481,18 @@
         <ul>
             <li><a id="fb" href="//www.facebook.com/sharer/sharer.php" target="_blank">
                     <i class="fa fa-fw"></i></a>
-            </li><li><a id="tweet" href="//twitter.com/intent/tweet?url=http%3A%2F%2Fnostradamiq.org%2Flanding%2F&text=nostradamIQ%20-%20Sensing%20our%20World%27s%20disasters&via=nostradamIQ" target="_blank">
+            </li><li><a id="tweet" href="//twitter.com/intent/tweet?url=http%3A%2F%2Fnostradamiq.org%2F&text=nostradamIQ%20-%20Sensing%20our%20World%27s%20disasters&via=nostradamIQ" target="_blank">
                     <i class="fa fa-fw"></i></a>
-            </li><li><a id="gplus" href="//plus.google.com/share?url=http%3A%2F%2Fnostradamiq.org%2Flanding%2F" onclick="javascript:window.open(this.href,
+            </li><li><a id="gplus" href="//plus.google.com/share?url=http%3A%2F%2Fnostradamiq.org%2F" onclick="javascript:window.open(this.href,
   '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
                     <i class="fa fa-fw"></i></a>
-            </li><li><a id="in" href="//www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fnostradamiq.org%2Flanding%2F&title=nostradamIQ%20-%20Sensing%20our%20World%27s%20disasters&source=nostradamIQ" target="_blank">
+            </li><li><a id="in" href="//www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fnostradamiq.org%2F&title=nostradamIQ%20-%20Sensing%20our%20World%27s%20disasters&source=nostradamIQ" target="_blank">
                     <i class="fa fa-fw"></i></a>
-            </li><li><a id="xing" href="//www.xing.com/spi/shares/new?url=http%3A%2F%2Fnostradamiq.org%2Flanding%2F" target="_blank">
+            </li><li><a id="xing" href="//www.xing.com/spi/shares/new?url=http%3A%2F%2Fnostradamiq.org%2F" target="_blank">
                     <i class="fa fa-fw"></i></a>
-            </li><li><a id="reddit" href="//www.reddit.com/submit?url=http%3A%2F%2Fnostradamiq.org%2Flanding%2F&title=nostradamIQ%20-%20Sensing%20our%20World%27s%20disasters" target="_blank">
+            </li><li><a id="reddit" href="//www.reddit.com/submit?url=http%3A%2F%2Fnostradamiq.org%2F&title=nostradamIQ%20-%20Sensing%20our%20World%27s%20disasters" target="_blank">
                     <i class="fa fa-fw"></i></a>
-            </li><li><a id="pin" href="//pinterest.com/pin/create/bookmarklet/?media=http%3A%2F%2Fnostradamiq.org%2Flanding%2Fimg%2Fintro_bg.jpg&url=http%3A%2F%2Fnostradamiq.org%2Flanding%2F&is_video=false&description=nostradamIQ%20-%20Sensing%20our%20World%27s%20disasters" target="_blank">
+            </li><li><a id="pin" href="//pinterest.com/pin/create/bookmarklet/?media=http%3A%2F%2Fnostradamiq.org%2Fimg%2Fintro_bg.jpg&url=http%3A%2F%2Fnostradamiq.org%2F&is_video=false&description=nostradamIQ%20-%20Sensing%20our%20World%27s%20disasters" target="_blank">
                     <i class="fa fa-fw"></i></a>
             </li><li><a id="mail" href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site http://nostradamiq.org.">
                     <i class="fa fa-fw"></i></a>

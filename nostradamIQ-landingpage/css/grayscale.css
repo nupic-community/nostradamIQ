@@ -818,7 +818,11 @@ a:focus {
 }
 
 #earthquake {
-    background-image: url(../img/earthquake_83016693.jpg);
+    background-image: url(../img/resources_earthquake.jpg);
+}
+
+#cyclones {
+    background-image: url(../img/resources_cyclones.jpg);
 }
 
 #high-surf {
