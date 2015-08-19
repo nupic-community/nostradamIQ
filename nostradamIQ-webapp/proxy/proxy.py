@@ -40,8 +40,16 @@ class ProxyHandler(tornado.web.RequestHandler):
     def __init__(self, *args, **kw):
         self.proxy_whitelist = kw.pop('proxy_whitelist', None)
         self.origin_whitelist = kw.pop('origin_whitelist', None)
+        # Remove the '?'' Cesium prepends to the Proxy-Request:
         self.url = None
-        super(ProxyHandler, self).__init__(*args, **kw)
+        try:
+            print self.request.uri
+            if '?' == self.request.uri[0]:
+                self.request.uri = self.request.uri[1:]
+        except:
+            pass
+
+        super(ProxyHandler, self).__init__(*args, **kw) #super(tornado.web.RequestHandler, self).__init__(*args, **kw)
 
     def check_proxy_host(self, url_parts):
         if self.proxy_whitelist is None:
@@ -121,10 +129,8 @@ class ProxyHandler(tornado.web.RequestHandler):
 
     @tornado.web.asynchronous
     def request_handler(self, url):
-        
-        #if '?' == url[0]:
-        #    url = url[1:]
-        
+        print url
+
         url_parts = urlparse.urlparse(url)
         # We are from your side ;)
         self.request.headers['Host'] = url_parts.netloc
@@ -144,7 +150,7 @@ class ProxyHandler(tornado.web.RequestHandler):
         )
 
         # For saving it in Redis
-        self.url = url
+        #self.url = url
         client = tornado.httpclient.AsyncHTTPClient()
         try:
             redis_response = REDIS.get(self.url)
@@ -171,7 +177,7 @@ class ProxyHandler(tornado.web.RequestHandler):
                 raise
 
     # alias HTTP methods to generic request handler
-    SUPPORTED_METHODS = ['GET', 'POST', 'PUT', 'DELETE', 'HEAD', 'OPTIONS']
+    SUPPORTED_METHODS = ['GET', 'POST', 'PUT', 'HEAD', 'OPTIONS']
     get = request_handler
     post = request_handler
     put = request_handler

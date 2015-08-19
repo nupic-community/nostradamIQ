@@ -1,3 +1,2 @@
 redis==2.10.3
 tornado==4.2.1
-Image==1.4.0
