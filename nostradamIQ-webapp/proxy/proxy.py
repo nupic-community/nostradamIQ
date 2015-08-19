@@ -129,12 +129,13 @@ class ProxyHandler(tornado.web.RequestHandler):
             allow_nonstandard_methods=True,
             use_gzip=False, # otherwise tornado will decode proxied data
         )
+
         # For saving it in Redis
         self.url = url
 
         client = tornado.httpclient.AsyncHTTPClient()
         try:
-            content = REDIS.get(url)
+            content = REDIS.get(self.url)
             if content == None:
                 # Have the AJAX Client fetch the content
                 client.fetch(req, self.response_handler)

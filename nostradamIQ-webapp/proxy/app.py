@@ -70,11 +70,11 @@ def main():
 
     tornado.log.enable_pretty_logging()
 
-    print("Starting Corsa...", file=sys.stderr)
-    print("  CORS proxy at http://%s:%d/proxy/" % (host, port), file=sys.stderr)
+    print("Starting CORS-Proxy...", file=sys.stderr)
+    print("CORS proxy at http://%s:%d/proxy/" % (host, port), file=sys.stderr)
 
     if options.app_dir:
-        print("  Hosting %s at http://%s:%d/app/" % (options.app_dir, host, port),
+        print("Hosting %s at http://%s:%d/app/" % (options.app_dir, host, port),
             file=sys.stderr)
 
     proxy_whitelist = []
