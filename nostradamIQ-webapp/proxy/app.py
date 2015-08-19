@@ -13,7 +13,7 @@ from proxy import ProxyHandler
 def run_proxy(bind, app_path=None, debug=False,
     proxy_whitelist=None, origin_whitelist=None):
     handler = [
-        (r'/proxy/(\w.*)', ProxyHandler, {
+        (r'/proxy/(.*)', ProxyHandler, { #r'/proxy/[?](.*)' # ^/proxy/[?](.*) TODO Should work!
             'proxy_whitelist': proxy_whitelist,
             'origin_whitelist': origin_whitelist,
             }

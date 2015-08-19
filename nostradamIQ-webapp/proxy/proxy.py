@@ -130,7 +130,6 @@ class ProxyHandler(tornado.web.RequestHandler):
     @tornado.web.asynchronous
     def request_handler(self, url):
         print url
-
         url_parts = urlparse.urlparse(url)
         # We are from your side ;)
         self.request.headers['Host'] = url_parts.netloc

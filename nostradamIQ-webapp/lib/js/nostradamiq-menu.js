@@ -5,7 +5,6 @@ var baseURL = window.location.protocol + "//" + window.location.host + "/webapp/
 //var proxyURL = 'http://climateviewer.net/netj1/proxy';  // production
 //var proxyURL = 'http://nostradamiq.org/webapp/proxy/proxy:8081';  
 var proxyURL = 'http://localhost:8888/proxy/';  // dev
-var proxyEverything = false;
 
 var activeLayers = {};
 var infoBox = $('.cesium-infoBox');
@@ -296,7 +295,7 @@ function loadOsmLayer(layerId, geoDataSrc, proxy, source) {
 function loadGeoJson(layerId, geoDataSrc, proxy, markerScale, markerImg, markerColor, zoom) {
     console.log('load geojson');
     if (proxy) {
-        new Cesium.GeoJsonDataSource.load(proxy + '?' + geoDataSrc).then(function (geoData) {
+        new Cesium.GeoJsonDataSource.load(proxyURL + '?' + geoDataSrc).then(function (geoData) {
           modMarkers(geoData, markerImg, markerScale, markerColor, markerLabel);
           viewer.dataSources.add(geoData);
           activeLayers[layerId] = geoData;
@@ -332,7 +331,7 @@ function loadGeoJson(layerId, geoDataSrc, proxy, markerScale, markerImg, markerC
 function loadPDC_XML(layerId, geoDataSrc, proxy, markerLabel, markerScale, markerImg, markerColor, zoom) {
     console.log('load PDC-XML');
     if (proxy) {
-      new Cesium.loadXML(proxy + '?' + geoDataSrc).then(function(xmlData) {
+      new Cesium.loadXML(proxyURL + '?' + geoDataSrc).then(function(xmlData) {
           // convert xml to geoJSON:
           console.log(xmlData);
           var geoData = xml2geojson(xmlData);
@@ -547,13 +546,6 @@ function updateLayer(layerId) {
     markerColor = l.MC,
     timeline = l.C,
     proxy = l.P;
-
-    if (proxyEverything) {
-      if (geoDataSrc.indexOf('/webapp/layers/') === -1) {
-        geoDSRC = geoDataSrc;
-        geoDataSrc = proxyURL + 'http:' + geoDSRC;
-      }
-    }
 
     if (layerEnabled[layerId] === undefined) {
         //put it in a temporary state to disallow loading while loading
