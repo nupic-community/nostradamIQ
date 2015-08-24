@@ -47,5 +47,5 @@ if __name__ == '__main__':
     url = ''
     port = 8088
     srv = make_server(url, port, app)
-    print "Twitter-Server listening on {0}:{1}\n".format(url, port)
+    print "Twitter-File-Server listening on {0}:{1}\n".format(url, port)
     srv.serve_forever()
