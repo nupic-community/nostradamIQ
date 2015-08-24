@@ -36,13 +36,13 @@ OUTPUTGEO_TPL = "tweets_%s_%s_%s.geojson"
 
 
 # TODO : Minute only for testing!! Go for hour!
-def getCurrentDateKey(self):
+def getCurrentDateKey():
     # Returns: str: HH:DD-MM-YYYY 
     hour = datetime.datetime.now().hour
     minute = datetime.datetime.now().minute
     date = "{0}-{1}-{2}".format(datetime.datetime.now().day, datetime.datetime.now().month, datetime.datetime.now().year)
     print "getCurrentDateKey: %s" % ("{0}:{1}".format(minute, date)) #"{0}:{1}".format(hour, date))
-    print "currentKeyDateTime: %s" % (listener.currentKeyDateTime)
+    #print "currentKeyDateTime: %s" % (listener.currentKeyDateTime)
     return "{0}:{1}".format(minute, date) #"{0}:{1}".format(hour, date)
 
 
@@ -130,7 +130,10 @@ class StdOutListener(StreamListener):
         return True
 
     def on_error(self, status):
-        print 'Error: ', status
+        if status == 420:
+            print "Status Code 420: Enhance Your Calm\nTwitter's Restriction set in... :'(\nALL THAT BEAUTIFUL DATA!!!\nRetrying...\n"
+        else:
+            print 'Error: ', status
 
 
 
@@ -159,19 +162,23 @@ if __name__ == '__main__':
         stream.filter(track=KEYWORD_ARRAY)#, async=True) #async for multithreating
 
     except KeyboardInterrupt:
-        print "\n\nYOU INTERRUPTED!\nFINISH WRITING FILE\n"
+        print "\n\nYOU INTERRUPTED!\n"
         print "Saw {0} tweets; {1} of them had location information!\n".format(listener.countAll, listener.countLoc)
-        with open(listener.outputgeo, 'a+') as outPgeo:
-            outPgeo.write(']}')
-        outPgeo.close()
+        if listener.outputgeo != None:
+            print "FINISH WRITING FILE\n"
+            with open(listener.outputgeo, 'a+') as outPgeo:
+                outPgeo.write(']}')
+            outPgeo.close()
+        else:
+            print "NOTHING WRITTEN TO FILE!\n"
 
     except IncompleteRead: 
         print "Twitter Restriction set in... \nALL THAT BEAUTIFUL DATA :'(\n"
         time.sleep(10) # sleep for 10 seconds twitters restrictions
 
-    except:
-        print "\nAN ERROR OCCURED!\n"
-        print "Saw {0} tweets; {1} of them had location information!\n".format(listener.countAll, listener.countLoc)
-        with open(listener.outputgeo, 'a+') as outPgeo:
-            outPgeo.write(']}')
-        outPgeo.close()
+    #except:
+    #    print "\nAN ERROR OCCURED!\n"
+    #    print "Saw {0} tweets; {1} of them had location information!\n".format(listener.countAll, listener.countLoc)
+    #    with open(listener.outputgeo, 'a+') as outPgeo:
+    #        outPgeo.write(']}')
+    #    outPgeo.close()

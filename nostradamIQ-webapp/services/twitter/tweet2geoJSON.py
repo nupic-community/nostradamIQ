@@ -74,7 +74,7 @@ def check_text_for_location(text):
 			return coords_array[0]
 		return coords_array
 """
-	""" or a brute-force approach? // Maybe better for more languages...
+""" or a brute-force approach? // Maybe better for more languages...
 	coords_array = [] # What to do when we find multiple?
 	for word in text.split(' '):
 		if (not word in BLACKLIST):
