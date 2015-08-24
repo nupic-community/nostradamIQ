@@ -537,7 +537,14 @@ function loadCZML(layerId, geoDataSrc, proxy, zoom, markerImg, markerScale, mark
 
 // TODO
 function loadLink(layerId, geoDataSrc, proxy, zoom) {
-  "Display external links in an iframe"
+  // Display external links in an iframe
+  console.log('load external Link');
+
+}
+
+// TODO: https://cesiumjs.org/Cesium/Build/Documentation/ImageryLayer.html
+function loadSingleTileImigary(layerId, geoDataSrc, proxy) {
+    console.log('load Single Tile Imagery');
 
 }
 
@@ -624,6 +631,8 @@ function updateLayer(layerId) {
             loadLink(layerId, geoDataSrc, proxy, zoom);
         } else if (l.T ===("pdc-xml")) {
             loadPDC_XML(layerId, geoDataSrc, proxy, markerLabel, markerScale, markerImg, markerColor, zoom);
+        } else if (l.T ===("STI")) {
+            loadSingleTileImigary(layerId, geoDataSrc, proxy);
         } else {
             console.log(layerId + ' failed to load map type: ' + l.T);
         }
@@ -916,11 +925,11 @@ var giveDataOn = false;
 function toggleGiveData() {
   if (giveDataOn) { // Hide give-data
     $('#give-data').html('');
-    $('.giveData-title').html('<i class="comments outline icon"></i>I HAVE DATA!');
+    $('.giveData-title').html('<i class="database icon"></i>I HAVE DATA!');
     giveDataOn = false;
   } else { // Show give-data
     $('#give-data').html("DO YOU KNOW OF HAVE SOME INTERESTING DATA?<br>We are happy to visualize Your, or any other Data for anybody, or privately!<br>We build nostradamIQ so that it is incredibally easy to add more data sources - We support various data formats and are happy to help you convert your non-geo dataformat like csv, exel, txt and so on... Open or Your Online Data-Sources are also welcome!<br><a href='mailto:info@nostradamiq.org?subject=nostradamIQ Data Suggestion&amp;body=I have some cool Data for you to include in nostradamIQ!\n\nFormat:____________\nSource:___________(If not an oline source, please attach the data!)\nWhy is this interesting?\nSuggested Name:____________\nOrigin to be credited:__________\n'>Please contact us!</a><br>If you feel like coding yourself, see <a href='https://github.com/nupic-community/nostradamIQ/tree/master/nostradamIQ-webapp' target='_blank'>our source-code</a> and <a href='https://github.com/nupic-community/nostradamIQ/pulls' target='_blank'>make a PR!</a>"); 
-    $('.giveData-title').html('<i class="comments icon"></i>CONTRIBUTE IT!');
+    $('.giveData-title').html('<i class="database icon"></i>CONTRIBUTE IT!');
     giveDataOn = true;
   }
 }
