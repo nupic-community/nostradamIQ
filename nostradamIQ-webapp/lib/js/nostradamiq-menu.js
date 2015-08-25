@@ -558,6 +558,7 @@ function loadSingleTileImigary(layerId, geoDataSrc, proxy) {
     } else {
         var src = viewer.imageryLayers.addImageryProvider(new Cesium.SingleTileImageryProvider({
             url : geoDataSrc,
+            //url : geoDataSrc.substring(0,-1),
             //credit : source,
             hasAlphaChannel : true,
             alpha : 0.7,
