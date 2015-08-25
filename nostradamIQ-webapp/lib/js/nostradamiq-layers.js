@@ -165,7 +165,8 @@ var layers = {
         ]},
         magnetic: {N: "Magnetic Field", icon: "magnet", '>' : [
                 { I: "magnetic-field", T: 'kml', G: "/webapp/layers/kml/magnetic/magnetic_field.kmz", S: "University of San Diego, Dept. of Geological Sciences", U: "http://www.geology.sdsu.edu/kmlgeology/magnetics.html", N: "Earth Magnetic Field"},
-                { I: "magnetic-field-anomalies", T: 'kml', G: "/webapp/layers/kml/magnetic/magnetic_anomalies.kmz", S: "University of San Diego, Dept. of Geological Sciences", U: "http://www.geology.sdsu.edu/kmlgeology/magnetics.html", N: "Earth Magnetic Field Anomalies"},
+                { I: "magnetic-field-anomalies-lg", T: 'STI', G: "http://www.geology.sdsu.edu/kmlgeology/kmz/magnetic_anomalies/magnetic_anomalies_lg.jpg", S: "University of San Diego, Dept. of Geological Sciences", U: "http://www.geology.sdsu.edu/kmlgeology/magnetics.html", N: "Earth Magnetic Field Anomalies LG"},
+                { I: "magnetic-field-anomalies", T: 'STI', G: "http://www.geology.sdsu.edu/kmlgeology/kmz/magnetic_anomalies/magnetic_anomalies.jpg", S: "University of San Diego, Dept. of Geological Sciences", U: "http://www.geology.sdsu.edu/kmlgeology/magnetics.html", N: "Earth Magnetic Field Anomalies"},
                 { I: "magnetic-field-declination", T: 'kml', G: "/webapp/layers/kml/magnetic/magnetic_field_declination.kmz", S: "University of San Diego, Dept. of Geological Sciences", U: "http://www.geology.sdsu.edu/kmlgeology/magnetics.html", N: "Earth Magnetic Field Declination"}
         ]},
         rain: { N: "Precipitation", icon: "umbrella", ">": [

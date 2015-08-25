@@ -542,10 +542,30 @@ function loadLink(layerId, geoDataSrc, proxy, zoom) {
 
 }
 
-// TODO: https://cesiumjs.org/Cesium/Build/Documentation/ImageryLayer.html
 function loadSingleTileImigary(layerId, geoDataSrc, proxy) {
     console.log('load Single Tile Imagery');
-
+    if (proxy) {
+        var src = viewer.imageryLayers.addImageryProvider(new Cesium.SingleTileImageryProvider({
+            url : geoDataSrc,
+            proxy: new Cesium.DefaultProxy(proxyURL),
+            //credit : source,
+            hasAlphaChannel : true,
+            alpha : 0.7,
+            brightness : 2
+        }));
+        activeLayers[layerId] = src;
+        loadSliders(src, layerId);
+    } else {
+        var src = viewer.imageryLayers.addImageryProvider(new Cesium.SingleTileImageryProvider({
+            url : geoDataSrc,
+            //credit : source,
+            hasAlphaChannel : true,
+            alpha : 0.7,
+            brightness : 2
+        }));
+        activeLayers[layerId] = src;
+        loadSliders(src, layerId);
+    }
 }
 
 /* ----------------------------- END LAYER HANDELERS ----------------------------- */
@@ -679,6 +699,9 @@ function initDetails(layerId, layerType, details, source, sourceUrl, geoDataSrc)
     }
     if (layerType == ('nasa-gibs')) {
       $('<div class="item '+ layerId + '-info"><i class="circular inverted file icon"></i><div class="content"><div class="header">Data Type</div>Web Map Tile Service (WMTS)</div>').appendTo(list);
+    }
+    if (layerType == ('STI')) {
+      $('<div class="item '+ layerId + '-info"><i class="circular inverted file icon"></i><div class="content"><div class="header">Data Type</div>Single Tile Imagery</div>').appendTo(list);
     }
     if (layerType == ('wms')) {
       $('<div class="item '+ layerId + '-info"><i class="circular inverted file icon"></i><div class="content"><div class="header">Data Type</div>Web Mapping Service (WMS)<br><a target="_blank" rel="nofollow" href="' + geoDataSrc + '?request=GetCapabilities&service=WMS">Get Capabilities</a></div>').appendTo(list);
