@@ -29,6 +29,20 @@ var map_box_appendix = '?access_token=pk.eyJ1Ijoibm9zdHJhZGFtaXEiLCJhIjoiNWUyMTM
 
 // Base Map Picker
 imageryViewModels.push(new Cesium.ProviderViewModel({
+    name: 'Natural Earth II',
+    iconUrl: Cesium.buildModuleUrl('Widgets/Images/ImageryProviders/natural_earth.jpg'),
+    tooltip: 'Natural Earth Model by the Cesium Community\nhttps://cesiumjs.org/data-and-assets/imagery/natural-earth-ii.html',
+    creationFunction: function () {
+        return new Cesium.UrlTemplateImageryProvider({
+            url: '//cesiumjs.org/tilesets/imagery/naturalearthii/{z}/{x}/{reverseY}.jpg',
+            credit: '© Analytical Graphics, Inc.',
+            tilingScheme: new Cesium.GeographicTilingScheme(),
+            maximumLevel: 5
+        });
+    }
+}));
+
+imageryViewModels.push(new Cesium.ProviderViewModel({
     name: 'Dark Matter',
     iconUrl: Cesium.buildModuleUrl('Widgets/Images/ImageryProviders/dark_matter.jpg'),
     tooltip: 'Map tiles by CartoDB, under CC BY 3.0. Data by OpenStreetMap, under ODbL.',
@@ -308,20 +322,6 @@ imageryViewModels.push(new Cesium.ProviderViewModel({
     }
 }));
 
-
-imageryViewModels.push(new Cesium.ProviderViewModel({
-    name: 'Natural Earth II',
-    iconUrl: Cesium.buildModuleUrl('Widgets/Images/ImageryProviders/natural_earth.jpg'),
-    tooltip: 'Natural Earth Model by the Cesium Community\nhttps://cesiumjs.org/data-and-assets/imagery/natural-earth-ii.html',
-    creationFunction: function () {
-        return new Cesium.UrlTemplateImageryProvider({
-            url: '//cesiumjs.org/tilesets/imagery/naturalearthii/{z}/{x}/{reverseY}.jpg',
-            credit: '© Analytical Graphics, Inc.',
-            tilingScheme: new Cesium.GeographicTilingScheme(),
-            maximumLevel: 5
-        });
-    }
-}));
 
 imageryViewModels.push(new Cesium.ProviderViewModel({
     name: 'The Black Marble',
