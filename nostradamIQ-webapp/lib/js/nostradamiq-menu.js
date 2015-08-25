@@ -1012,6 +1012,8 @@ $('.sun-control').toggle(
 /* ----------------------------- LEGEND ----------------------------- */
 
 // TODO NOT WORKING!
+/*
+
 var legendOn = false;
 function toggleLegend() {
   if (legendOn) { // Hide Legend
@@ -1025,6 +1027,8 @@ function toggleLegend() {
   }
 }
 $('.legend-title').click(toggleLegend);
+
+*/
 
 /* ----------------------------- TIMEZONES ----------------------------- */
 /*
