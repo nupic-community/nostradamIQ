@@ -384,6 +384,7 @@ div.cesium-baseLayerPicker-item {
 
 .cesium-baseLayerPicker-itemLabel {
 	color:#DDD;
+    line-height: 1.2em;
 }
 
 .cesium-baseLayerPicker-selectedItem .cesium-baseLayerPicker-itemLabel {
@@ -535,16 +536,33 @@ button.ui.button.cv-button:focus span,button.ui.button.cv-button:hover span {
 }
 
 .banner-social-buttons li {
+    width: 80px;
     text-align: center;
-    padding: 5px 4%;
-    margin-bottom: 3px;
-    display: block;
-    border: 1px solid #FF7214;
+    margin: 4px 5px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
 }
 
-.banner-social-buttons li a {
-    width: 100%;
-    height: 100%;
+.banner-social-buttons li img {
+    display: inline-block;
+    width: inherit;
+    max-width: 100%;
+    height: auto;
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.banner-social-buttons li div {
+    color: rgb(221,221,221);
+    display: block;
+    font-size: 8pt;
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word;
+    line-height: 1.2em;
 }
 
 .banner-social-buttons li:hover {
