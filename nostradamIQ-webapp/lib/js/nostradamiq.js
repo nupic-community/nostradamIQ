@@ -29,6 +29,20 @@ var map_box_appendix = '?access_token=pk.eyJ1Ijoibm9zdHJhZGFtaXEiLCJhIjoiNWUyMTM
 
 // Base Map Picker
 imageryViewModels.push(new Cesium.ProviderViewModel({
+    name: 'Natural Earth II',
+    iconUrl: Cesium.buildModuleUrl('Widgets/Images/ImageryProviders/natural_earth.jpg'),
+    tooltip: 'Natural Earth Model by the Cesium Community\nhttps://cesiumjs.org/data-and-assets/imagery/natural-earth-ii.html',
+    creationFunction: function () {
+        return new Cesium.UrlTemplateImageryProvider({
+            url: '//cesiumjs.org/tilesets/imagery/naturalearthii/{z}/{x}/{reverseY}.jpg',
+            credit: '© Analytical Graphics, Inc.',
+            tilingScheme: new Cesium.GeographicTilingScheme(),
+            maximumLevel: 5
+        });
+    }
+}));
+
+imageryViewModels.push(new Cesium.ProviderViewModel({
     name: 'Dark Matter',
     iconUrl: Cesium.buildModuleUrl('Widgets/Images/ImageryProviders/dark_matter.jpg'),
     tooltip: 'Map tiles by CartoDB, under CC BY 3.0. Data by OpenStreetMap, under ODbL.',
@@ -310,20 +324,6 @@ imageryViewModels.push(new Cesium.ProviderViewModel({
 
 
 imageryViewModels.push(new Cesium.ProviderViewModel({
-    name: 'Natural Earth II',
-    iconUrl: Cesium.buildModuleUrl('Widgets/Images/ImageryProviders/natural_earth.jpg'),
-    tooltip: 'Natural Earth Model by the Cesium Community\nhttps://cesiumjs.org/data-and-assets/imagery/natural-earth-ii.html',
-    creationFunction: function () {
-        return new Cesium.UrlTemplateImageryProvider({
-            url: '//cesiumjs.org/tilesets/imagery/naturalearthii/{z}/{x}/{reverseY}.jpg',
-            credit: '© Analytical Graphics, Inc.',
-            tilingScheme: new Cesium.GeographicTilingScheme(),
-            maximumLevel: 5
-        });
-    }
-}));
-
-imageryViewModels.push(new Cesium.ProviderViewModel({
     name: 'The Black Marble',
     iconUrl: Cesium.buildModuleUrl('Widgets/Images/ImageryProviders/black_marble.jpg'),
     tooltip: 'The lights of cities and villages trace the outlines of civilization in this global view of the \
@@ -407,6 +407,7 @@ if ($('body').hasClass('mobile')) {
         textureUrl: '/webapp/lib/cesium/Cesium/Assets/Textures/moonSmall.jpg', 
         onlySunLightning: false 
     });
+    
     // better Stars: WARNING! LOTS OF WORK! 
 /*
     viewer.scene.skyBox = new Cesium.SkyBox({
@@ -452,10 +453,10 @@ function fly(position) {
 }
 
 function showAndFlyPosition(position) {
-    document.getElementById('geolocation_window').innerHTML = "<i><b>Your Position:</b><br>Lat: "+Number((position.coords.latitude).toFixed(3))+"<br>Lng: "+Number((position.coords.longitude).toFixed(3)+"</i><br><button onclick='fly()'>Fly Me there!</button> ");
+    document.getElementById('geolocation-window').innerHTML = "<i><b>Your Position:</b><br>Lat: "+Number((position.coords.latitude).toFixed(3))+"<br>Lng: "+Number((position.coords.longitude).toFixed(3)+"</i><br><button onclick='fly()'>Fly Me there!</button> ");
 }
 function showError(error) {
-    $('#geolocation_window').hide();
+    $('#geolocation-window').hide();
     switch(error.code) {
         case error.PERMISSION_DENIED:
             console.log("You denied the request for Geolocation.");

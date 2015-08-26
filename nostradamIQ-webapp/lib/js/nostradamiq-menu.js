@@ -945,6 +945,7 @@ function toggleComments() {
 }
 $('.chat-title').click(toggleComments);
 
+// TODO NOT WORKING!
 var giveDataOn = false;
 function toggleGiveData() {
   if (giveDataOn) { // Hide give-data
@@ -952,7 +953,7 @@ function toggleGiveData() {
     $('.giveData-title').html('<i class="database icon"></i>I HAVE DATA!');
     giveDataOn = false;
   } else { // Show give-data
-    $('#give-data').html("DO YOU KNOW OF HAVE SOME INTERESTING DATA?<br>We are happy to visualize Your, or any other Data for anybody, or privately!<br>We build nostradamIQ so that it is incredibally easy to add more data sources - We support various data formats and are happy to help you convert your non-geo dataformat like csv, exel, txt and so on... Open or Your Online Data-Sources are also welcome!<br><a href='mailto:info@nostradamiq.org?subject=nostradamIQ Data Suggestion&amp;body=I have some cool Data for you to include in nostradamIQ!\n\nFormat:____________\nSource:___________(If not an oline source, please attach the data!)\nWhy is this interesting?\nSuggested Name:____________\nOrigin to be credited:__________\n'>Please contact us!</a><br>If you feel like coding yourself, see <a href='https://github.com/nupic-community/nostradamIQ/tree/master/nostradamIQ-webapp' target='_blank'>our source-code</a> and <a href='https://github.com/nupic-community/nostradamIQ/pulls' target='_blank'>make a PR!</a>"); 
+    $('#give-data').html("<p>DO YOU KNOW OF HAVE SOME INTERESTING DATA?<br>We are happy to visualize Your, or any other Data for anybody, or privately!<br>We build nostradamIQ so that it is incredibally easy to add more data sources - We support various data formats and are happy to help you convert your non-geo dataformat like csv, exel, txt and so on... Open or Your Online Data-Sources are also welcome!<br><a href='mailto:info@nostradamiq.org?subject=nostradamIQ Data Suggestion&amp;body=I have some cool Data for you to include in nostradamIQ!\n\nFormat:____________\nSource:___________(If not an oline source, please attach the data!)\nWhy is this interesting?\nSuggested Name:____________\nOrigin to be credited:__________\n'>Please contact us!</a><br>If you feel like coding yourself, see <a href='https://github.com/nupic-community/nostradamIQ/tree/master/nostradamIQ-webapp' target='_blank'>our source-code</a> and <a href='https://github.com/nupic-community/nostradamIQ/pulls' target='_blank'>make a PR!</a></p>"); 
     $('.giveData-title').html('<i class="database icon"></i>CONTRIBUTE IT!');
     giveDataOn = true;
   }
@@ -1007,6 +1008,27 @@ $('.sun-control').toggle(
   function () { showSun(); $(this).addClass('active'); },
   function () { hideSun(); $(this).removeClass('active'); }
 );
+
+/* ----------------------------- LEGEND ----------------------------- */
+
+// TODO NOT WORKING!
+/*
+
+var legendOn = false;
+function toggleLegend() {
+  if (legendOn) { // Hide Legend
+    $('#legend').html('');
+    $('.legend-title').html('<i class="info icon"></i>SHOW LEGEND');
+    legend0n = false;
+  } else { // Show Legend
+    $('#legend').html('<i class="play icon"></i> =&nbsp;&nbsp;&nbsp;Load Layer<br><i class="folder icon"></i> =&nbsp;&nbsp;&nbsp;Toggle Layer Details<br><i class="play icon new-layer"></i> =&nbsp;&nbsp;&nbsp;New Layer!<br><i class="play icon large-layer"></i> =&nbsp;&nbsp;&nbsp;Warning, Large Layer - High-performance processor required, may crash weaker systems<br><p class="instruct">Bottom Menu</p><i class="trash icon"></i> =&nbsp;&nbsp;&nbsp;Clear Globe. Remove all layers<br><i class="clock icon"></i> =&nbsp;&nbsp;&nbsp;Toggle timeline<br><i class="sun icon"></i> =&nbsp;&nbsp;&nbsp;Toggle Sun<br><i class="share alternate icon"></i> =&nbsp;&nbsp;&nbsp;Generate URL to share all currently active layers<br><i class="compress icon"></i> =&nbsp;&nbsp;&nbsp;Collapse layer category list<br><i class="chevron up icon"></i> =&nbsp;&nbsp;&nbsp;Scroll to menu top<br><i class="close icon"></i> =&nbsp;&nbsp;&nbsp;Close this menu<br>');
+    $('.legend-title').html('<i class="info icon"></i>HIDE LEGEND! :)');
+    legendOn = true;
+  }
+}
+$('.legend-title').click(toggleLegend);
+
+*/
 
 /* ----------------------------- TIMEZONES ----------------------------- */
 /*
