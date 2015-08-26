@@ -643,12 +643,11 @@ div.folder {
     padding: 6px 0;
 	display:none;
     background-color: #2F393F;
-    border-bottom: 1px solid #666;
 }
 
 div.map-layers div.folder div.folder {
 	background:#39454C;
-    color: #eee;
+    color: #eee !important;
 	margin:0;
 	padding:10px 0;
 	border-bottom: 0px;
@@ -656,7 +655,7 @@ div.map-layers div.folder div.folder {
 
 div.legend {
     color: #EEE;
-    padding: 0px 20px 20px;
+    padding: 0px 4% 20px 4%;
     /* display: none; */
 }
 
@@ -803,6 +802,14 @@ p.instruct:not(:first-child) {
 
 .ui.menu .item:hover>a:not(.ui) i {
 	color:#FFF;
+}
+
+.extra.content a {
+    color: #eee !important;
+}
+
+.extra.content a:hover {
+    color: #FF7214 !important;
 }
 
 /* SEARCH BAR */
