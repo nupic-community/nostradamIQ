@@ -407,6 +407,7 @@ if ($('body').hasClass('mobile')) {
         textureUrl: '/webapp/lib/cesium/Cesium/Assets/Textures/moonSmall.jpg', 
         onlySunLightning: false 
     });
+    
     // better Stars: WARNING! LOTS OF WORK! 
 /*
     viewer.scene.skyBox = new Cesium.SkyBox({
@@ -452,10 +453,10 @@ function fly(position) {
 }
 
 function showAndFlyPosition(position) {
-    document.getElementById('geolocation_window').innerHTML = "<i><b>Your Position:</b><br>Lat: "+Number((position.coords.latitude).toFixed(3))+"<br>Lng: "+Number((position.coords.longitude).toFixed(3)+"</i><br><button onclick='fly()'>Fly Me there!</button> ");
+    document.getElementById('geolocation-window').innerHTML = "<i><b>Your Position:</b><br>Lat: "+Number((position.coords.latitude).toFixed(3))+"<br>Lng: "+Number((position.coords.longitude).toFixed(3)+"</i><br><button onclick='fly()'>Fly Me there!</button> ");
 }
 function showError(error) {
-    $('#geolocation_window').hide();
+    $('#geolocation-window').hide();
     switch(error.code) {
         case error.PERMISSION_DENIED:
             console.log("You denied the request for Geolocation.");
